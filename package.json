@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "tokens": "node scripts/build-tokens.mjs",
+    "prebuild": "node scripts/build-tokens.mjs",
+    "predev": "node scripts/build-tokens.mjs"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.3.1",
