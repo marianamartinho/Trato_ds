@@ -13,6 +13,11 @@ npm run build   # sitio estático en /out (Vercel: framework Next.js, sin config
 npm run build:single  # versión de una sola página (navegación por #hash) en /dist-single
 ```
 
+## Preview online
+
+Cada push a `main` publica el sitio en GitHub Pages (`.github/workflows/pages.yml`):
+`https://<usuario>.github.io/trato-ds/`. Activarlo una vez en **Settings → Pages → Source: GitHub Actions**.
+
 ## Estructura
 
 ```
