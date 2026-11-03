@@ -10,6 +10,7 @@ Origen: Figma **Platform Designs** (`k9llQiGMDSuQn9zWXeUo6r`).
 npm install
 npm run dev     # http://localhost:3000
 npm run build   # sitio estático en /out (Vercel: framework Next.js, sin config extra)
+npm run build:single  # versión de una sola página (navegación por #hash) en /dist-single
 ```
 
 ## Estructura

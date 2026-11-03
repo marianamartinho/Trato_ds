@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { DocLink as Link } from "@/lib/nav";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { NavEntry } from "@/content/registry";
 

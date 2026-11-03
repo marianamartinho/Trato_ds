@@ -1,10 +1,10 @@
 "use client";
 import * as React from "react";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
 import * as Dialog from "@radix-ui/react-dialog";
 import { ArrowRight, BookOpen, Command, Component, LayoutGrid, Menu, Moon, Palette, Search, Sun, X } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { DocLink as Link, useNavigate, usePath } from "@/lib/nav";
+import { TRATO_OWL } from "@/lib/brand";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { components, foundations, patterns, type NavEntry } from "@/content/registry";
 import { FigmaIcon } from "./figma-icon";
@@ -20,6 +20,7 @@ const groups: Group[] = [
     items: [
       { slug: "home", title: "Introducción", href: "/" },
       { slug: "getting-started", title: "Cómo usarlo", href: "/getting-started/" },
+      { slug: "roadmap", title: "Hoja de ruta", href: "/roadmap/" },
       { slug: "tokens", title: "Tokens", href: "/tokens/" },
     ],
   },
@@ -39,10 +40,7 @@ const hrefOf = (g: Group, it: Group["items"][number]) => ("href" in it ? it.href
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-md">
-      <span className="relative grid size-8 place-items-center overflow-hidden rounded-lg bg-gray-blue-700 text-white shadow-sm">
-        <span className="absolute -right-1.5 -top-1.5 size-4 rounded-full bg-orange-500" />
-        <span className="relative text-md font-bold leading-none">t</span>
-      </span>
+      <img src={TRATO_OWL} alt="" width={32} height={30} className="h-[30px] w-8 object-contain" />
       <span className="flex items-baseline gap-sm">
         <span className="text-md font-semibold tracking-tight text-(--text-primary)">Trato</span>
         <span className="hidden text-sm font-medium text-(--text-quaternary) sm:inline">Design System</span>
@@ -52,7 +50,7 @@ function Logo() {
 }
 
 function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
-  const pathname = usePathname();
+  const pathname = usePath();
   const norm = (p: string) => (p.endsWith("/") ? p : p + "/");
   return (
     <nav className="flex flex-col gap-3xl">
@@ -96,11 +94,26 @@ function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
 
 function useTheme() {
   const [dark, setDark] = React.useState(false);
-  React.useEffect(() => setDark(document.documentElement.classList.contains("dark")), []);
+  React.useEffect(() => {
+    const root = document.documentElement;
+    setDark(root.classList.contains("dark"));
+    // Si el contenedor define data-theme (p. ej. el visor de claude.ai), lo seguimos.
+    const obs = new MutationObserver(() => {
+      const a = root.getAttribute("data-theme");
+      if (a) {
+        root.classList.toggle("dark", a === "dark");
+        setDark(a === "dark");
+      }
+    });
+    obs.observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => obs.disconnect();
+  }, []);
   const toggle = () => {
     const next = !dark;
     setDark(next);
-    document.documentElement.classList.toggle("dark", next);
+    const root = document.documentElement;
+    root.classList.toggle("dark", next);
+    if (root.hasAttribute("data-theme")) root.setAttribute("data-theme", next ? "dark" : "light");
     try {
       localStorage.setItem("trato-theme", next ? "dark" : "light");
     } catch {}
@@ -109,7 +122,7 @@ function useTheme() {
 }
 
 function SearchDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
-  const router = useRouter();
+  const navigate = useNavigate();
   const [q, setQ] = React.useState("");
   const [idx, setIdx] = React.useState(0);
   const all = React.useMemo(
@@ -134,7 +147,7 @@ function SearchDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o:
   const go = (href: string) => {
     onOpenChange(false);
     setQ("");
-    router.push(href);
+    navigate(href);
   };
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
@@ -239,7 +252,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <main className="min-w-0 flex-1 overflow-x-clip px-xl py-4xl md:px-5xl lg:px-6xl">
             <div className="mx-auto max-w-[1040px]">{children}</div>
             <footer className="mx-auto mt-7xl flex max-w-[1040px] flex-wrap items-center justify-between gap-lg border-t border-(--border-secondary) pt-3xl text-sm text-(--text-quaternary)">
-              <span>Trato Design System · fuente de verdad para Diseño y Frontend</span>
+              <span>Trato Design System · propuesta v0.1</span>
               <span>Fuente: Figma “Platform Designs”</span>
             </footer>
           </main>

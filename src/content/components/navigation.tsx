@@ -2,6 +2,7 @@
 import * as React from "react";
 import { Archive, ChartPie, CircleHelp, ClipboardList, FileText, House, Infinity as InfinityIcon, LogOut, MessageSquareText, Paperclip, Search, Settings, TriangleAlert, Users, Rows3 } from "lucide-react";
 import { Avatar, NavItem, NavRail, Tooltip } from "@/components/ui";
+import { TRATO_OWL } from "@/lib/brand";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
 
@@ -21,7 +22,7 @@ export default function NavigationDoc() {
 </NavRail>`}>
           <div className="flex h-[640px] overflow-hidden rounded-2xl border border-(--border-secondary) bg-(--bg-secondary)">
             <NavRail
-              logo={<span className="grid size-9 place-items-center rounded-full bg-gray-blue-700 text-sm font-bold text-white">t</span>}
+              logo={<img src={TRATO_OWL} alt="Trato" width={36} height={34} className="h-[34px] w-9 object-contain" />}
               footer={<><NavItem icon={<MessageSquareText />} label="Chat" className="bg-orange-50 text-orange-600 hover:bg-orange-100 dark:bg-orange-900/30" /><NavItem icon={<Settings />} label="Configuración" /><Avatar initials="AT" size="md" /></>}
             >
               {items.map(([label, Icon]) => (

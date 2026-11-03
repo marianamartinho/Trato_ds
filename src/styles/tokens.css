@@ -144,7 +144,7 @@
   --text-display-md--line-height: 44px;
 }
 
-:root, .light {
+:root, .light, :root[data-theme="light"] {
   /* Semánticos — modo claro. Uso: bg-(--bg-primary), text-(--text-secondary) */
   --bg-primary: var(--color-white);
   --bg-secondary: var(--color-gray-50);
@@ -183,7 +183,7 @@
   --focus-ring: var(--color-indigo-400);
 }
 
-.dark {
+.dark, :root[data-theme="dark"] {
   /* Semánticos — modo oscuro */
   --bg-primary: var(--color-gray-950);
   --bg-secondary: #0F131A;

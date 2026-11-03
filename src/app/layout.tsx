@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Fuente de verdad del design system de Trato: tokens, componentes y patrones en código.",
 };
 
-const themeScript = `try{var t=localStorage.getItem('trato-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
+const themeScript = `try{var d=document.documentElement,a=d.getAttribute('data-theme'),t=null;try{t=localStorage.getItem('trato-theme')}catch(e){}var dark=a?a==='dark':t?t==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.classList.toggle('dark',dark)}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { figmaUrl, statusLabel, type Status } from "@/content/registry";
 import { FigmaIcon } from "./figma-icon";
+import { HASH } from "@/lib/env";
 
 export function StatusBadge({ status }: { status: Status }) {
   const color = status === "ready" ? "success" : status === "beta" ? "warning" : "gray";
@@ -68,11 +69,15 @@ export function DocHeader({
 export function Section({ title, description, children, id }: { title: string; description?: React.ReactNode; children: React.ReactNode; id?: string }) {
   const anchor = id ?? title.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-");
   return (
-    <section id={anchor} className="mb-6xl scroll-mt-24">
+    <section id={HASH ? undefined : anchor} className="mb-6xl scroll-mt-24">
       <h2 className="group mb-xs text-xl font-semibold text-(--text-primary)">
-        <a href={`#${anchor}`} className="hover:underline hover:decoration-(--border-primary) hover:underline-offset-4">
-          {title}
-        </a>
+        {HASH ? (
+          title
+        ) : (
+          <a href={`#${anchor}`} className="hover:underline hover:decoration-(--border-primary) hover:underline-offset-4">
+            {title}
+          </a>
+        )}
       </h2>
       {description && <div className="mb-2xl max-w-[672px] text-md text-(--text-tertiary)">{description}</div>}
       {!description && <div className="mb-xl" />}

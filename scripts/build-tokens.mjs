@@ -34,8 +34,8 @@ lines.push("/* ⚠️ Archivo generado por scripts/build-tokens.mjs — no edita
 lines.push("/* Fuente de verdad: src/tokens/tokens.json */\n");
 lines.push("/* Primitivos → expuestos como utilidades Tailwind (bg-indigo-500, p-md, rounded-sm, text-sm, shadow-xs…) */");
 lines.push("@theme {\n" + prim.join("\n") + "\n}\n");
-lines.push(":root, .light {\n  /* Semánticos — modo claro. Uso: bg-(--bg-primary), text-(--text-secondary) */\n" + semantic("light") + "\n}\n");
-lines.push(".dark {\n  /* Semánticos — modo oscuro */\n" + semantic("dark") + "\n}\n");
+lines.push(":root, .light, :root[data-theme=\"light\"] {\n  /* Semánticos — modo claro. Uso: bg-(--bg-primary), text-(--text-secondary) */\n" + semantic("light") + "\n}\n");
+lines.push(".dark, :root[data-theme=\"dark\"] {\n  /* Semánticos — modo oscuro */\n" + semantic("dark") + "\n}\n");
 
 mkdirSync(new URL("../src/styles/", import.meta.url), { recursive: true });
 writeFileSync(new URL("../src/styles/tokens.css", import.meta.url), lines.join("\n"));
