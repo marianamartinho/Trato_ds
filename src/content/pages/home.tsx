@@ -1,7 +1,7 @@
 "use client";
 import { DocLink as Link } from "@/lib/nav";
 import { ArrowRight, Component, FileText, Folder, Layers, LayoutGrid, MoreVertical, Palette, Plus, Sparkles } from "lucide-react";
-import { Avatar, AvatarGroup, Badge, Button, Chip, DocIcon, Progress, QuickAction, SearchInput, SegmentedBar, Stat } from "@/components/ui";
+import { Alert, Avatar, AvatarGroup, Badge, Button, Chip, DocIcon, Progress, QuickAction, SearchInput, SegmentedBar, Stat } from "@/components/ui";
 import { components, figmaPages, foundations, patterns } from "@/content/registry";
 import tokens from "@/tokens/tokens.json";
 
@@ -52,6 +52,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Alert tone="info" title="Trabajo en curso" className="mb-6xl">
+        Hace un mes que construimos este Design System en el repo. Todavía faltan piezas: lo que ven acá es un adelanto para que tengan una idea del rumbo.
+      </Alert>
 
       {/* Showcase vivo */}
       <section className="mb-6xl">
