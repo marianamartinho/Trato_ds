@@ -111,13 +111,13 @@ export function Calendar({
   const weeks = Math.ceil((offset + daysInMonth) / 7);
   const days = Array.from({ length: weeks * 7 }, (_, i) => new Date(y, m, 1 - offset + i));
 
-  const title = new Intl.DateTimeFormat(locale, { month: "long", year: "numeric" }).format(month);
+  const title = new Intl.DateTimeFormat(locale, { month: "long", year: "numeric" }).format(month).replace(/^./, (c) => c.toUpperCase());
   const longDate = new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long" });
 
   return (
     <div className={cn("flex w-full flex-col gap-md", className)}>
       <div className="flex items-center justify-between gap-md">
-        <h3 className="text-md font-semibold capitalize text-(--text-primary)" aria-live="polite">
+        <h3 className="text-md font-semibold text-(--text-primary)" aria-live="polite">
           {title}
         </h3>
         <div className="flex items-center gap-xs">

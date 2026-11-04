@@ -23,6 +23,9 @@ import EmptyStateDoc from "./components/empty-state";
 import ProgressDoc from "./components/progress";
 import ChipDoc from "./components/chip";
 import NavigationDoc from "./components/navigation";
+import ChartsDoc from "./components/charts";
+import CalendarDoc from "./components/calendar";
+import VideoPlayerDoc from "./components/video-player";
 import PageHeaderPattern from "./patterns/page-header";
 import DocumentsTablePattern from "./patterns/documents-table";
 import DashboardPattern from "./patterns/dashboard";
@@ -37,6 +40,7 @@ export const componentPages: Record<string, ComponentType> = {
   "checkbox-switch": CheckboxSwitchDoc, tabs: TabsDoc, avatar: AvatarDoc, tooltip: TooltipDoc, alert: AlertDoc,
   dialog: DialogDoc, menu: MenuDoc, table: TableDoc, "card-stat": CardStatDoc, "empty-state": EmptyStateDoc,
   progress: ProgressDoc, chip: ChipDoc, navigation: NavigationDoc,
+  charts: ChartsDoc, calendar: CalendarDoc, "video-player": VideoPlayerDoc,
 };
 
 export const patternPages: Record<string, ComponentType> = {

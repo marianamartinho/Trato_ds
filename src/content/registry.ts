@@ -96,7 +96,7 @@ export const components: NavEntry[] = [
   { slug: "upload-field", title: "Carga de archivos", level: "molecule", description: "Zona para subir anexos y documentos.", status: "planned", usage: 32, figmaName: "Upload Field (armado)", origin: "Local", pages: ["Vista participante"], examples: [{ name: "Vista participante", node: "232:11958" }] },
   { slug: "contracts-filter", title: "Filtro de contratos", level: "molecule", description: "Filtro por jurisdicción y tipo en el dashboard.", status: "planned", usage: 6, figmaName: "Contracts", origin: "Local", pages: ["New Dashboard"],
     variants: { Filter: ["Juris", "Type"] }, examples: [{ name: "New Dashboard", node: "1957:17786" }] },
-  { slug: "calendar", title: "Calendario", level: "molecule", description: "Celdas y eventos de calendario.", status: "planned", usage: 88, figmaName: "_Calendar cell · _Calendar event", origin: "Untitled UI", pages: ["New Dashboard"],
+  { slug: "calendar", title: "Calendario", level: "molecule", description: "Celdas y eventos de calendario.", status: "ready", usage: 88, figmaName: "_Calendar cell · _Calendar event", origin: "Untitled UI", pages: ["New Dashboard"],
     variants: { Breakpoint: ["Mobile"] }, examples: [{ name: "New Dashboard", node: "1839:42459" }] },
 
   // ── Organismos ──────────────────────────────────────────
@@ -109,9 +109,9 @@ export const components: NavEntry[] = [
   { slug: "drawer", title: "Panel lateral", level: "organism", description: "Panel derecho: análisis con IA, configuración, chat.", status: "planned", figmaName: "Sidebar (armado)", origin: "Local", pages: ["Document Editor", "Clause Pulse", "NEW AI Chat"], examples: [{ name: "Documento IA 1", node: "267:14867" }] },
   { slug: "editor-toolbar", title: "Toolbar del editor", level: "organism", description: "Formato de texto del Document Editor.", status: "planned", usage: 120, figmaName: "Tools (armado)", origin: "Local", pages: ["Document Editor"], examples: [{ name: "Documento IA 1", node: "267:15195" }] },
   { slug: "chat-panel", title: "Panel de chat", level: "organism", description: "Conversación, contexto y composer del chat.", status: "planned", usage: 140, figmaName: "Chat Bubble (armado)", origin: "Local", pages: ["Document Editor", "LetsLaw Integration", "NEW AI Chat"], examples: [{ name: "Document Editor", node: "267:17611" }] },
-  { slug: "charts", title: "Gráficos", level: "organism", description: "Línea, barras y mapa del dashboard.", status: "planned", usage: 299, figmaName: "_X-axis · _Y-axis · Chart marker", origin: "Untitled UI", pages: ["New Dashboard", "NEW AI Chat"],
+  { slug: "charts", title: "Gráficos", level: "organism", description: "Línea, barras y mapa del dashboard.", status: "ready", usage: 299, figmaName: "_X-axis · _Y-axis · Chart marker", origin: "Untitled UI", pages: ["New Dashboard", "NEW AI Chat"],
     variants: { Data: ["12 months"], Type: ["Line"] }, examples: [{ name: "New Dashboard", node: "1839:52379" }] },
-  { slug: "video-player", title: "Reproductor de video", level: "organism", description: "Video con barra de acciones.", status: "planned", usage: 1, figmaName: "Video player 16:9", origin: "Untitled UI", pages: ["Lefebvre Integration"],
+  { slug: "video-player", title: "Reproductor de video", level: "organism", description: "Video con barra de acciones.", status: "ready", usage: 1, figmaName: "Video player 16:9", origin: "Untitled UI", pages: ["Lefebvre Integration"],
     variants: { Size: ["sm"] }, examples: [{ name: "Lefebvre", node: "1121:6828" }] },
 ];
 
