@@ -22,6 +22,7 @@ const groups: Group[] = [
       { slug: "getting-started", title: "Cómo usarlo", href: "/getting-started/" },
       { slug: "roadmap", title: "Hoja de ruta", href: "/roadmap/" },
       { slug: "tokens", title: "Tokens", href: "/tokens/" },
+      { slug: "implementation", title: "Implementación", href: "/implementation/" },
     ],
   },
   { title: "Fundamentos", icon: <Palette />, base: "/foundations", items: foundations },
