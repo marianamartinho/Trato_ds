@@ -81,7 +81,7 @@ function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
                   >
                     <span className="truncate">{it.title}</span>
                     {status === "beta" && <span className="rounded-xs bg-warning-100 px-1 text-[10px] font-semibold text-warning-700 dark:bg-warning-900/50 dark:text-warning-300">BETA</span>}
-                    {status === "planned" && <span className="size-1.5 rounded-full border border-(--border-primary)" title="Pendiente" />}
+                    {status === "planned" && <span className="size-1.5 rounded-full border border-(--border-primary)" title="Mapeado" />}
                   </Link>
                 </li>
               );

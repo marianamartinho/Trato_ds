@@ -9,7 +9,7 @@ export const figmaUrl = (nodeId?: string) =>
   `https://www.figma.com/design/${FIGMA_FILE}/${FIGMA_NAME}${nodeId ? `?node-id=${nodeId.replace(":", "-")}` : ""}`;
 
 export type Status = "ready" | "beta" | "planned";
-export const statusLabel: Record<Status, string> = { ready: "Listo", beta: "Beta", planned: "Pendiente" };
+export const statusLabel: Record<Status, string> = { ready: "Listo", beta: "Beta", planned: "Mapeado" };
 
 export interface NavEntry {
   slug: string;
@@ -20,7 +20,21 @@ export interface NavEntry {
   /** Instancias aproximadas en el archivo de Figma (inventario). */
   usage?: number;
   keywords?: string[];
+  /** Nivel en el sistema. */
+  level?: "atom" | "molecule" | "organism";
+  /** Nombre del componente en Figma (librería Untitled UI o local). */
+  figmaName?: string;
+  /** "Untitled UI" si viene de la librería, "Local" si está armado en el archivo de Trato. */
+  origin?: "Untitled UI" | "Local";
+  /** Variantes que realmente se usan en los diseños, por propiedad. */
+  variants?: Record<string, string[]>;
+  /** Páginas de Figma donde aparece. */
+  pages?: string[];
+  /** Pantallas de ejemplo en Figma. */
+  examples?: { name: string; node: string }[];
 }
+
+export const levelLabel = { atom: "Átomos", molecule: "Moléculas", organism: "Organismos" } as const;
 
 export const foundations: NavEntry[] = [
   { slug: "colors", title: "Color", description: "Paletas primitivas y tokens semánticos en claro y oscuro.", status: "ready", keywords: ["paleta", "tokens", "indigo", "brand"] },

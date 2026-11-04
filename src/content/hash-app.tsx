@@ -6,6 +6,7 @@ import TokensPage from "./pages/tokens";
 import GettingStarted from "./pages/getting-started";
 import Roadmap from "./pages/roadmap";
 import Implementation from "./pages/implementation";
+import Inventory from "./pages/inventory";
 import { ComponentView, FoundationView, PatternView } from "./views";
 
 /** Router por hash: renderiza la vista según location.hash (modo página única). */
@@ -21,6 +22,7 @@ export function HashApp() {
     if (kind === "getting-started") return <GettingStarted />;
     if (kind === "roadmap") return <Roadmap />;
     if (kind === "implementation") return <Implementation />;
+    if (kind === "inventory") return <Inventory />;
     return null;
   })();
   return <div key={path}>{view ?? <Home />}</div>;
