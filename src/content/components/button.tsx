@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, Download02, FolderPlus, Plus, Stars01, Trash01 } from "@untitledui/icons";
+import { ArrowUpRight, Download02, FolderPlus, Plus, Trash01 } from "@untitledui/icons";
 import { Button } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { DoDont, Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -13,7 +13,7 @@ export default function ButtonDoc() {
 <Button variant="secondary">Mostrar</Button>
 <Button variant="tertiary">Cancelar</Button>
 <Button variant="soft">Trato agent</Button>
-<Button variant="dark"><Stars01 /> Analizar documento con IA</Button>
+<Button variant="dark">Analizar documento con IA</Button>
 <Button variant="destructive">Eliminar</Button>
 <Button variant="link">View more</Button>`}
         >
@@ -21,7 +21,7 @@ export default function ButtonDoc() {
           <Button variant="secondary">Mostrar</Button>
           <Button variant="tertiary">Cancelar</Button>
           <Button variant="soft">Trato agent</Button>
-          <Button variant="dark"><Stars01 className="text-orange-400" /> Analizar documento con IA</Button>
+          <Button variant="dark">Analizar documento con IA</Button>
           <Button variant="destructive"><Trash01 /> Eliminar</Button>
           <Button variant="link">View more</Button>
         </Preview>
@@ -66,7 +66,7 @@ export default function ButtonDoc() {
             { dont: <><Button>Cancelar</Button><Button>Enviar</Button></>, caption: "Dos botones primary compitiendo por atención." },
           ]}
         />
-        <div className="mt-xl"><Guidelines items={["Variante dark solo para la acción de IA dentro de paneles (“Analizar documento con IA”).", "Variante soft para accesos al agente (“Trato agent”) y acciones activas de toolbar."]} /></div>
+        <div className="mt-xl"><Guidelines items={["Variante dark: Primary con fondo gray-800 y texto blanco, como “Analizar documento con IA” en el Document Editor. Si lleva ícono, va en blanco.", "Variante soft para accesos al agente (“Trato agent”) y acciones activas de toolbar."]} /></div>
       </Section>
 
       <Section title="Props">

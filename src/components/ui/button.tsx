@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 /**
  * Button — Figma: "Buttons/Button" (~1.200 instancias) y "Button".
  * Referencias: "Crear nuevo" (primary), "Mostrar" (secondary xs),
- * "Trato agent" (soft), "Analizar documento con IA" (dark).
+ * "Trato agent" (soft), "Analizar documento con IA" (dark: Primary con fondo gray-800, texto e ícono blancos).
  */
 export const buttonVariants = cva(
   "inline-flex shrink-0 items-center justify-center gap-sm whitespace-nowrap font-semibold transition-[background,box-shadow,color,border-color] duration-150 disabled:pointer-events-none disabled:opacity-50 [&_svg]:shrink-0",

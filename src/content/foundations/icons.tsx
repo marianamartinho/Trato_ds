@@ -62,7 +62,7 @@ export default function Icons() {
       <Section title="Reglas">
         <Guidelines
           items={[
-            "Stars01 (stars-01) significa IA y va en naranja (--fg-ai).",
+            "Stars01 (stars-01) significa IA y va en naranja (--fg-ai). Dentro de un botón toma el color del texto del botón.",
             "Scales02 (scales-02) identifica contenido legal: Clause Pulse, LetsLaw, Lefebvre.",
             "En el Figma hay íconos de Remix Icon (close-line, file-2-line, eye-line…). En código se reemplazan por su equivalente de Untitled UI: XClose, File02, Eye.",
             "Íconos de acción sin texto llevan aria-label y tooltip.",

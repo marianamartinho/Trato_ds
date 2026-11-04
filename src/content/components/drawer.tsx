@@ -1,5 +1,4 @@
 "use client";
-import { Stars01 } from "@untitledui/icons";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerTrigger, SidePanel } from "@/components/ui/drawer";
 import { Preview } from "@/components/docs/preview";
@@ -13,7 +12,7 @@ export default function DrawerDoc() {
           <div className="h-[420px] w-full max-w-[360px] overflow-hidden rounded-xl border border-(--border-secondary)">
             <SidePanel title="Análisis con IA" onClose={() => {}}>
               <p className="mb-xl text-sm text-(--text-tertiary)">Extrae información y sugerencias relevantes del documento con inteligencia artificial.</p>
-              <Button variant="dark" className="w-full"><Stars01 className="text-orange-400" /> Analizar documento con IA</Button>
+              <Button variant="dark" className="w-full">Analizar documento con IA</Button>
             </SidePanel>
           </div>
         </Preview>
