@@ -12,6 +12,7 @@ import { cn } from "@/lib/cn";
 export type Align = "left" | "center" | "right" | "justify";
 
 const tool = "grid size-8 place-items-center rounded-sm text-(--fg-secondary) transition-colors hover:bg-(--bg-secondary) aria-pressed:bg-(--bg-brand-subtle) aria-pressed:text-(--fg-brand) [&_svg]:size-5";
+const menuTool = "inline-flex h-8 items-center gap-xs rounded-sm px-sm text-(--fg-secondary) transition-colors hover:bg-(--bg-secondary) [&_svg]:size-5";
 const sep = <span aria-hidden className="mx-xs h-[22px] w-px bg-(--border-secondary)" />;
 
 export function EditorToolbar({
@@ -42,14 +43,14 @@ export function EditorToolbar({
   ];
   return (
     <div role="toolbar" aria-label="Formato de texto" className={cn("flex min-h-[52px] flex-wrap items-center gap-xs border-b border-(--border-secondary) bg-(--bg-primary) px-xl", className)}>
-      <button className={cn(tool, "w-auto gap-xs px-xs")} aria-label="Tipo de bloque"><File02 /><ChevronDown className="size-4!" /></button>
+      <button className={menuTool} aria-label="Tipo de bloque"><File02 /><ChevronDown className="size-4!" /></button>
       {sep}
       <button className={tool} aria-pressed={!!marks.bold} aria-label="Negrita" onClick={() => onToggleMark("bold")}><Bold01 /></button>
       <button className={tool} aria-pressed={!!marks.italic} aria-label="Cursiva" onClick={() => onToggleMark("italic")}><Italic01 /></button>
       <button className={tool} aria-pressed={!!marks.underline} aria-label="Subrayado" onClick={() => onToggleMark("underline")}><Underline01 /></button>
       <button className={tool} aria-label="Color de texto"><span className="size-4 rounded-xxs" style={{ background: color === "currentColor" ? "var(--text-primary)" : color }} /></button>
       {sep}
-      <button className={cn(tool, "w-auto gap-xs px-sm text-sm font-medium text-(--text-secondary)")} aria-label="Tamaño de texto">{size}<ChevronDown className="size-4!" /></button>
+      <button className={cn(menuTool, "text-sm font-medium text-(--text-secondary)")} aria-label="Tamaño de texto">{size}<ChevronDown className="size-4!" /></button>
       {sep}
       {alignIcons.map(([a, icon, label]) => (
         <button key={a} className={tool} aria-pressed={align === a} aria-label={label} onClick={() => onAlign(a)}>{icon}</button>

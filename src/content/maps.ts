@@ -36,6 +36,11 @@ import FiltersBarDoc from "./components/filters-bar";
 import ContractsFilterDoc from "./components/contracts-filter";
 import UploadFieldDoc from "./components/upload-field";
 import ContactDoc from "./components/contact";
+import MessageDoc from "./components/message";
+import ChatPanelDoc from "./components/chat-panel";
+import DrawerDoc from "./components/drawer";
+import HeaderBarDoc from "./components/header-bar";
+import EditorToolbarDoc from "./components/editor-toolbar";
 import ChartsDoc from "./components/charts";
 import CalendarDoc from "./components/calendar";
 import VideoPlayerDoc from "./components/video-player";
@@ -55,6 +60,7 @@ export const componentPages: Record<string, ComponentType> = {
   progress: ProgressDoc, chip: ChipDoc, navigation: NavigationDoc,
   "dot": DotDoc, "map-marker": MapMarkerDoc, "featured-icon": FeaturedIconDoc, "logomark": LogomarkDoc, "toast": ToastDoc, "section-header": SectionHeaderDoc, "page-header-component": PageHeaderDoc,
   "breadcrumbs": BreadcrumbsDoc, "pagination": PaginationDoc, "filters-bar": FiltersBarDoc, "contracts-filter": ContractsFilterDoc, "upload-field": UploadFieldDoc, "contact": ContactDoc,
+  "message": MessageDoc, "chat-panel": ChatPanelDoc, "drawer": DrawerDoc, "header-bar": HeaderBarDoc, "editor-toolbar": EditorToolbarDoc,
   charts: ChartsDoc, calendar: CalendarDoc, "video-player": VideoPlayerDoc,
 };
 

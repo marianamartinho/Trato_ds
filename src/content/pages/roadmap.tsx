@@ -16,7 +16,6 @@ const phases = [
 ];
 
 export default function Roadmap() {
-  const planned = components.filter((c) => c.status === "planned");
   return (
     <>
       <DocHeader
@@ -31,11 +30,11 @@ export default function Roadmap() {
           {[
             {
               icon: <Check />, tone: "success" as const, tag: "Hecho", title: "Etapa 1 · Fundamentos y núcleo",
-              items: ["Tokens en código (color, tipografía, espaciado, radios, sombras)", "18 componentes documentados", "4 patrones: header, documentos, dashboard, chat IA", "Inventario de 14 áreas del Figma"],
+              items: ["Tokens en código (color, tipografía, espaciado, radios, sombras)", `${components.length} componentes documentados, todos los que usan los diseños`, "4 patrones: header, documentos, dashboard, chat IA", "Inventario de 14 áreas del Figma"],
             },
             {
               icon: <Tool01 />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
-              items: [`Construir los ${planned.length} componentes mapeados en el inventario`, "Unificar piezas de otros kits con Untitled UI", "Pasar los íconos al set de Untitled UI", "Revisar los tokens contra el Figma y Untitled UI"],
+              items: ["Revisar con Diseño todo lo marcado como “Pendiente de definir”", "Definir la escala completa del indigo", "Unificar en Figma las piezas de otros kits con Untitled UI", "Reconstruir con componentes NEW AI Chat y Expedientes"],
             },
             {
               icon: <LayersThree01 />, tone: "blue" as const, tag: "Propuesta", title: "Etapa 3 · Llevarlo a la plataforma",
