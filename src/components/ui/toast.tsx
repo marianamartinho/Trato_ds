@@ -27,7 +27,7 @@ export function Toast({ title, description, actions, icon, onClose, className }:
         className,
       )}
     >
-      <span className="pl-sm pt-sm">{icon ?? <FeaturedIcon color="success" icon={<CheckCircle />} />}</span>
+      <span className="-m-[9px] shrink-0">{icon ?? <FeaturedIcon color="success" icon={<CheckCircle />} />}</span>
       <div className="flex min-w-0 flex-col gap-lg pt-xxs">
         <div className="flex flex-col gap-xs">
           <p className="text-sm font-semibold text-(--text-primary)">{title}</p>

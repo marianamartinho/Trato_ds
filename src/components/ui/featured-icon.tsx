@@ -18,8 +18,8 @@ const featuredIcon = cva("relative inline-grid shrink-0 place-items-center", {
       error: "text-error-600",
     },
     size: {
-      md: "size-5 [&>svg]:size-5 [--inner:28px] [--outer:38px]",
-      lg: "size-6 [&>svg]:size-6 [--inner:34px] [--outer:46px]",
+      md: "size-[38px] [&>svg]:size-5 [--inner:28px] [--outer:38px]",
+      lg: "size-[46px] [&>svg]:size-6 [--inner:34px] [--outer:46px]",
     },
   },
   defaultVariants: { color: "success", size: "md" },

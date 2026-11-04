@@ -23,6 +23,13 @@ import EmptyStateDoc from "./components/empty-state";
 import ProgressDoc from "./components/progress";
 import ChipDoc from "./components/chip";
 import NavigationDoc from "./components/navigation";
+import DotDoc from "./components/dot";
+import MapMarkerDoc from "./components/map-marker";
+import FeaturedIconDoc from "./components/featured-icon";
+import LogomarkDoc from "./components/logomark";
+import ToastDoc from "./components/toast";
+import SectionHeaderDoc from "./components/section-header";
+import PageHeaderDoc from "./components/page-header-component";
 import ChartsDoc from "./components/charts";
 import CalendarDoc from "./components/calendar";
 import VideoPlayerDoc from "./components/video-player";
@@ -40,6 +47,7 @@ export const componentPages: Record<string, ComponentType> = {
   "checkbox-switch": CheckboxSwitchDoc, tabs: TabsDoc, avatar: AvatarDoc, tooltip: TooltipDoc, alert: AlertDoc,
   dialog: DialogDoc, menu: MenuDoc, table: TableDoc, "card-stat": CardStatDoc, "empty-state": EmptyStateDoc,
   progress: ProgressDoc, chip: ChipDoc, navigation: NavigationDoc,
+  "dot": DotDoc, "map-marker": MapMarkerDoc, "featured-icon": FeaturedIconDoc, "logomark": LogomarkDoc, "toast": ToastDoc, "section-header": SectionHeaderDoc, "page-header-component": PageHeaderDoc,
   charts: ChartsDoc, calendar: CalendarDoc, "video-player": VideoPlayerDoc,
 };
 
