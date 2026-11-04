@@ -1,6 +1,6 @@
 "use client";
 import { DocLink as Link } from "@/lib/nav";
-import { ArrowRight, Cube01, DotsVertical, File02, Folder, LayersThree01, LayoutGrid01, Palette, Plus, Stars01 } from "@untitledui/icons";
+import { ArrowRight, Cube01, DotsVertical, File02, Folder, LayersThree01, LayoutGrid01, Palette, Plus, Stars01 } from "@/components/icons";
 import { Alert, Avatar, AvatarGroup, Badge, Button, Chip, DocIcon, Progress, QuickAction, SearchInput, SegmentedBar, Stat } from "@/components/ui";
 import { components, figmaPages, foundations, patterns } from "@/content/registry";
 import tokens from "@/tokens/tokens.json";

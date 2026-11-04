@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold01, ChevronDown, File02, Italic01, Underline01 } from "@untitledui/icons";
+import { AlignCenter, AlignJustify, AlignLeft, AlignRight, Bold01, ChevronDown, File02, Italic01, Underline01 } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

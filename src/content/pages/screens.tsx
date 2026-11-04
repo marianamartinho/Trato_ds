@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ArrowUpRight, LayersThree01 } from "@untitledui/icons";
+import { ArrowUpRight, LayersThree01 } from "@/components/icons";
 import { Alert, Badge, Tabs, TabsList, TabsTrigger } from "@/components/ui";
 import { DocHeader } from "@/components/docs/doc";
 import { FigmaIcon } from "@/components/docs/figma-icon";

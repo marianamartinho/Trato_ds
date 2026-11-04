@@ -1,4 +1,4 @@
-import { BookOpen01, Cube01, Grid01, HelpCircle, Palette } from "@untitledui/icons";
+import { BookOpen01, Cube01, Grid01, HelpCircle, Palette } from "@/components/icons";
 import { Alert, Badge } from "@/components/ui";
 import { DocHeader, Guidelines, Section } from "@/components/docs/doc";
 import { DocLink as Link } from "@/lib/nav";
@@ -6,7 +6,7 @@ import { DocLink as Link } from "@/lib/nav";
 const deliverables = [
   { icon: <Palette />, t: "Tokens", d: "Variables CSS generadas desde tokens.json. Funcionan con cualquier framework." },
   { icon: <Cube01 />, t: "Componentes", d: "Componentes React accesibles, construidos solo con tokens." },
-  { icon: <Grid01 />, t: "Íconos", d: "Set oficial de Untitled UI, con los mismos nombres que en Figma." },
+  { icon: <Grid01 />, t: "Íconos", d: "Set de íconos del sistema, con los mismos nombres que en Figma." },
   { icon: <BookOpen01 />, t: "Documentación", d: "Este sitio: uso, variantes, código y vínculo a cada pantalla de Figma." },
 ];
 
@@ -112,7 +112,7 @@ export default function Implementation() {
             "Los cambios entran por pull request, con revisión de Diseño y revisión técnica.",
             "Cada cambio queda registrado con su versión, para saber qué cambió y cuándo.",
             "Nada nuevo de interfaz se construye fuera del Design System: si falta algo, primero se suma acá.",
-            "Lo que no está definido en Figma ni en Untitled UI se marca como pendiente, no se inventa.",
+            "Lo que no está definido en Figma no se inventa.",
           ]}
         />
       </Section>

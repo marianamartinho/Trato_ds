@@ -1,5 +1,5 @@
 import * as React from "react";
-import { XClose } from "@untitledui/icons";
+import { XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

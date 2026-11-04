@@ -1,5 +1,5 @@
 "use client";
-import { Mail01 } from "@untitledui/icons";
+import { Mail01 } from "@/components/icons";
 import { Contact } from "@/components/ui/contact";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";

@@ -26,11 +26,11 @@ npm run dev      # http://localhost:3000
 npm run build    # exporta el sitio estático a /out (deploy en Vercel)`} />
       </Section>
       <Section title="Stack" description="Pensado para que los componentes se copien tal cual a la app de Trato.">
-        <Guidelines items={["Next.js + React + TypeScript.", "Tailwind CSS v4 con los tokens como @theme.", "Radix UI para accesibilidad (diálogos, menús, selects, tabs).", "class-variance-authority para variantes.", "Íconos: @untitledui/icons, el mismo set que usa el Figma."]} />
+        <Guidelines items={["Next.js + React + TypeScript.", "Tailwind CSS v4 con los tokens como @theme.", "Radix UI para accesibilidad (diálogos, menús, selects, tabs).", "class-variance-authority para variantes.", "Íconos: el mismo set que usa el Figma, desde @/components/icons."]} />
       </Section>
       <Section title="Usar un componente">
         <CodeBlock code={`import { Button, Badge } from "@/components/ui";
-import { Plus } from "@untitledui/icons";
+import { Plus } from "@/components/icons";
 
 export function Toolbar() {
   return (
@@ -44,7 +44,7 @@ export function Toolbar() {
       <Section title="Estados de los componentes">
         <Guidelines items={["Listo: implementado, documentado y validado contra Figma. Usar en producto.", "Beta: implementado, puede cambiar la API.", "Pendiente: detectado en Figma, todavía no está en código (hoja de ruta)."]} />
         <Alert className="mt-xl" tone="info" title="Etapa 1">
-          Fundamentos completos, los componentes que usan los diseños de Trato construidos sobre Untitled UI y ejemplos de pantallas. El detalle está en el <Link href="/inventory/" className="font-semibold underline">inventario</Link>.
+          Fundamentos completos, los componentes que usan los diseños de Trato y ejemplos de pantallas. El detalle está en el <Link href="/inventory/" className="font-semibold underline">inventario</Link>.
         </Alert>
       </Section>
     </>

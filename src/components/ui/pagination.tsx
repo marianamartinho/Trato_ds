@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { Select } from "./select";
 

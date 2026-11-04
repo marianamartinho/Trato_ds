@@ -1,5 +1,5 @@
 "use client";
-import { Download02, PlayCircle, XClose } from "@untitledui/icons";
+import { Download02, PlayCircle, XClose } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { HeaderBar } from "@/components/ui/header-bar";
 import { Tooltip } from "@/components/ui/tooltip";

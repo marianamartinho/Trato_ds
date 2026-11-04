@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowRight, BookOpen01, Command, Cube01, LayoutGrid01, Menu01, Moon01, Palette, SearchLg, Sun, XClose } from "@untitledui/icons";
+import { ArrowRight, BookOpen01, Command, Cube01, LayoutGrid01, Menu01, Moon01, Palette, SearchLg, Sun, XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { DocLink as Link, useNavigate, usePath } from "@/lib/nav";
 import { TRATO_OWL } from "@/lib/brand";

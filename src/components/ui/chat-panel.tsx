@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ArrowUp, PlusCircle } from "@untitledui/icons";
+import { ArrowUp, PlusCircle } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { Button } from "./button";
 

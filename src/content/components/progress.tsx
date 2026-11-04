@@ -1,5 +1,5 @@
 "use client";
-import { Zap } from "@untitledui/icons";
+import { Zap } from "@/components/icons";
 import { Progress, SegmentedBar } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { PropsTable, Section } from "@/components/docs/doc";

@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * SectionHeader — Figma: "Section header" (Untitled UI, Type Button group / Buttons, Tabs False).
+ * SectionHeader — Figma: "Section header" (Type Button group / Buttons, Tabs False).
  * Título 18/28 semibold text-primary, texto de apoyo opcional, acciones a la derecha, gap 16.
  */
 export function SectionHeader({

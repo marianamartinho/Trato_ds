@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ChevronDown, SearchLg } from "@untitledui/icons";
+import { ChevronDown, SearchLg } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

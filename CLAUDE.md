@@ -7,17 +7,16 @@
 ## Cómo se decide qué entra (en este orden)
 
 1. **Figma de Trato** ("Platform Designs"). Lo que está ahí manda: colores, tamaños, textos, estados y pantallas.
-2. **Untitled UI**, el sistema sobre el que está construido ese Figma. Se usa para completar lo que el Figma no define: escalas de color, tokens semánticos, tipografía, sombras, radios, anatomía y variantes de componentes, e íconos.
-3. **Nada inventado.** Si algo no está ni en el Figma ni en Untitled UI, no se agrega al DS ni se rellena con valores propios.
+2. **La librería de componentes del Figma**, que completa lo que las pantallas no definen: escalas de color, tokens semánticos, tipografía, sombras, radios, anatomía y variantes de componentes, e íconos.
+3. **Nada inventado.** Si algo no está definido en el Figma ni en su librería, no se agrega al DS ni se rellena con valores propios.
 
-Siempre se adapta Untitled UI a lo que muestra el Figma, nunca al revés.
-Ejemplo: el color de marca de Trato es gris azulado `#3E4784` (prototipo Documentos · Carpetas), aunque Untitled UI use otro valor por defecto.
+Siempre se adapta la librería a lo que muestra el Figma, nunca al revés.
+Ejemplo: el color de marca de Trato es gris azulado `#3E4784` (prototipo Documentos · Carpetas).
 
-## Recursos de Untitled UI
+## Recursos
 
-- Íconos: paquete `@untitledui/icons` (MIT). Usar los mismos nombres que en Figma (`stars-01`, `file-02`, `scales-02`…).
-- Tokens: `theme.css` de Untitled UI (incluido en el paquete `untitledui` de npm) como referencia de escalas y nombres.
-- Componentes Pro de Untitled UI: requieren licencia comercial. No copiar su código sin confirmar la licencia.
+- Íconos: se importan siempre desde `@/components/icons`, con los mismos nombres que en Figma (`stars-01` → `Stars01`).
+- El repo no menciona por nombre la librería base ni sus kits. No copiar código de componentes de pago sin confirmar la licencia.
 
 ## Independencia
 

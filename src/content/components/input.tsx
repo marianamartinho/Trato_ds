@@ -1,5 +1,5 @@
 "use client";
-import { HelpCircle, Mail01 } from "@untitledui/icons";
+import { HelpCircle, Mail01 } from "@/components/icons";
 import * as React from "react";
 import { Field, Input, SearchInput, Tooltip } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
@@ -29,7 +29,7 @@ export default function InputDoc() {
           <Field label="Deshabilitado" className="w-56"><Input disabled defaultValue="ABOGADO TRATO" /></Field>
         </Preview>
       </Section>
-      <Section title="Búsqueda" description="Input con ícono de búsqueda y, opcional, selector de alcance (Untitled UI: leading dropdown).">
+      <Section title="Búsqueda" description="Input con ícono de búsqueda y, opcional, selector de alcance (leading dropdown).">
         <Preview code={`<SearchInput scopes={["Nombre", "ID"]} placeholder="Buscar documentos" />`}>
           <SearchInput scopes={["Nombre", "ID", "Participante"]} placeholder="Buscar documentos" className="w-full max-w-[448px]" />
           <SearchInput placeholder="Buscar workflows" className="w-72" />

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { File02, Scales02 } from "@untitledui/icons";
+import { File02, Scales02 } from "@/components/icons";
 import { Chip, QuickAction } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

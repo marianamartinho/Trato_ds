@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { AlertOctagon, AlertTriangle, CheckCircle, InfoCircle, Stars01, XClose } from "@untitledui/icons";
+import { AlertOctagon, AlertTriangle, CheckCircle, InfoCircle, Stars01, XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

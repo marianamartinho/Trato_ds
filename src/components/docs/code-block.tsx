@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Check, Copy03 } from "@untitledui/icons";
+import { Check, Copy03 } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /** Resaltado mínimo para TSX/CSS/bash, sin dependencias. */

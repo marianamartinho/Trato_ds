@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 
 /**
- * Dot — Figma: "_Dot" (Untitled UI, Size sm, Outline False).
+ * Dot — Figma: "_Dot" (Size sm, Outline False).
  * Contenedor 8×8 con círculo de 6px. Se usa dentro de badges y listas de estado.
  */
 const dotColor = {

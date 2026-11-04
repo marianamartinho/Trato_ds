@@ -1,4 +1,4 @@
-import { ArrowUpRight, Tool01 } from "@untitledui/icons";
+import { ArrowUpRight, Tool01 } from "@/components/icons";
 import { Alert, Badge } from "@/components/ui";
 import { Section } from "@/components/docs/doc";
 import { figmaUrl, levelLabel, type NavEntry } from "@/content/registry";
@@ -7,14 +7,14 @@ import { figmaUrl, levelLabel, type NavEntry } from "@/content/registry";
 export default function Planned({ entry }: { entry: NavEntry }) {
   const rows: [string, React.ReactNode][] = [];
   if (entry.figmaName) rows.push(["Nombre en Figma", <code key="n" className="font-mono text-xs">{entry.figmaName}</code>]);
-  if (entry.origin) rows.push(["Origen", entry.origin === "Untitled UI" ? "Librería Untitled UI" : "Armado en el archivo de Trato"]);
+  if (entry.origin) rows.push(["Origen", entry.origin === "Librería" ? "Librería de componentes" : "Armado en el archivo de Trato"]);
   if (entry.level) rows.push(["Nivel", levelLabel[entry.level].replace(/s$/, "")]);
   if (entry.usage) rows.push(["Uso en los diseños", `~${entry.usage.toLocaleString("es")} instancias`]);
   if (entry.pages?.length) rows.push(["Aparece en", entry.pages.join(" · ")]);
   return (
     <>
       <Alert tone="warning" title="Mapeado, todavía no construido" className="mb-5xl">
-        Este componente se usa en los diseños de Trato y ya está relevado. Se construye en un próximo paso, a partir del Figma y de Untitled UI.
+        Este componente se usa en los diseños de Trato y ya está relevado. Se construye en un próximo paso, a partir del Figma.
       </Alert>
 
       <Section title="Ficha de Figma">

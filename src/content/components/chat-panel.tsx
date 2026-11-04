@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ClockRewind, File02, Lock01, XClose } from "@untitledui/icons";
+import { ClockRewind, File02, Lock01, XClose } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { ChatComposer, ChatHeader, ChatMessages, ChatPanel } from "@/components/ui/chat-panel";
 import { Chip } from "@/components/ui/chip";

@@ -1,5 +1,5 @@
 import { DocLink as Link } from "@/lib/nav";
-import { ArrowLeft, ArrowRight } from "@untitledui/icons";
+import { ArrowLeft, ArrowRight } from "@/components/icons";
 import type { NavEntry } from "@/content/registry";
 
 export function Pager({ list, slug, base }: { list: NavEntry[]; slug: string; base: string }) {

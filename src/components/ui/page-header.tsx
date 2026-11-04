@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * PageHeader — Figma: "Page header" (Untitled UI, Style Avatar, Desktop) en New Dashboard.
+ * PageHeader — Figma: "Page header" (Style Avatar, Desktop) en New Dashboard.
  * Título 20/30 semibold (text-gray-800) a la izquierda y acciones a la derecha (búsqueda Select sm 320px), gap 16.
  */
 export function PageHeader({

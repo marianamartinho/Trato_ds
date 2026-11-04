@@ -1,4 +1,4 @@
-import { File02 } from "@untitledui/icons";
+import { File02 } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

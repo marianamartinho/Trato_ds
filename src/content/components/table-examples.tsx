@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Archive, Copy03, DotsVertical, Download02, Edit05, Folder, FolderDownload, Share07, Sliders04, Trash01, Users01, XClose } from "@untitledui/icons";
+import { Archive, Copy03, DotsVertical, Download02, Edit05, Folder, FolderDownload, Share07, Sliders04, Trash01, Users01, XClose } from "@/components/icons";
 import {
   Avatar, AvatarGroup, Badge, Button, CellStack, Checkbox, DocIcon, DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuSeparator, DropdownMenuTrigger, Select, TBody, TD, TH, THead, TR, Table,

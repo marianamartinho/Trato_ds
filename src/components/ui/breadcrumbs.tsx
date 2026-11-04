@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ChevronRight, HomeLine } from "@untitledui/icons";
+import { ChevronRight, HomeLine } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**
- * Breadcrumbs — Figma: "Breadcrumbs" (Untitled UI, Divider Chevron, Type Button).
- * En el archivo de Trato la instancia está oculta; la anatomía sigue Untitled UI:
+ * Breadcrumbs — Figma: "Breadcrumbs" (Divider Chevron, Type Button).
+ * En el archivo de Trato la instancia está oculta; la anatomía sigue la de la librería:
  * ítems tipo botón (14/20 semibold, padding 4 8, radio sm) separados por chevron-right 16px.
  */
 export interface BreadcrumbItem {

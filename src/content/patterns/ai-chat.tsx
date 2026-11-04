@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ArrowUp, ChevronRight, ClockRewind, File02, HelpCircle, Lock01, PlusCircle, Stars01, XClose, Zap } from "@untitledui/icons";
+import { ArrowUp, ChevronRight, ClockRewind, File02, HelpCircle, Lock01, PlusCircle, Stars01, XClose, Zap } from "@/components/icons";
 import { Badge, Button, Chip, Progress, Tooltip } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, Section } from "@/components/docs/doc";

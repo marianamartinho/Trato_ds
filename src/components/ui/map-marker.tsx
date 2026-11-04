@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 
 /**
- * MapMarker — Figma: "_Map location marker" (Untitled UI, State Default).
+ * MapMarker — Figma: "_Map location marker" (State Default).
  * Tres círculos concéntricos: exterior 24px al 10%, medio 14px al 20%, centro 5px sólido.
  * En los diseños se usa en naranja (jurisdicción destacada) y en gris.
  */

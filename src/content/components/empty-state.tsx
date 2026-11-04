@@ -1,5 +1,5 @@
 "use client";
-import { File02, FolderPlus, Plus, SearchRefraction, Upload01, User03 } from "@untitledui/icons";
+import { File02, FolderPlus, Plus, SearchRefraction, Upload01, User03 } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Preview } from "@/components/docs/preview";
@@ -25,7 +25,7 @@ export default function EmptyStateDoc() {
           </div>
         </Preview>
       </Section>
-      <Section title="Página" description="Para tablas y páginas sin contenido, con acciones (Untitled UI).">
+      <Section title="Página" description="Para tablas y páginas sin contenido, con acciones.">
         <Preview align="stretch" code={`<EmptyState icon={<FolderPlus />} title="Esta carpeta está vacía" description="…" actions={…} />`}>
           <div className="grid gap-xl md:grid-cols-2">
             <div className="rounded-xl border border-(--border-secondary) bg-(--bg-primary)">
@@ -45,7 +45,7 @@ export default function EmptyStateDoc() {
       </Section>
       <Section title="Props">
         <PropsTable props={[
-          { name: "variant", type: `"page" | "panel"`, default: `"page"`, description: "Página (Untitled UI) o panel (Figma de Trato)." },
+          { name: "variant", type: `"page" | "panel"`, default: `"page"`, description: "Página o panel (Figma de Trato)." },
           { name: "icon", type: "ReactNode", description: "Ícono o ilustración." },
           { name: "title / description", type: "string / ReactNode", description: "Mensaje. description admite íconos en línea." },
           { name: "actions", type: "ReactNode", description: "Hasta dos botones." },

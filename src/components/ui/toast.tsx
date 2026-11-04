@@ -1,11 +1,11 @@
 "use client";
 import * as React from "react";
-import { CheckCircle, XClose } from "@untitledui/icons";
+import { CheckCircle, XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { FeaturedIcon } from "./featured-icon";
 
 /**
- * Toast — Figma: "Notification" (Untitled UI, Type Success icon, Floating).
+ * Toast — Figma: "Notification" (Type Success icon, Floating).
  * Tarjeta 400px, radio xl (12), padding 16, gap 16, sombra lg, featured icon success md
  * y botón de cerrar sm. Título y texto de apoyo + acciones de texto.
  */

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Code02, Eye } from "@untitledui/icons";
+import { Code02, Eye } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { CodeBlock } from "./code-block";
 

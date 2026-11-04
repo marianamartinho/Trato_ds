@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowUpRight, Check, XClose } from "@untitledui/icons";
+import { ArrowUpRight, Check, XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { figmaUrl, statusLabel, type Status } from "@/content/registry";

@@ -22,10 +22,10 @@ export interface NavEntry {
   keywords?: string[];
   /** Nivel en el sistema. */
   level?: "atom" | "molecule" | "organism" | "specific";
-  /** Nombre del componente en Figma (librería Untitled UI o local). */
+  /** Nombre del componente en Figma (librería o local). */
   figmaName?: string;
-  /** "Untitled UI" si viene de la librería, "Local" si está armado en el archivo de Trato. */
-  origin?: "Untitled UI" | "Local";
+  /** "Librería" si viene de la librería de componentes, "Local" si está armado en el archivo de Trato. */
+  origin?: "Librería" | "Local";
   /** Variantes que realmente se usan en los diseños, por propiedad. */
   variants?: Record<string, string[]>;
   /** Páginas de Figma donde aparece. */
@@ -41,81 +41,81 @@ export const foundations: NavEntry[] = [
   { slug: "typography", title: "Tipografía", description: "Inter, escala tipográfica y pesos.", status: "ready", keywords: ["fuente", "inter", "texto"] },
   { slug: "spacing", title: "Espaciado y radios", description: "Escala de espaciado, radios de borde y layout.", status: "ready", keywords: ["padding", "gap", "radius", "grid"] },
   { slug: "elevation", title: "Elevación", description: "Sombras, bordes y superficies.", status: "ready", keywords: ["shadow", "sombra"] },
-  { slug: "icons", title: "Iconografía", description: "Set de íconos, tamaños y los íconos más usados.", status: "ready", keywords: ["untitled", "icon", "íconos"] },
+  { slug: "icons", title: "Iconografía", description: "Set de íconos, tamaños y los íconos más usados.", status: "ready", keywords: ["icon", "íconos"] },
   { slug: "voice", title: "Voz y microcopy", description: "Tono, ayudas, tooltips y textos de estado.", status: "beta", keywords: ["copy", "textos", "ayudas"] },
 ];
 
 export const components: NavEntry[] = [
   // ── Átomos ──────────────────────────────────────────────
-  { slug: "button", title: "Button", level: "atom", description: "Acciones primarias, secundarias, IA y destructivas.", status: "ready", usage: 1220, figma: "267:15166", figmaName: "Buttons/Button", origin: "Untitled UI", keywords: ["botón", "cta"],
+  { slug: "button", title: "Button", level: "atom", description: "Acciones primarias, secundarias, IA y destructivas.", status: "ready", usage: 1220, figma: "267:15166", figmaName: "Buttons/Button", origin: "Librería", keywords: ["botón", "cta"],
     variants: { Size: ["sm", "md", "lg"], Hierarchy: ["Primary", "Secondary", "Tertiary", "Link color", "Link gray"], State: ["Default", "Disabled", "Loading"], "Icon only": ["True", "False"] } },
-  { slug: "badge", title: "Badge", level: "atom", description: "Estados, contadores, días y etiquetas.", status: "ready", usage: 2029, figma: "232:10909", figmaName: "Badge", origin: "Untitled UI", keywords: ["pill", "tag", "estado"],
+  { slug: "badge", title: "Badge", level: "atom", description: "Estados, contadores, días y etiquetas.", status: "ready", usage: 2029, figma: "232:10909", figmaName: "Badge", origin: "Librería", keywords: ["pill", "tag", "estado"],
     variants: { Size: ["sm", "md", "lg"], Type: ["Badge color", "Pill color", "Badge modern"], Icon: ["False", "Dot", "X close", "Icon leading", "Icon trailing", "Country"], Color: ["Gray", "Blue gray", "Gray blue", "Blue", "Blue light", "Success", "Warning", "Error", "Orange", "Purple"] } },
-  { slug: "avatar", title: "Avatar", level: "atom", description: "Participantes, usuarios y grupos.", status: "ready", usage: 580, figma: "471:48933", figmaName: "Avatar · Avatar group", origin: "Untitled UI", keywords: ["usuario", "participante"],
+  { slug: "avatar", title: "Avatar", level: "atom", description: "Participantes, usuarios y grupos.", status: "ready", usage: 580, figma: "471:48933", figmaName: "Avatar · Avatar group", origin: "Librería", keywords: ["usuario", "participante"],
     variants: { Size: ["xs", "sm", "md", "xl"], Text: ["True", "False"], "Status icon": ["False", "Online indicator"] } },
-  { slug: "checkbox", title: "Checkbox", level: "atom", description: "Selección múltiple.", status: "ready", usage: 378, figma: "267:15960", figmaName: "Checkbox · Type Checkbox", origin: "Untitled UI", keywords: ["check", "selección"],
+  { slug: "checkbox", title: "Checkbox", level: "atom", description: "Selección múltiple.", status: "ready", usage: 378, figma: "267:15960", figmaName: "Checkbox · Type Checkbox", origin: "Librería", keywords: ["check", "selección"],
     variants: { Size: ["sm", "md"], Checked: ["True", "False"], State: ["Default", "Disabled", "Selected"] } },
-  { slug: "radio", title: "Radio", level: "atom", description: "Una opción entre varias.", status: "ready", figmaName: "Checkbox · Type Radio", origin: "Untitled UI", keywords: ["radio", "opción"],
+  { slug: "radio", title: "Radio", level: "atom", description: "Una opción entre varias.", status: "ready", figmaName: "Checkbox · Type Radio", origin: "Librería", keywords: ["radio", "opción"],
     variants: { Size: ["sm", "md"], State: ["Default", "Disabled", "Selected"] } },
-  { slug: "toggle", title: "Toggle", level: "atom", description: "Opciones que se aplican al instante.", status: "ready", usage: 70, figma: "661:6285", figmaName: "Toggle", origin: "Untitled UI", keywords: ["switch", "toggle"],
+  { slug: "toggle", title: "Toggle", level: "atom", description: "Opciones que se aplican al instante.", status: "ready", usage: 70, figma: "661:6285", figmaName: "Toggle", origin: "Librería", keywords: ["switch", "toggle"],
     variants: { Size: ["sm"], Pressed: ["True", "False"] } },
-  { slug: "tooltip", title: "Tooltip", level: "atom", description: "Ayudas contextuales.", status: "ready", usage: 59, figma: "661:6420", figmaName: "Tooltip · Help icon", origin: "Untitled UI", keywords: ["ayuda", "hint"],
+  { slug: "tooltip", title: "Tooltip", level: "atom", description: "Ayudas contextuales.", status: "ready", usage: 59, figma: "661:6420", figmaName: "Tooltip · Help icon", origin: "Librería", keywords: ["ayuda", "hint"],
     variants: { "Supporting text": ["True", "False"], Arrow: ["None", "Left", "Right", "Bottom center"] } },
-  { slug: "dot", title: "Dot", level: "atom", description: "Indicador de estado dentro de badges y listas.", status: "ready", usage: 208, figmaName: "_Dot", origin: "Untitled UI", pages: ["Vista participante", "Document Editor", "Clause Pulse", "New Dashboard", "New UI (Oscar)"],
+  { slug: "dot", title: "Dot", level: "atom", description: "Indicador de estado dentro de badges y listas.", status: "ready", usage: 208, figmaName: "_Dot", origin: "Librería", pages: ["Vista participante", "Document Editor", "Clause Pulse", "New Dashboard", "New UI (Oscar)"],
     variants: { Size: ["sm"], Outline: ["False"] } },
-  { slug: "featured-icon", title: "Featured icon", level: "atom", description: "Ícono destacado en modales, avisos y estados vacíos.", status: "ready", usage: 3, figmaName: "Featured icon outline", origin: "Untitled UI", pages: ["Document Editor", "Vista de solicitante"],
+  { slug: "featured-icon", title: "Featured icon", level: "atom", description: "Ícono destacado en modales, avisos y estados vacíos.", status: "ready", usage: 3, figmaName: "Featured icon outline", origin: "Librería", pages: ["Document Editor", "Vista de solicitante"],
     variants: { Color: ["Success"], Size: ["md", "lg"] } },
-  { slug: "map-marker", title: "Marcador de mapa", level: "specific", description: "Punto de ubicación en el mapa de jurisdicciones.", status: "ready", usage: 42, figmaName: "_Map location marker", origin: "Untitled UI", pages: ["Clause Pulse", "New Dashboard", "NEW AI Chat"], examples: [{ name: "Dashboard", node: "1839:55769" }] },
+  { slug: "map-marker", title: "Marcador de mapa", level: "specific", description: "Punto de ubicación en el mapa de jurisdicciones.", status: "ready", usage: 42, figmaName: "_Map location marker", origin: "Librería", pages: ["Clause Pulse", "New Dashboard", "NEW AI Chat"], examples: [{ name: "Dashboard", node: "1839:55769" }] },
   { slug: "logomark", title: "Logomark", level: "specific", description: "Marca de Trato en la navegación.", status: "ready", usage: 5, figmaName: "Logomark", origin: "Local", pages: ["New UI (Oscar)"], examples: [{ name: "New UI (Oscar)", node: "1992:31387" }] },
 
   // ── Moléculas ───────────────────────────────────────────
-  { slug: "input", title: "Input", level: "molecule", description: "Campos de texto, label, ayuda y error.", status: "ready", usage: 108, figma: "661:6264", figmaName: "Input field", origin: "Untitled UI", keywords: ["campo", "form", "textarea"],
+  { slug: "input", title: "Input", level: "molecule", description: "Campos de texto, label, ayuda y error.", status: "ready", usage: 108, figma: "661:6264", figmaName: "Input field", origin: "Librería", keywords: ["campo", "form", "textarea"],
     variants: { Size: ["sm"], Type: ["Default", "Trailing dropdown"], State: ["Placeholder", "Filled"], Destructive: ["False"] } },
-  { slug: "textarea", title: "Textarea", level: "molecule", description: "Campo de texto largo.", status: "ready", figmaName: "Textarea", origin: "Untitled UI", keywords: ["texto", "textbox", "comentario"] },
-  { slug: "select", title: "Select", level: "molecule", description: "Selección simple y filtros \"Filtrar: Activos\".", status: "ready", usage: 160, figma: "550:16609", figmaName: "Select · Dropdown / filter", origin: "Untitled UI", keywords: ["dropdown", "filtro"],
+  { slug: "textarea", title: "Textarea", level: "molecule", description: "Campo de texto largo.", status: "ready", figmaName: "Textarea", origin: "Librería", keywords: ["texto", "textbox", "comentario"] },
+  { slug: "select", title: "Select", level: "molecule", description: "Selección simple y filtros \"Filtrar: Activos\".", status: "ready", usage: 160, figma: "550:16609", figmaName: "Select · Dropdown / filter", origin: "Librería", keywords: ["dropdown", "filtro"],
     variants: { Size: ["sm"], Type: ["Search"], State: ["Placeholder"] } },
-  { slug: "menu", title: "Dropdown", level: "molecule", description: "Menús contextuales de documento y carpeta.", status: "ready", usage: 51, figma: "471:49388", figmaName: "Dropdown · Dropdown item", origin: "Untitled UI", keywords: ["dropdown", "kebab"],
+  { slug: "menu", title: "Dropdown", level: "molecule", description: "Menús contextuales de documento y carpeta.", status: "ready", usage: 51, figma: "471:49388", figmaName: "Dropdown · Dropdown item", origin: "Librería", keywords: ["dropdown", "kebab"],
     variants: { Type: ["Normal", "Icon"], State: ["Default", "Active", "Filled"] } },
-  { slug: "tabs", title: "Tabs", level: "molecule", description: "Segmented control y pestañas con subrayado.", status: "ready", usage: 72, figma: "471:48950", figmaName: "Horizontal tabs", origin: "Untitled UI", keywords: ["pestañas", "segmented"],
+  { slug: "tabs", title: "Tabs", level: "molecule", description: "Segmented control y pestañas con subrayado.", status: "ready", usage: 72, figma: "471:48950", figmaName: "Horizontal tabs", origin: "Librería", keywords: ["pestañas", "segmented"],
     variants: { Type: ["Button brand"], Size: ["sm", "md"], Breakpoint: ["Desktop"] } },
-  { slug: "alert", title: "Alert", level: "molecule", description: "Avisos inline y barras de estado.", status: "ready", usage: 3, figma: "559:5538", figmaName: "Alert · Notification", origin: "Untitled UI", keywords: ["banner", "aviso", "notificación"] },
+  { slug: "alert", title: "Alert", level: "molecule", description: "Avisos inline y barras de estado.", status: "ready", usage: 3, figma: "559:5538", figmaName: "Alert · Notification", origin: "Librería", keywords: ["banner", "aviso", "notificación"] },
   { slug: "card-stat", title: "Card y Metric", level: "molecule", description: "Contenedores y métricas del dashboard.", status: "ready", usage: 300, figma: "2213:30245", figmaName: "Card (armado)", origin: "Local", keywords: ["kpi", "métrica", "dashboard"] },
   { slug: "empty-state", title: "Empty state", level: "molecule", description: "Estados vacíos para paneles y páginas.", status: "ready", figma: "551:5060", figmaName: "Empty state (armado)", origin: "Local", keywords: ["vacío"] },
   { slug: "progress", title: "Progress", level: "molecule", description: "Barras de progreso y ciclo de vida.", status: "ready", figma: "2213:30245", figmaName: "Lifecycle · AI usage (armado)", origin: "Local", keywords: ["barra", "lifecycle"] },
   { slug: "chip", title: "Chip", level: "molecule", description: "Contexto del chat IA y accesos rápidos.", status: "ready", usage: 150, figma: "1839:52487", figmaName: "Quick Action Item", origin: "Local", keywords: ["chip", "contexto"] },
-  { slug: "breadcrumbs", title: "Breadcrumbs", level: "molecule", description: "Ruta dentro de carpetas y expedientes.", status: "ready", usage: 7, figmaName: "Breadcrumbs", origin: "Untitled UI", pages: ["Document Editor", "Clause Pulse"],
+  { slug: "breadcrumbs", title: "Breadcrumbs", level: "molecule", description: "Ruta dentro de carpetas y expedientes.", status: "ready", usage: 7, figmaName: "Breadcrumbs", origin: "Librería", pages: ["Document Editor", "Clause Pulse"],
     variants: { Divider: ["Chevron"], Type: ["Button"] }, examples: [{ name: "Document Editor", node: "878:16031" }] },
   { slug: "pagination", title: "Pagination", level: "molecule", description: "Paginado de tablas.", status: "ready", usage: 43, figmaName: "Pagination (armado)", origin: "Local", pages: ["Workflows", "Vista de solicitante", "AI Contract"], examples: [{ name: "Workflow", node: "471:49073" }] },
   { slug: "filters-bar", title: "Filters bar", level: "molecule", description: "Filtros sobre tablas y listados.", status: "ready", usage: 43, figmaName: "Filters bar (armado)", origin: "Local", pages: ["Workflows", "Vista de solicitante", "AI Contract"], examples: [{ name: "Workflow", node: "471:48812" }] },
-  { slug: "section-header", title: "Section header", level: "molecule", description: "Título de sección con acciones.", status: "ready", usage: 7, figmaName: "Section header", origin: "Untitled UI", pages: ["New Dashboard"],
+  { slug: "section-header", title: "Section header", level: "molecule", description: "Título de sección con acciones.", status: "ready", usage: 7, figmaName: "Section header", origin: "Librería", pages: ["New Dashboard"],
     variants: { Type: ["Button group", "Buttons"], Tabs: ["False"] }, examples: [{ name: "New Dashboard", node: "1801:23342" }] },
-  { slug: "page-header-component", title: "Page header", level: "molecule", description: "Encabezado de página con avatar.", status: "ready", usage: 1, figmaName: "Page header", origin: "Untitled UI", pages: ["New Dashboard"],
+  { slug: "page-header-component", title: "Page header", level: "molecule", description: "Encabezado de página con avatar.", status: "ready", usage: 1, figmaName: "Page header", origin: "Librería", pages: ["New Dashboard"],
     variants: { Style: ["Avatar"], Breakpoint: ["Desktop"] }, examples: [{ name: "New Dashboard", node: "1801:23210" }] },
-  { slug: "toast", title: "Notification", level: "molecule", description: "Confirmaciones flotantes.", status: "ready", usage: 2, figmaName: "Notification", origin: "Untitled UI", pages: ["Document Editor", "Vista de solicitante"],
+  { slug: "toast", title: "Notification", level: "molecule", description: "Confirmaciones flotantes.", status: "ready", usage: 2, figmaName: "Notification", origin: "Librería", pages: ["Document Editor", "Vista de solicitante"],
     variants: { Icon: ["Success"], Type: ["Floating", "Snackbar (oscuro)"] }, examples: [{ name: "Document Editor", node: "278:3417" }] },
   { slug: "message", title: "Message", level: "molecule", description: "Burbuja de mensaje enviado y recibido.", status: "ready", usage: 54, figmaName: "Message", origin: "Local", pages: ["LetsLaw Integration", "AI Contract", "New Dashboard"],
     variants: { Type: ["Message"], Sent: ["True", "False"], "Actions panel": ["False"] }, examples: [{ name: "LetsLaw", node: "1287:2933" }] },
-  { slug: "contact", title: "Contact", level: "molecule", description: "Persona o grupo de personas con datos de contacto.", status: "ready", usage: 5, figmaName: "_Contact", origin: "Untitled UI", pages: ["Vista participante"],
+  { slug: "contact", title: "Contact", level: "molecule", description: "Persona o grupo de personas con datos de contacto.", status: "ready", usage: 5, figmaName: "_Contact", origin: "Librería", pages: ["Vista participante"],
     variants: { People: ["1", "2"] }, examples: [{ name: "Vista participante", node: "247:18592" }] },
   { slug: "upload-field", title: "File upload", level: "molecule", description: "Zona para subir anexos y documentos.", status: "ready", usage: 32, figmaName: "Upload Field (armado)", origin: "Local", pages: ["Vista participante"], examples: [{ name: "Vista participante", node: "232:11958" }] },
   { slug: "contracts-filter", title: "Filtro de contratos", level: "specific", description: "Filtro por jurisdicción y tipo en el dashboard.", status: "ready", usage: 6, figmaName: "Contracts", origin: "Local", pages: ["New Dashboard"],
     variants: { Filter: ["Juris", "Type"] }, examples: [{ name: "New Dashboard", node: "1957:17786" }] },
-  { slug: "calendar", title: "Calendar", level: "molecule", description: "Celdas y eventos de calendario.", status: "ready", usage: 88, figmaName: "_Calendar cell · _Calendar event", origin: "Untitled UI", pages: ["New Dashboard"],
+  { slug: "calendar", title: "Calendar", level: "molecule", description: "Celdas y eventos de calendario.", status: "ready", usage: 88, figmaName: "_Calendar cell · _Calendar event", origin: "Librería", pages: ["New Dashboard"],
     variants: { Breakpoint: ["Mobile"] }, examples: [{ name: "New Dashboard", node: "1839:42459" }] },
 
   // ── Organismos ──────────────────────────────────────────
-  { slug: "table", title: "Table", level: "organism", description: "Tablas de datos: tipos de celda, orden, selección, filtros y paginación.", status: "ready", usage: 5552, figma: "471:48955", figmaName: "Table cell · Table header cell", origin: "Untitled UI", keywords: ["tabla", "lista"],
+  { slug: "table", title: "Table", level: "organism", description: "Tablas de datos: tipos de celda, orden, selección, filtros y paginación.", status: "ready", usage: 5552, figma: "471:48955", figmaName: "Table cell · Table header cell", origin: "Librería", keywords: ["tabla", "lista"],
     variants: { "Cell · Style": ["Text", "Lead text", "Action icons", "Badge", "Avatar", "Lead checkbox", "Avatar group"], "Header · Arrow": ["False", "Chevron selector"] } },
-  { slug: "navigation", title: "Sidebar navigation", level: "organism", description: "Rail lateral de íconos de la plataforma.", status: "ready", usage: 1828, figma: "471:48916", figmaName: "_Nav item button · Sidebar", origin: "Untitled UI", keywords: ["sidebar", "nav"],
+  { slug: "navigation", title: "Sidebar navigation", level: "organism", description: "Rail lateral de íconos de la plataforma.", status: "ready", usage: 1828, figma: "471:48916", figmaName: "_Nav item button · Sidebar", origin: "Librería", keywords: ["sidebar", "nav"],
     variants: { Current: ["False", "True"], Size: ["md"], State: ["Default"] } },
   { slug: "dialog", title: "Modal", level: "organism", description: "Confirmaciones y flujos cortos.", status: "ready", usage: 50, figma: "471:49369", figmaName: "Modal · Bottom (armado)", origin: "Local", keywords: ["modal", "dialog"] },
   { slug: "header-bar", title: "Header", level: "organism", description: "Barra superior con título del documento y acciones.", status: "ready", figmaName: "Header (armado)", origin: "Local", pages: ["Document Editor", "Workflows", "Vista de solicitante"], examples: [{ name: "Documento IA 1", node: "267:15157" }] },
   { slug: "drawer", title: "Drawer", level: "organism", description: "Panel derecho: análisis con IA, configuración, chat.", status: "ready", figmaName: "Sidebar (armado)", origin: "Local", pages: ["Document Editor", "Clause Pulse", "NEW AI Chat"], examples: [{ name: "Documento IA 1", node: "267:14867" }] },
   { slug: "editor-toolbar", title: "Toolbar del editor", level: "specific", description: "Formato de texto del Document Editor.", status: "ready", usage: 120, figmaName: "Tools (armado)", origin: "Local", pages: ["Document Editor"], examples: [{ name: "Documento IA 1", node: "267:15195" }] },
   { slug: "chat-panel", title: "Panel de chat IA", level: "specific", description: "Conversación, contexto y composer del chat.", status: "ready", usage: 140, figmaName: "Chat Bubble (armado)", origin: "Local", pages: ["Document Editor", "LetsLaw Integration", "NEW AI Chat"], examples: [{ name: "Document Editor", node: "267:17611" }] },
-  { slug: "charts", title: "Charts", level: "organism", description: "Línea, barras y mapa del dashboard.", status: "ready", usage: 299, figmaName: "_X-axis · _Y-axis · Chart marker", origin: "Untitled UI", pages: ["New Dashboard", "NEW AI Chat"],
+  { slug: "charts", title: "Charts", level: "organism", description: "Línea, barras y mapa del dashboard.", status: "ready", usage: 299, figmaName: "_X-axis · _Y-axis · Chart marker", origin: "Librería", pages: ["New Dashboard", "NEW AI Chat"],
     variants: { Data: ["12 months"], Type: ["Line"] }, examples: [{ name: "New Dashboard", node: "1839:52379" }] },
-  { slug: "video-player", title: "Video player", level: "organism", description: "Video con barra de acciones.", status: "ready", usage: 1, figmaName: "Video player 16:9", origin: "Untitled UI", pages: ["Lefebvre Integration"],
+  { slug: "video-player", title: "Video player", level: "organism", description: "Video con barra de acciones.", status: "ready", usage: 1, figmaName: "Video player 16:9", origin: "Librería", pages: ["Lefebvre Integration"],
     variants: { Size: ["sm"] }, examples: [{ name: "Lefebvre", node: "1121:6828" }] },
 ];
 

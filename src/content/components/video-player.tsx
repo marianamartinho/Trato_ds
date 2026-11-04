@@ -10,7 +10,7 @@ export default function VideoPlayerDoc() {
         title="Reproductor 16:9"
         description={
           <>
-            Envoltorio sobre el <code>&lt;video&gt;</code> nativo con la barra de acciones de Untitled UI (Size sm), como en el ejemplo
+            Envoltorio sobre el <code>&lt;video&gt;</code> nativo con la barra de acciones de la librería (Size sm), como en el ejemplo
             1121:6828. Recibe <code>src</code> y opcionalmente <code>poster</code>. En esta documentación no se carga ningún video externo:
             se ve el estado en pausa sobre el fondo de token (gray-blue-900).
           </>

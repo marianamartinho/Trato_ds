@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * Charts — Figma: gráficos de Untitled UI ("Line and bar chart" con "_Y-axis",
+ * Charts — Figma: gráficos de la librería ("Line and bar chart" con "_Y-axis",
  * "_X-axis", "_Chart data" y "Chart marker"; Data 12 months, Type Line) usados en
  * New Dashboard → "Signatures over time" (2213:33096, dentro de 2213:30245) y
  * "Contracts by type" (2213:30536).

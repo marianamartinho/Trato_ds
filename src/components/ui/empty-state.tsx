@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
  * variant="panel" (Figma de Trato, paneles laterales como "Asignación de elementos"):
  *   ilustración en círculo 86 px gray-blue-100, título 14 semibold text-tertiary,
  *   texto 12 regular text-quaternary (puede incluir íconos en línea), todo centrado, gap 24.
- * variant="page" (Untitled UI, páginas y tablas): featured icon sobre círculos concéntricos,
+ * variant="page" (páginas y tablas): featured icon sobre círculos concéntricos,
  *   título 16 semibold, texto 14, hasta dos acciones.
  */
 export interface EmptyStateProps {

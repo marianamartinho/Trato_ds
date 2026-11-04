@@ -1,5 +1,5 @@
 "use client";
-import { AlertTriangle, CheckCircle, InfoCircle, Send01, Trash01 } from "@untitledui/icons";
+import { AlertTriangle, CheckCircle, InfoCircle, Send01, Trash01 } from "@/components/icons";
 import { FeaturedIcon } from "@/components/ui/featured-icon";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -7,7 +7,7 @@ import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
 export default function FeaturedIconDoc() {
   return (
     <>
-      <Section title="Colores" description="En los diseños de Trato aparece en success. El resto sigue la paleta de Untitled UI.">
+      <Section title="Colores" description="En los diseños de Trato aparece en success. El resto sigue la paleta del sistema.">
         <Preview code={`<FeaturedIcon color="success" icon={<CheckCircle />} />`}>
           <FeaturedIcon color="success" icon={<CheckCircle />} />
           <FeaturedIcon color="brand" icon={<Send01 />} />
@@ -30,7 +30,7 @@ export default function FeaturedIconDoc() {
       </Section>
       <Section title="Props">
         <PropsTable props={[
-          { name: "icon", type: "ReactNode", description: "Ícono de @untitledui/icons." },
+          { name: "icon", type: "ReactNode", description: "Ícono del set del sistema." },
           { name: "color", type: `"success" | "brand" | "gray" | "warning" | "error"`, default: `"success"`, description: "Color del ícono y los anillos." },
           { name: "size", type: `"md" | "lg"`, default: `"md"`, description: "Tamaño." },
         ]} />

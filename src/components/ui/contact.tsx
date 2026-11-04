@@ -2,7 +2,7 @@ import { cn } from "@/lib/cn";
 import { Avatar } from "./avatar";
 
 /**
- * Contact — Figma: "_Contact" (Untitled UI, People 1 / 2) en Vista participante · Compartir (247:18592).
+ * Contact — Figma: "_Contact" (People 1 / 2) en Vista participante · Compartir (247:18592).
  * Avatar 62px, nombre 11 regular centrado debajo (2 líneas máx.) y, opcional, un ícono 20px de la app
  * por la que se comparte, abajo a la derecha del avatar.
  */

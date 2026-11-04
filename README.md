@@ -32,7 +32,7 @@ src/
 
 ## Stack
 
-Next.js + React + TypeScript · Tailwind CSS v4 (tokens como `@theme`) · Radix UI · class-variance-authority · @untitledui/icons. Base visual: Untitled UI, adaptado al Figma de Trato.
+Next.js + React + TypeScript · Tailwind CSS v4 (tokens como `@theme`) · Radix UI · class-variance-authority. Base visual: el Figma de Trato.
 
 ## Tokens
 

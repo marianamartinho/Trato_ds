@@ -1,5 +1,5 @@
 "use client";
-import { AlertCircle } from "@untitledui/icons";
+import { AlertCircle } from "@/components/icons";
 import { Button, Card, CardHeader, Select, Stat, StatGroup } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

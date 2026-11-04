@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Check } from "@untitledui/icons";
+import { Check } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 function luminance(hex: string) {

@@ -1,12 +1,12 @@
 "use client";
 import * as React from "react";
-import { Maximize01, Minimize01, PauseCircle, Play, VolumeMax, VolumeX } from "@untitledui/icons";
+import { Maximize01, Minimize01, PauseCircle, Play, VolumeMax, VolumeX } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**
  * VideoPlayer — Figma: "Video player 16:9" + "_Video actions bar" (Size sm) +
  * "_Video action button" + "_Video action tooltip" + "_Video overlay action"
- * (Untitled UI). Ejemplo: página Lefebvre, 1121:6828.
+ *. Ejemplo: página Lefebvre, 1121:6828.
  *
  * Valores del Figma:
  * - Contenedor: 16:9, radio md, borde 0,5 px negro 10 %.

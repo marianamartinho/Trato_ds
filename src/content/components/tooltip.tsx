@@ -1,5 +1,5 @@
 "use client";
-import { HelpCircle, InfoCircle, Link01 as LinkIcon } from "@untitledui/icons";
+import { HelpCircle, InfoCircle, Link01 as LinkIcon } from "@/components/icons";
 import { Button, Tooltip } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

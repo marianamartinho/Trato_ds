@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowDown, ArrowUp, InfoCircle } from "@untitledui/icons";
+import { ArrowDown, ArrowUp, InfoCircle } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

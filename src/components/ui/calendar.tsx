@@ -1,13 +1,13 @@
 "use client";
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "@untitledui/icons";
+import { ChevronLeft, ChevronRight } from "@/components/icons";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/cn";
 import { Button } from "./button";
 
 /**
  * Calendar — Figma: "_Calendar column header", "_Calendar cell/Month view",
- * "_Calendar cell date" y "_Calendar event/Month view" (Untitled UI) en
+ * "_Calendar cell date" y "_Calendar event/Month view" en
  * New Dashboard → vista mensual 1839:42459 (celda 1839:42463).
  *
  * Medidas reales (el frame del Figma está escalado ×1,341):
@@ -21,7 +21,7 @@ import { Button } from "./button";
  *   hora text-xs medium, detalle text-sm.
  *
  * La navegación de mes (encabezado con flechas) no aparece en el Figma: sigue el
- * "Calendar header" de Untitled UI.
+ * "Calendar header" de la librería.
  */
 
 export type CalendarEventColor = "gray" | "brand" | "accent" | "orange" | "success";

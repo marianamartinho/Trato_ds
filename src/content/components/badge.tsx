@@ -1,5 +1,5 @@
 "use client";
-import { Folder, Stars01 } from "@untitledui/icons";
+import { Folder, Stars01 } from "@/components/icons";
 import { Badge } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { File02, Trash01, Upload01 } from "@untitledui/icons";
+import { File02, Trash01, Upload01 } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "@/lib/cn";
 
 /**
- * Radio — Figma: "Checkbox" con Type Radio (Untitled UI, Size sm/md; States Default/Disabled/Selected).
+ * Radio — Figma: "Checkbox" con Type Radio (Size sm/md; States Default/Disabled/Selected).
  * Círculo 16 (sm) o 20 (md), borde border-primary; seleccionado: borde y punto brand.
  * Implementado con <input type="radio"> nativo para mantener teclado y formularios.
  */

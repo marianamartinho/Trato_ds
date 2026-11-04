@@ -1,5 +1,5 @@
 "use client";
-import { Plus } from "@untitledui/icons";
+import { Plus } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { FiltersBar } from "@/components/ui/filters-bar";
 import { SearchInput } from "@/components/ui/search-input";

@@ -57,7 +57,7 @@ export default function Typography() {
         </div>
       </Section>
 
-      <Section title="Estilos de texto de Figma" description="Equivalencias con los estilos que usa el archivo (Untitled UI).">
+      <Section title="Estilos de texto de Figma" description="Equivalencias con los estilos que usa el archivo.">
         <Specs
           rows={[
             ["Text xs/Regular", "text-xs font-normal"],

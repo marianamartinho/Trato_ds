@@ -1,5 +1,5 @@
 "use client";
-import { AlertCircle, ArrowUpRight, MessageQuestionCircle, User03 } from "@untitledui/icons";
+import { AlertCircle, ArrowUpRight, MessageQuestionCircle, User03 } from "@/components/icons";
 import { Button, Card, CardHeader, QuickAction, SegmentedBar, Select, Stat, StatGroup, Tabs, TabsList, TabsTrigger } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, Section } from "@/components/docs/doc";

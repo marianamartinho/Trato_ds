@@ -1,5 +1,5 @@
 "use client";
-import { Send01, Trash01 } from "@untitledui/icons";
+import { Send01, Trash01 } from "@/components/icons";
 import { Button, Dialog, DialogClose, DialogContent, DialogTrigger, Field, Textarea } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

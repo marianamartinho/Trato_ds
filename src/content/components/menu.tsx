@@ -1,5 +1,5 @@
 "use client";
-import { Copy03, DotsVertical, Download02, Edit05, FolderDownload, Share07, Trash01 } from "@untitledui/icons";
+import { Copy03, DotsVertical, Download02, Edit05, FolderDownload, Share07, Trash01 } from "@/components/icons";
 import { Button, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

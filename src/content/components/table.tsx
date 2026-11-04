@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ChevronSelectorVertical, DotsVertical, Edit05, Plus, Trash01 } from "@untitledui/icons";
+import { ChevronSelectorVertical, DotsVertical, Edit05, Plus, Trash01 } from "@/components/icons";
 import { Avatar, AvatarGroup, Badge, Button, CellStack, Checkbox, DocIcon, FiltersBar, Pagination, SearchInput, Select, TBody, TD, TH, THead, TR, Table } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -36,7 +36,7 @@ export default function TableDoc() {
         </Preview>
       </Section>
 
-      <Section title="Tipos de celda" description="Los estilos de “Table cell” que usan los diseños (Untitled UI).">
+      <Section title="Tipos de celda" description="Los estilos de “Table cell” que usan los diseños.">
         <Preview align="stretch" canvas="canvas" code={`<TD><Checkbox /></TD>                       {/* Lead checkbox */}
 <TD><CellStack top="…" bottom="…" /></TD>   {/* Lead text */}
 <TD><Badge dot color="success">Activo</Badge></TD>

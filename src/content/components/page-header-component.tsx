@@ -1,5 +1,5 @@
 "use client";
-import { Archive, FolderPlus, Plus } from "@untitledui/icons";
+import { Archive, FolderPlus, Plus } from "@/components/icons";
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/ui/page-header";

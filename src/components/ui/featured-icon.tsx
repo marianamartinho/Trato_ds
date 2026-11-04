@@ -3,10 +3,10 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/cn";
 
 /**
- * FeaturedIcon — Figma: "Featured icon outline" (Untitled UI).
+ * FeaturedIcon — Figma: "Featured icon outline".
  * Ícono de 20px con dos anillos de contorno de 2px: interior 28px al 30% y exterior 38px al 10%.
  * En los diseños de Trato aparece en Color Success, tamaños md y lg (Notification, modales).
- * Los demás colores siguen la paleta de Untitled UI.
+ * Los demás colores siguen la paleta del sistema.
  */
 const featuredIcon = cva("relative inline-grid shrink-0 place-items-center", {
   variants: {

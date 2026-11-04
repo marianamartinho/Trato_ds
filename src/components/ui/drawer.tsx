@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { XClose } from "@untitledui/icons";
+import { XClose } from "@/components/icons";
 import { cn } from "@/lib/cn";
 
 /**

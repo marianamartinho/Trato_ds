@@ -1,5 +1,5 @@
 "use client";
-import { Download02 } from "@untitledui/icons";
+import { Download02 } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Preview } from "@/components/docs/preview";

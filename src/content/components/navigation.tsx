@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { AlertTriangle, Archive, Clipboard, Dataflow03 as InfinityIcon, File02, HelpCircle, HomeLine, LogOut01, MessageTextSquare01, Paperclip, PieChart01, Rows03, SearchLg, Settings01, Users01 } from "@untitledui/icons";
+import { AlertTriangle, Archive, Clipboard, Dataflow03 as InfinityIcon, File02, HelpCircle, HomeLine, LogOut01, MessageTextSquare01, Paperclip, PieChart01, Rows03, SearchLg, Settings01, Users01 } from "@/components/icons";
 import { Avatar, NavItem, NavRail, Tooltip } from "@/components/ui";
 import { TRATO_OWL } from "@/lib/brand";
 import { Preview } from "@/components/docs/preview";

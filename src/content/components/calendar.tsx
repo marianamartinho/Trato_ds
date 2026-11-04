@@ -89,7 +89,7 @@ export default function CalendarDoc() {
         </Preview>
       </Section>
 
-      <Section title="Especificaciones" description="El frame del Figma está escalado ×1,341; estas son las medidas reales (Untitled UI).">
+      <Section title="Especificaciones" description="El frame del Figma está escalado ×1,341; estas son las medidas reales.">
         <Specs
           rows={[
             ["Encabezado de columna", "p-md · text-xs medium · text-quaternary"],

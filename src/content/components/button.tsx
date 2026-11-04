@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, Download02, FolderPlus, Plus, Trash01 } from "@untitledui/icons";
+import { ArrowUpRight, Download02, FolderPlus, Plus, Trash01 } from "@/components/icons";
 import { Button } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { DoDont, Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";

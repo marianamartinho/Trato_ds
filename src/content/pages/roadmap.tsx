@@ -1,4 +1,4 @@
-import { Check, LayersThree01, Tool01 } from "@untitledui/icons";
+import { Check, LayersThree01, Tool01 } from "@/components/icons";
 import { Alert, Badge } from "@/components/ui";
 import { DocHeader, Section } from "@/components/docs/doc";
 import { DocLink as Link } from "@/lib/nav";
@@ -34,7 +34,7 @@ export default function Roadmap() {
             },
             {
               icon: <Tool01 />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
-              items: ["Actualizar en Figma las pantallas viejas al gris azulado de marca", "Unificar en Figma las piezas de otros kits con Untitled UI", "Reconstruir con componentes NEW AI Chat y Expedientes"],
+              items: ["Actualizar en Figma las pantallas viejas al gris azulado de marca", "Unificar en Figma las piezas de otros kits con la librería principal", "Reconstruir con componentes NEW AI Chat y Expedientes"],
             },
             {
               icon: <LayersThree01 />, tone: "blue" as const, tag: "Propuesta", title: "Etapa 3 · Llevarlo a la plataforma",

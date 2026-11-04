@@ -1,4 +1,4 @@
-import * as I from "@untitledui/icons";
+import * as I from "@/components/icons";
 import { Guidelines, Section, Specs } from "@/components/docs/doc";
 import { CodeBlock } from "@/components/docs/code-block";
 
@@ -48,7 +48,7 @@ export default function Icons() {
     <>
       <Section
         title="Set de íconos"
-        description="Untitled UI Icons, el mismo set que usa el Figma de Trato. En código se usan desde el paquete @untitledui/icons con el nombre en PascalCase: stars-01 en Figma es Stars01 en código."
+        description="El mismo set de íconos que usa el Figma de Trato. En código se importan desde @/components/icons con el nombre en PascalCase: stars-01 en Figma es Stars01 en código."
       >
         <Grid items={top} />
         <p className="mt-md text-xs text-(--text-quaternary)">Nombre en Figma · cantidad aproximada de usos en los diseños de Trato.</p>
@@ -64,11 +64,11 @@ export default function Icons() {
           items={[
             "Stars01 (stars-01) significa IA y va en naranja (--fg-ai). Dentro de un botón toma el color del texto del botón.",
             "Scales02 (scales-02) identifica contenido legal: Clause Pulse, LetsLaw, Lefebvre.",
-            "En el Figma hay íconos de Remix Icon (close-line, file-2-line, eye-line…). En código se reemplazan por su equivalente de Untitled UI: XClose, File02, Eye.",
+            "En el Figma hay íconos de Remix Icon (close-line, file-2-line, eye-line…). En código se reemplazan por su equivalente del set del sistema: XClose, File02, Eye.",
             "Íconos de acción sin texto llevan aria-label y tooltip.",
           ]}
         />
-        <CodeBlock className="mt-xl" code={`import { Stars01 } from "@untitledui/icons";
+        <CodeBlock className="mt-xl" code={`import { Stars01 } from "@/components/icons";
 
 <Stars01 className="size-4 text-(--fg-ai)" />`} />
       </Section>

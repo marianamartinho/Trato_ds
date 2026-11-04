@@ -1,5 +1,5 @@
 "use client";
-import { Users01 } from "@untitledui/icons";
+import { Users01 } from "@/components/icons";
 import { Avatar, AvatarGroup } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";

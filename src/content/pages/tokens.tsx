@@ -1,4 +1,4 @@
-import { ArrowRight } from "@untitledui/icons";
+import { ArrowRight } from "@/components/icons";
 import tokens from "@/tokens/tokens.json";
 import { DocHeader, Guidelines, Section } from "@/components/docs/doc";
 import { CodeBlock } from "@/components/docs/code-block";
@@ -68,7 +68,7 @@ export default function TokensPage() {
 
       <Section
         title="Mismos nombres que en Figma"
-        description="Los nombres salen de las variables del archivo de Figma de Trato, que siguen la convención de Untitled UI. Así, lo que Diseño ve en Figma se busca igual en el código."
+        description="Los nombres salen de las variables del archivo de Figma de Trato. Así, lo que Diseño ve en Figma se busca igual en el código."
       >
         <div className="overflow-x-auto rounded-xl border border-(--border-secondary) bg-(--bg-primary)">
           <table className="w-full text-left text-sm">
