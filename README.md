@@ -16,7 +16,7 @@ npm run build:single  # versión de una sola página (navegación por #hash) en 
 ## Preview online
 
 Cada push a `main` publica el sitio en GitHub Pages (`.github/workflows/pages.yml`):
-`https://<usuario>.github.io/trato-ds/`. Activarlo una vez en **Settings → Pages → Source: GitHub Actions**.
+`https://marianamartinho.github.io/Trato_ds/`. Activarlo una vez en **Settings → Pages → Source: GitHub Actions**.
 
 ## Estructura
 

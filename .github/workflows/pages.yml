@@ -1,5 +1,5 @@
 # Publica el Design System en GitHub Pages en cada push a main.
-# URL: https://<usuario>.github.io/trato-ds/
+# URL: https://marianamartinho.github.io/Trato_ds/
 name: Deploy to GitHub Pages
 
 on:
