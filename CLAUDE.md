@@ -7,7 +7,7 @@
 3. **Nada inventado.** Si algo no está ni en el Figma ni en Untitled UI, se marca como "Pendiente de definir" y no se rellena con valores propios.
 
 Siempre se adapta Untitled UI a lo que muestra el Figma, nunca al revés.
-Ejemplo: el color primario de Trato es indigo `#6875F5` (Figma), aunque Untitled UI use otro valor por defecto.
+Ejemplo: el color de marca de Trato es gris azulado `#3E4784` (prototipo Documentos · Carpetas), aunque Untitled UI use otro valor por defecto. El indigo `#6875F5` de las pantallas anteriores queda solo como referencia.
 
 ## Recursos de Untitled UI
 

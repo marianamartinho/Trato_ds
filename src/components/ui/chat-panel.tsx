@@ -64,7 +64,7 @@ export function ChatComposer({
   };
   return (
     <div className="border-t border-(--border-secondary) p-xl">
-      <div className="rounded-xl border border-(--border-primary) p-md focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-indigo-100 dark:focus-within:ring-indigo-900/50">
+      <div className="rounded-xl border border-(--border-primary) p-md focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-gray-blue-100 dark:focus-within:ring-gray-blue-900/50">
         {context && <div className="mb-md flex flex-wrap gap-sm">{context}</div>}
         <div className="flex items-end gap-md">
           <textarea

@@ -38,7 +38,7 @@ export function DialogContent({
       >
         <div className="flex flex-col gap-xl p-3xl pb-0">
           {icon && (
-            <div className="grid size-12 place-items-center rounded-full border-8 border-indigo-50 bg-indigo-100 text-indigo-600 dark:border-indigo-900/40 dark:bg-indigo-900 dark:text-indigo-300 [&_svg]:size-5">
+            <div className="grid size-12 place-items-center rounded-full border-8 border-gray-blue-50 bg-gray-blue-100 text-gray-blue-600 dark:border-gray-blue-900/40 dark:bg-gray-blue-900 dark:text-gray-blue-300 [&_svg]:size-5">
               {icon}
             </div>
           )}

@@ -92,7 +92,7 @@ export const components: NavEntry[] = [
   { slug: "page-header-component", title: "Page header", level: "molecule", description: "Encabezado de página con avatar.", status: "ready", usage: 1, figmaName: "Page header", origin: "Untitled UI", pages: ["New Dashboard"],
     variants: { Style: ["Avatar"], Breakpoint: ["Desktop"] }, examples: [{ name: "New Dashboard", node: "1801:23210" }] },
   { slug: "toast", title: "Notification", level: "molecule", description: "Confirmaciones flotantes.", status: "ready", usage: 2, figmaName: "Notification", origin: "Untitled UI", pages: ["Document Editor", "Vista de solicitante"],
-    variants: { Icon: ["Success"], Type: ["Floating"] }, examples: [{ name: "Document Editor", node: "278:3417" }] },
+    variants: { Icon: ["Success"], Type: ["Floating", "Snackbar (oscuro)"] }, examples: [{ name: "Document Editor", node: "278:3417" }] },
   { slug: "message", title: "Message", level: "molecule", description: "Burbuja de mensaje enviado y recibido.", status: "ready", usage: 54, figmaName: "Message", origin: "Local", pages: ["LetsLaw Integration", "AI Contract", "New Dashboard"],
     variants: { Type: ["Message"], Sent: ["True", "False"], "Actions panel": ["False"] }, examples: [{ name: "LetsLaw", node: "1287:2933" }] },
   { slug: "contact", title: "Contact", level: "molecule", description: "Persona o grupo de personas con datos de contacto.", status: "ready", usage: 5, figmaName: "_Contact", origin: "Untitled UI", pages: ["Vista participante"],

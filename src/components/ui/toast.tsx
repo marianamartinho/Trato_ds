@@ -44,6 +44,46 @@ export function Toast({ title, description, actions, icon, onClose, className }:
   );
 }
 
+/**
+ * Snackbar — variante oscura de Toast, definida en el prototipo "Documentos · Carpetas".
+ * Confirma una acción breve (mover, renombrar, eliminar) y ofrece "Deshacer".
+ * Fondo gray-900 (#181D27), texto blanco 13px, ícono success-500, acción gray-blue-300,
+ * radio 10, padding 10 14 10 16, sombra 0 12 16 -4 rgba(10,13,18,.2).
+ */
+export interface SnackbarProps {
+  children: React.ReactNode;
+  icon?: React.ReactNode | null;
+  actionLabel?: React.ReactNode;
+  onAction?: () => void;
+  onClose?: () => void;
+  className?: string;
+}
+
+export function Snackbar({ children, icon, actionLabel, onAction, onClose, className }: SnackbarProps) {
+  return (
+    <div
+      role="status"
+      className={cn(
+        "inline-flex max-w-full items-center gap-lg rounded-[10px] bg-gray-900 py-2.5 pl-xl pr-3.5 text-[13px] leading-5 text-white shadow-[0_12px_16px_-4px_rgba(10,13,18,0.2)] dark:bg-gray-800",
+        className,
+      )}
+    >
+      {icon !== null && <span className="shrink-0 text-success-500 [&_svg]:size-4">{icon ?? <CheckCircle />}</span>}
+      <span className="min-w-0 truncate">{children}</span>
+      {actionLabel && (
+        <button onClick={onAction} className="shrink-0 font-semibold text-gray-blue-300 hover:text-white">
+          {actionLabel}
+        </button>
+      )}
+      {onClose && (
+        <button onClick={onClose} aria-label="Cerrar" className="-mr-xs shrink-0 text-gray-400 hover:text-white">
+          <XClose className="size-4" />
+        </button>
+      )}
+    </div>
+  );
+}
+
 type Item = ToastProps & { id: number };
 const Ctx = React.createContext<{ show: (t: ToastProps & { duration?: number }) => void } | null>(null);
 

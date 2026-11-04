@@ -48,7 +48,7 @@ export default function AiChatPattern() {
               ))}
             </div>
             <div className="border-t border-(--border-secondary) p-xl">
-              <div className="rounded-xl border border-(--border-primary) p-md focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-indigo-100 dark:focus-within:ring-indigo-900/50">
+              <div className="rounded-xl border border-(--border-primary) p-md focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-gray-blue-100 dark:focus-within:ring-gray-blue-900/50">
                 <Chip icon={<File02 />} onRemove={() => {}}>Master services agreement · Grupo Invex · TR-2024-0387</Chip>
                 <div className="flex items-center gap-md pt-md">
                   <input value={msg} onChange={(e) => setMsg(e.target.value)} onKeyDown={(e) => e.key === "Enter" && send()} placeholder="Ask about this contract" className="flex-1 bg-transparent px-xs text-sm text-(--text-primary) outline-none placeholder:text-(--text-placeholder)" />

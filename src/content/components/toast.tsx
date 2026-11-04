@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Toast, ToastProvider, useToast } from "@/components/ui/toast";
+import { Snackbar, Toast, ToastProvider, useToast } from "@/components/ui/toast";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
 
@@ -31,6 +31,17 @@ export default function ToastDoc() {
           />
         </Preview>
       </Section>
+      <Section title="Snackbar (oscuro)" description="Variante compacta definida en el prototipo Documentos · Carpetas. Confirma acciones rápidas sobre la lista (mover, renombrar, eliminar) y ofrece Deshacer. Va abajo al centro.">
+        <Preview code={`<Snackbar actionLabel="Deshacer" onAction={undo}>
+  Movido a “Contratos 2025”
+</Snackbar>`}>
+          <div className="flex flex-col items-center gap-md">
+            <Snackbar actionLabel="Deshacer" onAction={() => {}}>Movido a “Contratos 2025”</Snackbar>
+            <Snackbar actionLabel="Deshacer" onAction={() => {}}>3 documentos eliminados</Snackbar>
+          </div>
+        </Preview>
+        <Specs rows={[["Fondo", "gray-900 · #181D27"], ["Texto", "13/20 blanco"], ["Ícono", "check-circle 16 · success-500"], ["Acción", "semibold · gray-blue-300"], ["Radio · padding", "10 · 10 14 10 16"], ["Sombra", "0 12 16 -4 rgba(10,13,18,.2)"]]} />
+      </Section>
       <Section title="Mostrar desde una acción">
         <Preview code={`const { show } = useToast();
 show({ title: "Documento enviado a firmar", description: "…" });`}>
@@ -48,6 +59,7 @@ show({ title: "Documento enviado a firmar", description: "…" });`}>
           { name: "title / description", type: "ReactNode", description: "Texto principal y de apoyo." },
           { name: "actions", type: "ReactNode", description: "Acciones de texto." },
           { name: "onClose", type: "() => void", description: "Muestra el botón de cerrar." },
+          { name: "Snackbar · actionLabel / onAction", type: "ReactNode / () => void", description: "Acción de texto, normalmente Deshacer." },
           { name: "useToast().show", type: "(toast & { duration? }) => void", description: "Muestra un toast. duration 0 lo deja fijo." },
         ]} />
       </Section>

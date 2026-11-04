@@ -36,7 +36,7 @@ export default function InputDoc() {
         </Preview>
       </Section>
       <Section title="Especificaciones">
-        <Specs rows={[["Alto", "40px"], ["Padding", "0 12px"], ["Radio", "md · 8px"], ["Borde", "--border-primary"], ["Foco", "borde brand + ring 4px indigo-100"], ["Texto", "14/20 · placeholder --text-placeholder"]]} />
+        <Specs rows={[["Alto", "40px"], ["Padding", "0 12px"], ["Radio", "md · 8px"], ["Borde", "--border-primary"], ["Foco", "borde brand + ring 4 px gray-blue-100"], ["Texto", "14/20 · placeholder --text-placeholder"]]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

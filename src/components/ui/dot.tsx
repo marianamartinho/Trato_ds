@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
  */
 const dotColor = {
   gray: "bg-gray-500",
-  brand: "bg-indigo-500",
+  brand: "bg-gray-blue-500",
   accent: "bg-gray-blue-500",
   success: "bg-success-500",
   warning: "bg-warning-500",

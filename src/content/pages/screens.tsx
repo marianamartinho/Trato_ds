@@ -43,7 +43,7 @@ export default function Screens() {
               <div className="absolute inset-x-6 bottom-0 top-6 flex overflow-hidden rounded-t-lg border border-b-0 border-(--border-secondary) bg-(--bg-primary) shadow-md transition-transform group-hover:-translate-y-1">
                 <div className="flex w-8 flex-col items-center gap-1.5 border-r border-(--border-secondary) py-2">
                   <span className="size-3 rounded-full bg-gray-blue-600" />
-                  {[0, 1, 2, 3, 4].map((i) => <span key={i} className={`size-3 rounded-[3px] ${i === 1 ? "bg-indigo-200" : "bg-(--bg-tertiary)"}`} />)}
+                  {[0, 1, 2, 3, 4].map((i) => <span key={i} className={`size-3 rounded-[3px] ${i === 1 ? "bg-gray-blue-200" : "bg-(--bg-tertiary)"}`} />)}
                 </div>
                 <div className="flex-1 p-3">
                   <p className="text-xs font-semibold text-(--text-primary)">{p.hero.name}</p>

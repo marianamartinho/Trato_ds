@@ -17,7 +17,7 @@ export function SearchInput({ scopes, scope, onScopeChange, className, ...props 
   return (
     <div
       className={cn(
-        "flex h-10 items-stretch overflow-hidden rounded-md border border-(--border-primary) bg-(--bg-primary) shadow-xs focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-indigo-100 dark:focus-within:ring-indigo-900/50",
+        "flex h-10 items-stretch overflow-hidden rounded-md border border-(--border-primary) bg-(--bg-primary) shadow-xs focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-gray-blue-100 dark:focus-within:ring-gray-blue-900/50",
         className,
       )}
     >

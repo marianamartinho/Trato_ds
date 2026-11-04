@@ -12,7 +12,7 @@ export default function Spacing() {
             <div key={k} className="grid grid-cols-[90px_60px_1fr] items-center gap-xl border-b border-(--border-secondary) px-xl py-md last:border-0">
               <code className="font-mono text-13 font-medium text-(--text-brand)">{k}</code>
               <span className="font-mono text-xs text-(--text-quaternary)">{v}px</span>
-              <span className="h-4 rounded-xs bg-gradient-to-r from-indigo-400 to-indigo-500" style={{ width: v * 3 }} />
+              <span className="h-4 rounded-xs bg-gradient-to-r from-gray-blue-400 to-gray-blue-500" style={{ width: v * 3 }} />
             </div>
           ))}
         </div>
@@ -22,7 +22,7 @@ export default function Spacing() {
         <div className="grid grid-cols-2 gap-xl sm:grid-cols-5">
           {Object.entries(rd).filter(([k]) => k !== "none").map(([k, v]) => (
             <div key={k} className="flex flex-col items-center gap-md rounded-2xl border border-(--border-secondary) bg-(--bg-primary) p-xl">
-              <div className="size-16 border-2 border-indigo-400 bg-indigo-50 dark:bg-indigo-900/40" style={{ borderRadius: Math.min(v, 32) }} />
+              <div className="size-16 border-2 border-gray-blue-400 bg-gray-blue-50 dark:bg-gray-blue-900/40" style={{ borderRadius: Math.min(v, 32) }} />
               <code className="font-mono text-13 font-medium text-(--text-primary)">rounded-{k}</code>
               <span className="font-mono text-xs text-(--text-quaternary)">{v === 9999 ? "9999" : v}px</span>
             </div>
@@ -33,7 +33,7 @@ export default function Spacing() {
       <Section title="Layout de la plataforma" description="Medidas recurrentes en las pantallas de 1440 px.">
         <div className="mb-xl overflow-hidden rounded-2xl border border-(--border-secondary) bg-(--bg-canvas) p-xl">
           <div className="flex h-56 gap-md">
-            <div className="flex w-14 flex-col items-center gap-md rounded-lg border border-dashed border-indigo-300 bg-indigo-50/60 py-md text-[10px] font-semibold text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
+            <div className="flex w-14 flex-col items-center gap-md rounded-lg border border-dashed border-gray-blue-300 bg-gray-blue-50/60 py-md text-[10px] font-semibold text-gray-blue-700 dark:bg-gray-blue-900/30 dark:text-gray-blue-300">
               72px
             </div>
             <div className="flex flex-1 flex-col gap-md rounded-xl border border-dashed border-(--border-primary) bg-(--bg-primary) p-md">

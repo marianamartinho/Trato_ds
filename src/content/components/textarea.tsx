@@ -17,7 +17,7 @@ export default function TextareaDoc() {
         </Preview>
       </Section>
       <Section title="Especificaciones">
-        <Specs rows={[["Alto mínimo", "96 px"], ["Padding", "10 14"], ["Radio · borde", "md (8) · border-primary"], ["Foco", "borde brand + ring 4 px indigo-100"]]} />
+        <Specs rows={[["Alto mínimo", "96 px"], ["Padding", "10 14"], ["Radio · borde", "md (8) · border-primary"], ["Foco", "borde brand + ring 4 px gray-blue-100"]]} />
       </Section>
       <Section title="Uso">
         <Guidelines items={["Usá Field para label, ayuda y error.", "Pendiente de definir: contador de caracteres (no aparece en los diseños)."]} />

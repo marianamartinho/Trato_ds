@@ -48,7 +48,7 @@ export default function TokensPage() {
             <span className="font-mono text-xs text-(--text-tertiary)">indigo-500</span>
           </Layer>
           <ArrowRight className="mx-auto size-5 shrink-0 rotate-90 self-center text-(--fg-quaternary) lg:rotate-0" />
-          <Layer n="2" title="Semánticos" desc="Dicen para qué se usa el valor. Cambian entre modo claro y oscuro." example="--bg-brand-solid: var(--color-indigo-500)">
+          <Layer n="2" title="Semánticos" desc="Dicen para qué se usa el valor. Cambian entre modo claro y oscuro." example="--bg-brand-solid: var(--color-gray-blue-600)">
             <span className="size-8 rounded-md bg-(--bg-brand-solid)" />
             <span className="font-mono text-xs text-(--text-tertiary)">bg-brand-solid</span>
           </Layer>

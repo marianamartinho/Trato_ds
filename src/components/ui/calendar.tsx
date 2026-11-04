@@ -28,7 +28,7 @@ export type CalendarEventColor = "gray" | "brand" | "accent" | "orange" | "succe
 
 const dotColor: Record<CalendarEventColor, string> = {
   gray: "bg-gray-500",
-  brand: "bg-indigo-500",
+  brand: "bg-gray-blue-500",
   accent: "bg-gray-blue-600",
   orange: "bg-orange-500",
   success: "bg-success-500",
@@ -216,7 +216,7 @@ export function Calendar({
 export const calendarEventVariants = cva("flex w-full flex-col justify-center gap-xs rounded-sm border p-lg", {
   variants: {
     color: {
-      brand: "border-indigo-200 bg-indigo-50 dark:border-indigo-800 dark:bg-indigo-900/40",
+      brand: "border-gray-blue-200 bg-gray-blue-50 dark:border-gray-blue-800 dark:bg-gray-blue-900/40",
       gray: "border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900",
     },
   },
@@ -225,9 +225,9 @@ export const calendarEventVariants = cva("flex w-full flex-col justify-center ga
 
 const eventText = {
   brand: {
-    title: "text-indigo-600 dark:text-indigo-300",
-    time: "text-indigo-400",
-    desc: "text-indigo-500 dark:text-indigo-300",
+    title: "text-gray-blue-600 dark:text-gray-blue-300",
+    time: "text-gray-blue-400",
+    desc: "text-gray-blue-500 dark:text-gray-blue-300",
   },
   gray: {
     title: "text-gray-700 dark:text-gray-200",

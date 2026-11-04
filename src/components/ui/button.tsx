@@ -18,7 +18,7 @@ export const buttonVariants = cva(
         secondary:
           "border border-(--border-primary) bg-(--bg-primary) text-(--text-secondary) shadow-xs hover:bg-(--bg-secondary) hover:text-(--text-primary)",
         tertiary: "text-(--text-tertiary) hover:bg-(--bg-secondary) hover:text-(--text-secondary)",
-        soft: "bg-(--bg-brand-subtle) text-(--text-brand) hover:bg-indigo-200 dark:hover:bg-indigo-900",
+        soft: "bg-(--bg-brand-subtle) text-(--text-brand) hover:bg-gray-blue-200 dark:hover:bg-gray-blue-900",
         dark: "bg-gray-800 text-white shadow-xs hover:bg-gray-900 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-white",
         destructive: "bg-error-600 text-white shadow-xs hover:bg-error-700",
         link: "h-auto! px-0! text-(--text-brand) underline-offset-4 hover:underline",
@@ -26,7 +26,7 @@ export const buttonVariants = cva(
       size: {
         xs: "h-7 rounded-sm px-2.5 text-xs [&_svg]:size-3.5",
         sm: "h-9 rounded-md px-3 text-sm [&_svg]:size-4",
-        md: "h-10 rounded-md px-4 text-sm [&_svg]:size-[18px]",
+        md: "h-10 rounded-md px-4 text-sm has-[>svg:first-child]:pl-3.5 [&_svg]:size-[18px]",
         lg: "h-11 rounded-md px-[18px] text-md [&_svg]:size-5",
       },
       iconOnly: { true: "px-0", false: "" },

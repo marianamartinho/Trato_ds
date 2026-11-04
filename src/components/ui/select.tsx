@@ -31,7 +31,7 @@ export function Select({
     <SelectPrimitive.Root value={value} defaultValue={defaultValue} onValueChange={onValueChange}>
       <SelectPrimitive.Trigger
         className={cn(
-          "inline-flex items-center justify-between gap-md rounded-md border border-(--border-primary) bg-(--bg-primary) px-lg text-sm font-semibold text-(--text-primary) shadow-xs outline-none data-[placeholder]:font-normal data-[placeholder]:text-(--text-placeholder) focus-visible:ring-4 focus-visible:ring-indigo-100",
+          "inline-flex items-center justify-between gap-md rounded-md border border-(--border-primary) bg-(--bg-primary) px-lg text-sm font-semibold text-(--text-primary) shadow-xs outline-none data-[placeholder]:font-normal data-[placeholder]:text-(--text-placeholder) focus-visible:ring-4 focus-visible:ring-gray-blue-100",
           size === "sm" ? "h-8 text-13" : "h-10",
           className,
         )}

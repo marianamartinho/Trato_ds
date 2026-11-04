@@ -18,7 +18,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     <div
       className={cn(
         "flex h-10 w-full items-center gap-md rounded-md border border-(--border-primary) bg-(--bg-primary) px-lg shadow-xs transition-[box-shadow,border-color]",
-        "focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-indigo-100 dark:focus-within:ring-indigo-900/50",
+        "focus-within:border-(--border-brand) focus-within:ring-4 focus-within:ring-gray-blue-100 dark:focus-within:ring-gray-blue-900/50",
         invalid && "border-(--border-error) focus-within:border-(--border-error) focus-within:ring-error-100",
         props.disabled && "bg-(--bg-secondary) opacity-70",
         className,
@@ -70,7 +70,7 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, React.TextareaHTML
     <textarea
       ref={ref}
       className={cn(
-        "min-h-24 w-full rounded-md border border-(--border-primary) bg-(--bg-primary) px-3.5 py-2.5 text-sm text-(--text-primary) shadow-xs outline-none placeholder:text-(--text-placeholder) focus:border-(--border-brand) focus:ring-4 focus:ring-indigo-100 dark:focus:ring-indigo-900/50",
+        "min-h-24 w-full rounded-md border border-(--border-primary) bg-(--bg-primary) px-3.5 py-2.5 text-sm text-(--text-primary) shadow-xs outline-none placeholder:text-(--text-placeholder) focus:border-(--border-brand) focus:ring-4 focus:ring-gray-blue-100 dark:focus:ring-gray-blue-900/50",
         className,
       )}
       {...props}

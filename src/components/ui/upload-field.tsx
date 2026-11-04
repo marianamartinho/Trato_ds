@@ -39,8 +39,8 @@ export function UploadField({
         onDragLeave={() => setOver(false)}
         onDrop={(e) => { e.preventDefault(); setOver(false); take(e.dataTransfer.files); }}
         className={cn(
-          "flex min-h-56 cursor-pointer flex-col items-center justify-center gap-md rounded-sm border border-(--border-primary) bg-gray-100 p-md text-center transition-colors focus-within:ring-4 focus-within:ring-indigo-100 dark:bg-gray-900",
-          over && "border-(--border-brand) bg-indigo-50 dark:bg-indigo-900/30",
+          "flex min-h-56 cursor-pointer flex-col items-center justify-center gap-md rounded-sm border border-(--border-primary) bg-gray-100 p-md text-center transition-colors focus-within:ring-4 focus-within:ring-gray-blue-100 dark:bg-gray-900",
+          over && "border-(--border-brand) bg-gray-blue-50 dark:bg-gray-blue-900/30",
         )}
       >
         <span className="grid size-10 place-items-center rounded-full border border-gray-200 bg-white text-gray-600 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">

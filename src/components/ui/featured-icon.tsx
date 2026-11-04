@@ -12,7 +12,7 @@ const featuredIcon = cva("relative inline-grid shrink-0 place-items-center", {
   variants: {
     color: {
       success: "text-success-600",
-      brand: "text-indigo-600",
+      brand: "text-gray-blue-600",
       gray: "text-gray-600",
       warning: "text-warning-600",
       error: "text-error-600",
