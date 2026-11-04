@@ -80,7 +80,7 @@ export default function Colors() {
 
       <Section
         title="Paletas primitivas"
-        description={<>Escala Untitled UI (la que usa el archivo de Figma). Clic en un color para copiar su variable. El punto marca los pasos verificados en las variables de Figma.</>}
+        description={<>Escalas de Untitled UI v7, la versión sobre la que está hecho el Figma. Clic en un color para copiar su variable. El punto marca los valores que salen de las variables del Figma de Trato; el resto viene del theme.css oficial de Untitled UI v7.</>}
       >
         <Scale name="Gray" cssName="gray" scale={c.gray} verified={["50", "200", "300", "500", "600", "700", "900"]} />
         <Scale name="Gray blue (accent)" cssName="gray-blue" scale={c.grayBlue} verified={["50", "100", "400", "500", "600"]} />
@@ -90,8 +90,8 @@ export default function Colors() {
         <Scale name="Warning" cssName="warning" scale={c.warning} />
         <Scale name="Success" cssName="success" scale={c.success} verified={["500", "600"]} />
         <Scale name="Blue light" cssName="blue-light" scale={c.blueLight} verified={["500", "800", "900"]} />
-        <Alert tone="info" title="Pasos no verificados">
-          Los pasos sin punto completan la escala estándar de Untitled UI y no aparecen todavía como variables en el archivo. Si Diseño usa otro valor, se corrige en <code className="font-mono">src/tokens/tokens.json</code>.
+        <Alert tone="warning" title="Indigo: escala a confirmar con Diseño">
+          El Figma define solo los pasos 50, 100 y 500 del indigo (#6875F5), que no coinciden con el indigo de Untitled UI (#6172F3). Los demás pasos se toman de Untitled UI v7 hasta que Diseño defina la escala completa. Se corrige en <code className="font-mono">src/tokens/tokens.json</code>.
         </Alert>
       </Section>
     </>
