@@ -80,19 +80,15 @@ export default function Colors() {
 
       <Section
         title="Paletas primitivas"
-        description={<>Escalas de Untitled UI v7, la versión sobre la que está hecho el Figma. Clic en un color para copiar su variable. El punto marca los valores que salen de las variables del Figma de Trato; el resto viene del theme.css oficial de Untitled UI v7.</>}
+        description="Escalas base. Clic en un color para copiar su variable."
       >
-        <Scale name="Gray" cssName="gray" scale={c.gray} verified={["50", "200", "300", "500", "600", "700", "900"]} />
-        <Scale name="Gray blue (brand)" cssName="gray-blue" scale={c.grayBlue} verified={["50", "100", "400", "500", "600"]} />
-        <Scale name="Indigo (anterior)" cssName="indigo" scale={c.indigo} verified={["50", "100", "500"]} />
-        <Scale name="Orange (IA)" cssName="orange" scale={c.orange} verified={["100", "500"]} />
-        <Scale name="Error" cssName="error" scale={c.error} verified={["50", "200", "700"]} />
+        <Scale name="Gray" cssName="gray" scale={c.gray} />
+        <Scale name="Gray blue (brand)" cssName="gray-blue" scale={c.grayBlue} />
+        <Scale name="Orange (IA)" cssName="orange" scale={c.orange} />
+        <Scale name="Error" cssName="error" scale={c.error} />
         <Scale name="Warning" cssName="warning" scale={c.warning} />
-        <Scale name="Success" cssName="success" scale={c.success} verified={["500", "600"]} />
-        <Scale name="Blue light" cssName="blue-light" scale={c.blueLight} verified={["500", "800", "900"]} />
-        <Alert tone="warning" title="Marca: de indigo a gris azulado">
-          El prototipo Documentos · Carpetas define el gris azulado (#3E4784) como color de marca, y el DS lo sigue. Las pantallas viejas del Figma todavía usan indigo #6875F5: se mantiene en la paleta solo como referencia hasta que Diseño actualice esas pantallas. Se cambia en <code className="font-mono">src/tokens/tokens.json</code>.
-        </Alert>
+        <Scale name="Success" cssName="success" scale={c.success} />
+        <Scale name="Blue light" cssName="blue-light" scale={c.blueLight} />
       </Section>
     </>
   );

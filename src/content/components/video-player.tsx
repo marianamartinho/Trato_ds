@@ -62,9 +62,6 @@ export default function VideoPlayerDoc() {
             "Usá `poster` con una imagen propia del video; sin póster se ve el fondo gray-blue-900.",
             "Atajos con el foco dentro del reproductor: Space o K reproduce/pausa, M silencia, F pantalla completa.",
             "No reproduzcas automáticamente con sonido. Si necesitás autoplay, pasá también `muted`.",
-            "Pendiente de definir: barra de progreso y tiempo. No aparecen en la variante sm del Figma; se muestran con un estilo mínimo (blanco sobre blanco 30 %).",
-            "Pendiente de definir: el ícono “pause” del Figma no existe en @untitledui/icons; se usa pause-circle.",
-            "Pendiente de definir: control de volumen deslizable y velocidad de reproducción.",
           ]}
         />
       </Section>

@@ -113,9 +113,6 @@ export default function CalendarDoc() {
             "Colores de punto: gray (tareas), brand (envíos y firmas pendientes), accent (firmas), orange (vencimientos), success (firmado).",
             "Cada día es un botón con nombre accesible: fecha completa y lista de eventos.",
             "Para el detalle de un día, usá CalendarEvent debajo del calendario, no tooltips sobre los puntos.",
-            "Pendiente de definir: el encabezado con mes y flechas no está en el Figma; se toma del “Calendar header” de Untitled UI.",
-            "Pendiente de definir: indicador de “más eventos” (“+N”) cuando un día supera 3 puntos; el Figma deja el espacio “More events” vacío.",
-            "Pendiente de definir: significado definitivo de cada color de evento y vistas semana/día.",
           ]}
         />
       </Section>

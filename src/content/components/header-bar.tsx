@@ -28,7 +28,7 @@ export default function HeaderBarDoc() {
         <Specs rows={[["Alto", "64 px"], ["Título", "16 medium · text-primary"], ["Acciones", "botones 40 px · gap 12"], ["Primaria", "Guardar · primary"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Una sola acción primaria.", "Íconos sin texto con tooltip y aria-label.", "Pendiente de definir: estado de guardado (“Guardando…”, “Guardado”)."]} />
+        <Guidelines items={["Una sola acción primaria.", "Íconos sin texto con tooltip y aria-label."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

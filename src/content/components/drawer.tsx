@@ -34,7 +34,7 @@ export default function DrawerDoc() {
         <Specs rows={[["Ancho", "360 px (editor) · hasta 470 (chat IA)"], ["Header", "56 px · título 18 medium"], ["Cuerpo", "padding 16 · scroll propio"], ["Borde", "izquierdo · border-secondary"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["SidePanel cuando el usuario trabaja con la página y el panel a la vez (editor).", "Drawer modal para tareas que interrumpen (configuración).", "Pendiente de definir: footer con pasos (Drawer Footer solo aparece en material de referencia)."]} />
+        <Guidelines items={["SidePanel cuando el usuario trabaja con la página y el panel a la vez (editor).", "Drawer modal para tareas que interrumpen (configuración)."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

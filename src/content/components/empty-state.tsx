@@ -41,7 +41,7 @@ export default function EmptyStateDoc() {
         <Specs rows={[["Panel · ilustración", "círculo 86 px · gray-blue-100"], ["Panel · título", "14 semibold · text-tertiary"], ["Panel · texto", "12 regular · text-quaternary"], ["Panel · separación", "24 entre ilustración y texto · 4 entre título y texto"], ["Página · ícono", "featured icon 48 px sobre círculos"], ["Página · título", "16 semibold · text-primary"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Panel: dentro de paneles laterales y tarjetas; explica cómo llegar al contenido, sin botones si la acción está en otro lugar.", "Página: en tablas y vistas completas; ofrece la acción para empezar.", "Sin resultados: decí qué se buscó y cómo salir.", "Pendiente de definir: ilustraciones propias de Trato como asset (hoy se usa un ícono de Untitled UI dentro del círculo)."]} />
+        <Guidelines items={["Panel: dentro de paneles laterales y tarjetas; explica cómo llegar al contenido, sin botones si la acción está en otro lugar.", "Página: en tablas y vistas completas; ofrece la acción para empezar.", "Sin resultados: decí qué se buscó y cómo salir."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

@@ -7,7 +7,7 @@ import { DocLink as Link } from "@/lib/nav";
 
 /** Equivalencias reales: variable de Figma (archivo Platform Designs) → token en código. */
 const figmaMap: [string, string, string][] = [
-  ["indigo/500", "--color-indigo-500", "bg-indigo-500"],
+  ["gray-blue/600", "--color-gray-blue-600", "bg-gray-blue-600"],
   ["Colors/Background/bg-primary", "--bg-primary", "bg-(--bg-primary)"],
   ["Colors/Text/text-primary (900)", "--text-primary", "text-(--text-primary)"],
   ["Colors/Text/text-tertiary (600)", "--text-tertiary", "text-(--text-tertiary)"],
@@ -43,9 +43,9 @@ export default function TokensPage() {
 
       <Section title="Cómo funcionan" description="Tres capas. Cada una se apoya en la anterior, así un cambio se hace en un solo lugar.">
         <div className="mb-xl flex flex-col items-stretch gap-md lg:flex-row">
-          <Layer n="1" title="Primitivos" desc="La paleta y las escalas. No tienen significado, solo valor." example="--color-indigo-500: #6875F5">
-            <span className="size-8 rounded-md bg-indigo-500" />
-            <span className="font-mono text-xs text-(--text-tertiary)">indigo-500</span>
+          <Layer n="1" title="Primitivos" desc="La paleta y las escalas. No tienen significado, solo valor." example="--color-gray-blue-600: #3E4784">
+            <span className="size-8 rounded-md bg-gray-blue-600" />
+            <span className="font-mono text-xs text-(--text-tertiary)">gray-blue-600</span>
           </Layer>
           <ArrowRight className="mx-auto size-5 shrink-0 rotate-90 self-center text-(--fg-quaternary) lg:rotate-0" />
           <Layer n="2" title="Semánticos" desc="Dicen para qué se usa el valor. Cambian entre modo claro y oscuro." example="--bg-brand-solid: var(--color-gray-blue-600)">
@@ -120,7 +120,7 @@ export default function TokensPage() {
           <CodeBlock title="Tailwind" code={`<div className="rounded-xl border border-(--border-secondary) bg-(--bg-primary) p-xl text-(--text-primary)" />`} />
           <CodeBlock title="JavaScript / TypeScript (gráficos, emails)" code={`import tokens from "@/tokens/tokens.json";
 
-tokens.primitive.color.indigo["500"]; // "#6875F5"`} />
+tokens.primitive.color.grayBlue["600"]; // "#3E4784"`} />
         </div>
       </Section>
 

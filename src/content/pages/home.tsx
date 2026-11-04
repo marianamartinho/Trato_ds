@@ -14,14 +14,14 @@ export default function Home() {
       {/* Hero */}
       <section className="relative -mx-xl -mt-4xl mb-6xl overflow-hidden border-b border-(--border-secondary) px-xl pb-6xl pt-6xl md:-mx-5xl md:px-5xl lg:-mx-6xl lg:px-6xl">
         <div aria-hidden className="absolute inset-0 bg-grid [mask-image:radial-gradient(ellipse_at_top,black_30%,transparent_75%)]" />
-        <div aria-hidden className="animate-drift absolute -right-24 -top-24 size-96 rounded-full bg-indigo-400/25 blur-3xl" />
+        <div aria-hidden className="animate-drift absolute -right-24 -top-24 size-96 rounded-full bg-gray-blue-400/25 blur-3xl" />
         <div aria-hidden className="animate-drift absolute -left-16 top-40 size-72 rounded-full bg-orange-400/20 blur-3xl [animation-delay:-6s]" />
         <div className="relative mx-auto max-w-[1040px]">
           <Badge color="brand" size="md" className="animate-fade-up mb-2xl">
             <Stars01 /> Propuesta · Etapa 1
           </Badge>
           <h1 className="animate-fade-up max-w-[768px] text-[44px] font-semibold leading-[1.08] tracking-[-0.03em] text-(--text-primary) md:text-[56px] [animation-delay:60ms]">
-            Un Design System para <span className="bg-gradient-to-r from-indigo-500 via-gray-blue-500 to-orange-500 bg-clip-text text-transparent">Trato</span>, construido en código.
+            Un Design System para <span className="bg-gradient-to-r from-gray-blue-600 via-gray-blue-400 to-orange-500 bg-clip-text text-transparent">Trato</span>, construido en código.
           </h1>
           <p className="animate-fade-up mt-2xl max-w-[672px] text-lg text-(--text-tertiary) [animation-delay:120ms]">
             Tokens, componentes y patrones extraídos de los diseños de la plataforma en Figma, construidos en código y listos para usarse en producto. Un mismo lugar de referencia para Diseño y Desarrollo.

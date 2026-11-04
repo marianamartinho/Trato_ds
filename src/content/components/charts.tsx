@@ -116,8 +116,6 @@ export default function ChartsDoc() {
             "En BarList el ancho de cada barra es proporcional al mayor valor. Ordená de mayor a menor.",
             "El tooltip muestra el valor con unidad (“128 firmas”) y el período completo (“Abril, 2026”).",
             "Usá `defaultActiveIndex` sólo para destacar un punto (por ejemplo, el mes actual).",
-            "Pendiente de definir: “Contracts by jurisdiction” (mapa mundial en 2213:30565) no se implementa como componente.",
-            "Pendiente de definir: etiquetas del eje Y, leyenda y gráficos con varias series (Series 2 y 3 están ocultas en el Figma).",
           ]}
         />
       </Section>

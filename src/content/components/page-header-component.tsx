@@ -38,7 +38,7 @@ export default function PageHeaderDoc() {
         <Specs rows={[["Título", "20/30 semibold · gray-800"], ["Gap", "16"], ["Búsqueda", "Select sm · 320 px"], ["Breakpoint", "Desktop (único definido)"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Uno por página, arriba de todo.", "Una sola acción primary; las acciones de ícono llevan tooltip.", "Pendiente de definir: versión mobile."]} />
+        <Guidelines items={["Uno por página, arriba de todo.", "Una sola acción primary; las acciones de ícono llevan tooltip."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

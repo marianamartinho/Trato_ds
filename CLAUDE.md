@@ -1,13 +1,17 @@
 # Trato Design System — reglas de trabajo
 
-## Fuentes de verdad (en este orden)
+## Fuente de verdad
+
+**Este repo (GitHub) es la fuente de verdad del Design System.** Lo que está acá es lo vigente: el sitio no muestra avisos de "a confirmar", "pendiente de definir" ni diferencias con el Figma. Lo que falta se registra en el repo (issues o la hoja de ruta), no en las páginas del DS.
+
+## Cómo se decide qué entra (en este orden)
 
 1. **Figma de Trato** ("Platform Designs"). Lo que está ahí manda: colores, tamaños, textos, estados y pantallas.
 2. **Untitled UI**, el sistema sobre el que está construido ese Figma. Se usa para completar lo que el Figma no define: escalas de color, tokens semánticos, tipografía, sombras, radios, anatomía y variantes de componentes, e íconos.
-3. **Nada inventado.** Si algo no está ni en el Figma ni en Untitled UI, se marca como "Pendiente de definir" y no se rellena con valores propios.
+3. **Nada inventado.** Si algo no está ni en el Figma ni en Untitled UI, no se agrega al DS ni se rellena con valores propios.
 
 Siempre se adapta Untitled UI a lo que muestra el Figma, nunca al revés.
-Ejemplo: el color de marca de Trato es gris azulado `#3E4784` (prototipo Documentos · Carpetas), aunque Untitled UI use otro valor por defecto. El indigo `#6875F5` de las pantallas anteriores queda solo como referencia.
+Ejemplo: el color de marca de Trato es gris azulado `#3E4784` (prototipo Documentos · Carpetas), aunque Untitled UI use otro valor por defecto.
 
 ## Recursos de Untitled UI
 

@@ -18,7 +18,7 @@ export default function BreadcrumbsDoc() {
         <Specs rows={[["Divisor", "chevron-right 16 px"], ["Ítem", "14/20 semibold · padding 4 8 · radio sm"], ["Actual", "bg-secondary · text-secondary"], ["Anteriores", "text-quaternary · hover bg-secondary"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["La instancia del Figma de Trato está oculta: la anatomía es la de Untitled UI (Divider Chevron, Type Button).", "El último ítem es la página actual y no es un link.", "Pendiente de definir: truncado con “…” para rutas largas."]} />
+        <Guidelines items={["La instancia del Figma de Trato está oculta: la anatomía es la de Untitled UI (Divider Chevron, Type Button).", "El último ítem es la página actual y no es un link."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

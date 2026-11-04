@@ -19,7 +19,7 @@ export default function MessageDoc() {
         <Specs rows={[["Ancho", "320 px"], ["Nombre · hora", "14 medium · 12 text-tertiary"], ["Burbuja", "padding 8 12 · texto 16 · radio md"], ["Enviado", "gray-blue-25 · borde gray-blue-200 · texto gray-blue-500"], ["Recibido", "gray-50 · borde gray-200 · avatar 40"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["La esquina sin redondear apunta a quien habla.", "Pendiente de definir: panel de acciones del mensaje (Actions panel True no se usa en los diseños)."]} />
+        <Guidelines items={["La esquina sin redondear apunta a quien habla."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

@@ -23,7 +23,7 @@ export default function ContractsFilterDoc() {
         <Specs rows={[["Ancho en Figma", "442 px"], ["Fondo", "gray-blue-25 al 40%"], ["Borde · radio", "gray-blue-50 · xl (12)"], ["Padding · gap", "16 20 · 40"], ["Filtros", "Juris · Type"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Para desgloses del dashboard que cambian de dimensión sin salir de la tarjeta.", "Pendiente de definir: vista de mapa para jurisdicción."]} />
+        <Guidelines items={["Para desgloses del dashboard que cambian de dimensión sin salir de la tarjeta."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

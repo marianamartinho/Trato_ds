@@ -30,7 +30,7 @@ export default function EditorToolbarDoc() {
         <Specs rows={[["Alto", "52 px"], ["Íconos", "20 px · gap 12"], ["Divisores", "1 × 22 px"], ["Tamaño de texto", "“30” con chevron"], ["Menús", "Insertar firma · Acciones"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Los botones de formato muestran su estado con aria-pressed.", "Pendiente de definir: contenido de los menús de bloque, tamaño, color, “Insertar firma” y “Acciones”."]} />
+        <Guidelines items={["Los botones de formato muestran su estado con aria-pressed."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

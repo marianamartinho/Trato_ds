@@ -15,7 +15,7 @@ export default function UploadFieldDoc() {
         <Specs rows={[["Ancho en Figma", "532 px"], ["Alto", "224 px"], ["Fondo · borde", "gray-100 · gray-300"], ["Radio", "sm (6)"], ["Ícono", "upload en círculo 40 px blanco"], ["Texto", "14 medium · text-primary"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Funciona con clic, teclado y arrastrar y soltar.", "Indicá formatos y tamaño máximo en hint.", "Pendiente de definir: estados de carga con progreso y de error."]} />
+        <Guidelines items={["Funciona con clic, teclado y arrastrar y soltar.", "Indicá formatos y tamaño máximo en hint."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

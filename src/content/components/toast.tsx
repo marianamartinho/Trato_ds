@@ -52,7 +52,7 @@ show({ title: "Documento enviado a firmar", description: "…" });`}>
         <Specs rows={[["Ancho", "400 px"], ["Radio", "xl · 12 px"], ["Padding · gap", "16 · 16"], ["Sombra", "lg"], ["Ícono", "Featured icon success md"], ["Cerrar", "botón sm 36 px · x-close"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Para confirmar acciones que ya ocurrieron. Los errores que bloquean van en un Alert.", "Se cierra solo a los 5 segundos; las acciones importantes no van en un toast.", "Pendiente de definir: variantes de error y advertencia (el Figma solo usa success)."]} />
+        <Guidelines items={["Para confirmar acciones que ya ocurrieron. Los errores que bloquean van en un Alert.", "Se cierra solo a los 5 segundos; las acciones importantes no van en un toast."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

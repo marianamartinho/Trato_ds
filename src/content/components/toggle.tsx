@@ -29,7 +29,7 @@ export default function ToggleDoc() {
         <Specs rows={[["En Figma", "Toggle · Size sm · Pressed True/False"], ["sm", "16 × 28 px · thumb 12"], ["md", "20 × 36 px · thumb 16"], ["Activo", "bg-brand-solid"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Solo para cambios inmediatos, sin botón Guardar.", "El label describe el estado activado.", "Pendiente de definir: md no aparece en los diseños; se toma de Untitled UI."]} />
+        <Guidelines items={["Solo para cambios inmediatos, sin botón Guardar.", "El label describe el estado activado."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[
