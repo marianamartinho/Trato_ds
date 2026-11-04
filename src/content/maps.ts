@@ -30,6 +30,12 @@ import LogomarkDoc from "./components/logomark";
 import ToastDoc from "./components/toast";
 import SectionHeaderDoc from "./components/section-header";
 import PageHeaderDoc from "./components/page-header-component";
+import BreadcrumbsDoc from "./components/breadcrumbs";
+import PaginationDoc from "./components/pagination";
+import FiltersBarDoc from "./components/filters-bar";
+import ContractsFilterDoc from "./components/contracts-filter";
+import UploadFieldDoc from "./components/upload-field";
+import ContactDoc from "./components/contact";
 import ChartsDoc from "./components/charts";
 import CalendarDoc from "./components/calendar";
 import VideoPlayerDoc from "./components/video-player";
@@ -48,6 +54,7 @@ export const componentPages: Record<string, ComponentType> = {
   dialog: DialogDoc, menu: MenuDoc, table: TableDoc, "card-stat": CardStatDoc, "empty-state": EmptyStateDoc,
   progress: ProgressDoc, chip: ChipDoc, navigation: NavigationDoc,
   "dot": DotDoc, "map-marker": MapMarkerDoc, "featured-icon": FeaturedIconDoc, "logomark": LogomarkDoc, "toast": ToastDoc, "section-header": SectionHeaderDoc, "page-header-component": PageHeaderDoc,
+  "breadcrumbs": BreadcrumbsDoc, "pagination": PaginationDoc, "filters-bar": FiltersBarDoc, "contracts-filter": ContractsFilterDoc, "upload-field": UploadFieldDoc, "contact": ContactDoc,
   charts: ChartsDoc, calendar: CalendarDoc, "video-player": VideoPlayerDoc,
 };
 
