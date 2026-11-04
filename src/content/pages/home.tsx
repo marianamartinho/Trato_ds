@@ -147,7 +147,7 @@ export default function Home() {
         {[
           { href: "/foundations/colors/", icon: <Palette />, t: "Fundamentos", d: `${foundations.length} guías: color, tipografía, espaciado, elevación, íconos y voz.` },
           { href: "/components/button/", icon: <Cube01 />, t: "Componentes", d: `${ready} listos y ${components.length - ready} en la hoja de ruta, con props y código.` },
-          { href: "/patterns/documents-table/", icon: <LayoutGrid01 />, t: "Patrones", d: `${patterns.length} composiciones reales: header, tabla de documentos, dashboard y chat IA.` },
+          { href: "/patterns/dashboard/", icon: <LayoutGrid01 />, t: "Ejemplos", d: `${patterns.length} pantallas armadas solo con componentes del sistema: dashboard y chat IA.` },
         ].map((c) => (
           <Link
             key={c.t}

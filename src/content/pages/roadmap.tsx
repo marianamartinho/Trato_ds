@@ -5,11 +5,11 @@ import { DocLink as Link } from "@/lib/nav";
 import { components, figmaPages } from "@/content/registry";
 
 const statusOf = (name: string) => figmaPages.find((p) => p.name === name)?.status;
-const stLabel = { done: ["En producción", "success"], wip: ["En progreso", "warning"], explore: ["Exploración", "blue"] } as const;
+const stLabel = { done: ["Diseño en producción", "success"], wip: ["Diseño en progreso", "warning"], explore: ["Diseño en exploración", "blue"] } as const;
 
 const phases = [
   { k: "A", t: "Base visual común", d: "Tokens, navegación lateral, headers de página y tablas. Es lo que más se repite en la plataforma, así que el cambio se nota en todas las pantallas.", areas: [] as string[] },
-  { k: "B", t: "Documentos y carpetas", d: "La lista de documentos con carpetas, selección múltiple y menús. Ya está diseñada y tiene su patrón en el DS.", areas: ["Expedientes (carpetas)"] },
+  { k: "B", t: "Documentos y carpetas", d: "La lista de documentos con carpetas, selección múltiple y menús. Ya está diseñada y tiene su ejemplo en Table.", areas: ["Expedientes (carpetas)"] },
   { k: "C", t: "Dashboard", d: "KPIs, overview operativo y ciclo de vida de contratos.", areas: ["New Dashboard"] },
   { k: "D", t: "IA: chat y Clause Pulse", d: "Panel del asistente, contexto, créditos y chequeo de cláusulas.", areas: ["NEW AI Chat", "Clause Pulse"] },
   { k: "E", t: "Flujos de contrato", d: "Firma, workflows, solicitudes e integraciones.", areas: ["Vista participante", "Workflows", "Vista de solicitante", "LetsLaw Integration", "Lefebvre Integration"] },
@@ -30,7 +30,7 @@ export default function Roadmap() {
           {[
             {
               icon: <Check />, tone: "success" as const, tag: "Hecho", title: "Etapa 1 · Fundamentos y núcleo",
-              items: ["Tokens en código (color, tipografía, espaciado, radios, sombras)", `${components.length} componentes documentados, todos los que usan los diseños`, "4 patrones: header, documentos, dashboard, chat IA", "Inventario de 14 áreas del Figma"],
+              items: ["Tokens en código (color, tipografía, espaciado, radios, sombras)", `${components.length} componentes documentados, todos los que usan los diseños`, "Ejemplos de pantallas: dashboard y chat IA", "Inventario de 14 áreas del Figma"],
             },
             {
               icon: <Tool01 />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
@@ -84,7 +84,10 @@ export default function Roadmap() {
             </div>
           ))}
         </div>
-        <Alert className="mt-xl" tone="info" title="Es una propuesta">
+        <Alert className="mt-xl" tone="warning" title="Todos los flujos están pendientes de aplicar">
+          Ningún flujo tiene todavía la UI aplicada con el sistema, incluidos los que figuran “en producción” en Figma: lo que está en producción tampoco sigue bien el diseño. Por eso todas las áreas entran en las fases.
+        </Alert>
+        <Alert className="mt-md" tone="info" title="Es una propuesta">
           El orden y el alcance de cada fase se definen en conjunto. El estado de cada área sale del <Link href="/screens/" className="font-semibold underline">inventario de pantallas</Link>.
         </Alert>
       </Section>

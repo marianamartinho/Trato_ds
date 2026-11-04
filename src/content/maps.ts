@@ -8,9 +8,11 @@ import Voice from "./foundations/voice";
 import ButtonDoc from "./components/button";
 import BadgeDoc from "./components/badge";
 import InputDoc from "./components/input";
-import SearchDoc from "./components/search";
 import SelectDoc from "./components/select";
-import CheckboxSwitchDoc from "./components/checkbox-switch";
+import CheckboxDoc from "./components/checkbox";
+import RadioDoc from "./components/radio";
+import ToggleDoc from "./components/toggle";
+import TextareaDoc from "./components/textarea";
 import TabsDoc from "./components/tabs";
 import AvatarDoc from "./components/avatar";
 import TooltipDoc from "./components/tooltip";
@@ -44,8 +46,6 @@ import EditorToolbarDoc from "./components/editor-toolbar";
 import ChartsDoc from "./components/charts";
 import CalendarDoc from "./components/calendar";
 import VideoPlayerDoc from "./components/video-player";
-import PageHeaderPattern from "./patterns/page-header";
-import DocumentsTablePattern from "./patterns/documents-table";
 import DashboardPattern from "./patterns/dashboard";
 import AiChatPattern from "./patterns/ai-chat";
 
@@ -54,8 +54,8 @@ export const foundationPages: Record<string, ComponentType> = {
 };
 
 export const componentPages: Record<string, ComponentType> = {
-  button: ButtonDoc, badge: BadgeDoc, input: InputDoc, search: SearchDoc, select: SelectDoc,
-  "checkbox-switch": CheckboxSwitchDoc, tabs: TabsDoc, avatar: AvatarDoc, tooltip: TooltipDoc, alert: AlertDoc,
+  button: ButtonDoc, badge: BadgeDoc, input: InputDoc, select: SelectDoc,
+  checkbox: CheckboxDoc, radio: RadioDoc, toggle: ToggleDoc, textarea: TextareaDoc, tabs: TabsDoc, avatar: AvatarDoc, tooltip: TooltipDoc, alert: AlertDoc,
   dialog: DialogDoc, menu: MenuDoc, table: TableDoc, "card-stat": CardStatDoc, "empty-state": EmptyStateDoc,
   progress: ProgressDoc, chip: ChipDoc, navigation: NavigationDoc,
   "dot": DotDoc, "map-marker": MapMarkerDoc, "featured-icon": FeaturedIconDoc, "logomark": LogomarkDoc, "toast": ToastDoc, "section-header": SectionHeaderDoc, "page-header-component": PageHeaderDoc,
@@ -65,5 +65,5 @@ export const componentPages: Record<string, ComponentType> = {
 };
 
 export const patternPages: Record<string, ComponentType> = {
-  "page-header": PageHeaderPattern, "documents-table": DocumentsTablePattern, dashboard: DashboardPattern, "ai-chat": AiChatPattern,
+  dashboard: DashboardPattern, "ai-chat": AiChatPattern,
 };

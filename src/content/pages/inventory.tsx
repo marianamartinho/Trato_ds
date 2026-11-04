@@ -7,7 +7,7 @@ import { DocLink as Link } from "@/lib/nav";
 import { components, levelLabel, type NavEntry } from "@/content/registry";
 
 type Filter = "all" | "ready" | "planned";
-const levels = ["atom", "molecule", "organism"] as const;
+const levels = ["atom", "molecule", "organism", "specific"] as const;
 
 export default function Inventory() {
   const [filter, setFilter] = React.useState<Filter>("all");

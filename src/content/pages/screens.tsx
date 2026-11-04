@@ -1,15 +1,15 @@
 "use client";
 import * as React from "react";
 import { ArrowUpRight, LayersThree01 } from "@untitledui/icons";
-import { Badge, Tabs, TabsList, TabsTrigger } from "@/components/ui";
+import { Alert, Badge, Tabs, TabsList, TabsTrigger } from "@/components/ui";
 import { DocHeader } from "@/components/docs/doc";
 import { FigmaIcon } from "@/components/docs/figma-icon";
 import { figmaPages, figmaUrl, type FigmaPage } from "@/content/registry";
 
 const st: Record<FigmaPage["status"], { label: string; color: "success" | "warning" | "blue" }> = {
-  done: { label: "En producción", color: "success" },
-  wip: { label: "En progreso", color: "warning" },
-  explore: { label: "Exploración", color: "blue" },
+  done: { label: "Diseño en producción", color: "success" },
+  wip: { label: "Diseño en progreso", color: "warning" },
+  explore: { label: "Diseño en exploración", color: "blue" },
 };
 
 export default function Screens() {
@@ -24,10 +24,13 @@ export default function Screens() {
         figma={undefined}
         meta={<span className="text-xs text-(--text-quaternary)">{figmaPages.length} áreas · {figmaPages.reduce((n, p) => n + p.screens.length + 1, 0)} pantallas clave · wireframes y Graveyard excluidos</span>}
       />
+      <Alert tone="warning" title="UI pendiente de aplicar en todos los flujos" className="mb-3xl">
+        El estado de cada área es el estado del diseño en Figma. En la plataforma, ningún flujo tiene todavía la UI aplicada con el sistema, ni siquiera los que están en producción.
+      </Alert>
       <Tabs value={filter} onValueChange={(v) => setFilter(v as typeof filter)} className="mb-3xl">
         <TabsList>
           <TabsTrigger value="all">Todas</TabsTrigger>
-          <TabsTrigger value="done">En producción</TabsTrigger>
+          <TabsTrigger value="done">Diseño en producción</TabsTrigger>
           <TabsTrigger value="wip">En progreso</TabsTrigger>
           <TabsTrigger value="explore">Exploración</TabsTrigger>
         </TabsList>
@@ -56,6 +59,7 @@ export default function Screens() {
                 <h2 className="mr-auto text-lg font-semibold text-(--text-primary)">{p.name}</h2>
                 <Badge color="gray" shape="tag">{p.area}</Badge>
                 <Badge color={st[p.status].color} dot>{st[p.status].label}</Badge>
+                <Badge color="warning" shape="tag">UI pendiente</Badge>
               </div>
               <p className="text-sm text-(--text-tertiary)">{p.summary}</p>
               <ul className="mt-xs flex flex-wrap gap-sm">

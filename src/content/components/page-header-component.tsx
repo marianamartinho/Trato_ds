@@ -1,4 +1,5 @@
 "use client";
+import { Archive, FolderPlus, Plus } from "@untitledui/icons";
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/ui/page-header";
@@ -14,6 +15,20 @@ export default function PageHeaderDoc() {
           <PageHeader title="Dashboard" actions={<SearchInput placeholder="Buscar" className="w-full sm:w-80" />} />
         </Preview>
       </Section>
+      <Section title="Con búsqueda y acciones" description="Como en Documentos: búsqueda con alcance, acciones de ícono y la acción principal.">
+        <Preview align="stretch" canvas="canvas" code={`<PageHeader title="Documentos" actions={<>
+  <SearchInput scopes={["Nombre", "ID"]} placeholder="Buscar documentos" />
+  <Button variant="secondary" iconOnly aria-label="Archivados"><Archive /></Button>
+  <Button><Plus /> Crear nuevo</Button>
+</>} />`}>
+          <PageHeader title="Documentos" actions={<>
+            <SearchInput scopes={["Nombre", "ID"]} placeholder="Buscar documentos" className="w-full sm:w-80" />
+            <Button variant="secondary" iconOnly aria-label="Archivados"><Archive /></Button>
+            <Button variant="secondary" iconOnly aria-label="Nueva carpeta"><FolderPlus /></Button>
+            <Button><Plus /> Crear nuevo</Button>
+          </>} />
+        </Preview>
+      </Section>
       <Section title="Con avatar" description="Style Avatar: identifica a la persona o la entidad de la página.">
         <Preview align="stretch" canvas="canvas" code={`<PageHeader leading={<Avatar initials="AT" size="lg" />} title="Abogado Trato" description="Mis documentos" />`}>
           <PageHeader leading={<Avatar initials="AT" size="lg" />} title="Abogado Trato" description="34 documentos activos" actions={<Button variant="secondary">Editar perfil</Button>} />
@@ -23,7 +38,7 @@ export default function PageHeaderDoc() {
         <Specs rows={[["Título", "20/30 semibold · gray-800"], ["Gap", "16"], ["Búsqueda", "Select sm · 320 px"], ["Breakpoint", "Desktop (único definido)"]]} />
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Uno por página, arriba de todo.", "Para el patrón completo de Documentos (búsqueda + acciones + crear) ver Patrones › Header de página.", "Pendiente de definir: versión mobile."]} />
+        <Guidelines items={["Uno por página, arriba de todo.", "Una sola acción primary; las acciones de ícono llevan tooltip.", "Pendiente de definir: versión mobile."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

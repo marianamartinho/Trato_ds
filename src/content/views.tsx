@@ -48,7 +48,7 @@ export function PatternView({ slug }: { slug: string }) {
   if (!entry || !Content) return null;
   return (
     <>
-      <DocHeader eyebrow="Patrones" title={entry.title} description={entry.description} status={entry.status} figma={entry.figma} />
+      <DocHeader eyebrow="Ejemplos" title={entry.title} description={entry.description} status={entry.status} figma={entry.figma} />
       <Content />
       <Pager list={patterns} slug={slug} base="/patterns" />
     </>

@@ -36,7 +36,7 @@ export default function ChatPanelDoc() {
         </Preview>
       </Section>
       <Section title="Uso">
-        <Guidelines items={["Vive dentro de un Drawer o SidePanel a la derecha.", "El contexto (documento o biblioteca) se muestra como Chip en el composer.", "Enter envía, Shift+Enter hace salto de línea.", "Para el patrón completo ver Patrones › Chat IA."]} />
+        <Guidelines items={["Vive dentro de un Drawer o SidePanel a la derecha.", "El contexto (documento o biblioteca) se muestra como Chip en el composer.", "Enter envía, Shift+Enter hace salto de línea.", "Para la pantalla completa ver Ejemplos › Chat IA."]} />
       </Section>
       <Section title="Props">
         <PropsTable props={[

@@ -26,8 +26,8 @@ const groups: Group[] = [
     ],
   },
   { title: "Fundamentos", icon: <Palette />, base: "/foundations", items: foundations },
-  { title: "Componentes", icon: <Cube01 />, base: "/components", items: [{ slug: "inventory", title: "Inventario", href: "/inventory/" }, ...(["atom", "molecule", "organism"] as const).flatMap((l) => components.filter((c) => c.level === l))] },
-  { title: "Patrones", icon: <LayoutGrid01 />, base: "/patterns", items: patterns },
+  { title: "Componentes", icon: <Cube01 />, base: "/components", items: [{ slug: "inventory", title: "Inventario", href: "/inventory/" }, ...(["atom", "molecule", "organism", "specific"] as const).flatMap((l) => components.filter((c) => c.level === l))] },
+  { title: "Ejemplos", icon: <LayoutGrid01 />, base: "/patterns", items: patterns },
   {
     title: "Producto",
     icon: <FigmaIcon className="size-4" />,

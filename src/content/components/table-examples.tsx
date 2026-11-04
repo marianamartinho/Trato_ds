@@ -5,8 +5,6 @@ import {
   Avatar, AvatarGroup, Badge, Button, CellStack, Checkbox, DocIcon, DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuSeparator, DropdownMenuTrigger, Select, TBody, TD, TH, THead, TR, Table,
 } from "@/components/ui";
-import { Preview } from "@/components/docs/preview";
-import { Guidelines, Section } from "@/components/docs/doc";
 
 type Row = { id: number; name: string; meta: string; tag?: string; creator: string; p: string[]; created: string; days: number; status: string; sub?: string; pdf?: boolean };
 const data: Row[] = [
@@ -17,14 +15,12 @@ const data: Row[] = [
   { id: 42, name: "42 - contrato277", meta: "Otro · Actualizado 09/06/2025", creator: "—", p: ["P1", "P2"], created: "27/05/2022", days: 1574, status: "Borrador", pdf: true },
 ];
 
-export default function DocumentsTablePattern() {
+/** Ejemplo de tabla: documentos con carpetas, selección múltiple y acciones (Expedientes 11.1 + 11.4). */
+export function DocumentsTableExample() {
   const [sel, setSel] = React.useState<number[]>([]);
   const all = sel.length === data.length ? true : sel.length ? "indeterminate" : false;
   const toggle = (id: number) => setSel((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]));
   return (
-    <>
-      <Section title="Lista de documentos con carpetas" description="Composición de Expedientes 11.1 + 11.4. Seleccioná filas para ver la barra de acciones masivas.">
-        <Preview align="stretch" canvas="canvas" className="p-xl md:p-3xl">
           <div className="flex flex-col gap-lg">
             <div className="flex items-center justify-between gap-md">
               <h2 className="text-lg font-medium text-(--text-primary)">Mis documentos</h2>
@@ -95,11 +91,5 @@ export default function DocumentsTablePattern() {
               </TBody>
             </Table>
           </div>
-        </Preview>
-      </Section>
-      <Section title="Reglas">
-        <Guidelines items={["Carpetas siempre arriba, separadas de los documentos.", "La barra de acciones masivas reemplaza a los filtros mientras hay selección.", "Los días se muestran como badge: error cuando exceden el SLA del workflow.", "Las columnas secundarias (Creador, Creado) se ocultan primero en pantallas angostas."]} />
-      </Section>
-    </>
   );
 }
