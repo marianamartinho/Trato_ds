@@ -32,7 +32,7 @@ src/
 
 ## Stack
 
-Next.js + React + TypeScript · Tailwind CSS v4 (tokens como `@theme`) · Radix UI · class-variance-authority · lucide-react. API compatible con shadcn/ui.
+Next.js + React + TypeScript · Tailwind CSS v4 (tokens como `@theme`) · Radix UI · class-variance-authority · @untitledui/icons. Base visual: Untitled UI, adaptado al Figma de Trato.
 
 ## Tokens
 

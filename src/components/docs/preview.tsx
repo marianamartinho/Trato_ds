@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Code2, Eye } from "lucide-react";
+import { Code02, Eye } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 import { CodeBlock } from "./code-block";
 
@@ -32,7 +32,7 @@ export function Preview({
                 tab === t ? "bg-(--bg-tertiary) text-(--text-primary)" : "text-(--text-quaternary) hover:text-(--text-secondary)",
               )}
             >
-              {t === "preview" ? <Eye className="size-3.5" /> : <Code2 className="size-3.5" />}
+              {t === "preview" ? <Eye className="size-3.5" /> : <Code02 className="size-3.5" />}
               {t === "preview" ? "Vista previa" : "Código"}
             </button>
           ))}

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Hammer } from "lucide-react";
+import { ArrowUpRight, Tool01 } from "@untitledui/icons";
 import { Alert, Badge } from "@/components/ui";
 import { Section } from "@/components/docs/doc";
 import { figmaUrl, levelLabel, type NavEntry } from "@/content/registry";
@@ -54,7 +54,7 @@ export default function Planned({ entry }: { entry: NavEntry }) {
       )}
 
       <div className="flex items-center gap-md rounded-xl border border-dashed border-(--border-primary) bg-(--bg-secondary) p-xl text-sm text-(--text-tertiary)">
-        <Hammer className="size-5 shrink-0 text-(--fg-quaternary)" />
+        <Tool01 className="size-5 shrink-0 text-(--fg-quaternary)" />
         Próximo paso: construirlo con las variantes de arriba y documentarlo con vista previa, código y props.
       </div>
     </>

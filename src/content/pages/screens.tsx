@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ArrowUpRight, Layers } from "lucide-react";
+import { ArrowUpRight, LayersThree01 } from "@untitledui/icons";
 import { Badge, Tabs, TabsList, TabsTrigger } from "@/components/ui";
 import { DocHeader } from "@/components/docs/doc";
 import { FigmaIcon } from "@/components/docs/figma-icon";
@@ -68,7 +68,7 @@ export default function Screens() {
                 ))}
               </ul>
               <a href={figmaUrl(p.id)} target="_blank" rel="noreferrer" className="mt-auto inline-flex items-center gap-xs pt-md text-sm font-semibold text-(--text-brand)">
-                <Layers className="size-4" /> Ver página completa <ArrowUpRight className="size-3.5" />
+                <LayersThree01 className="size-4" /> Ver página completa <ArrowUpRight className="size-3.5" />
               </a>
             </div>
           </article>

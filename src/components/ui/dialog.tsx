@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { X } from "lucide-react";
+import { XClose } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -55,7 +55,7 @@ export function DialogContent({
           className="absolute right-xl top-xl grid size-9 place-items-center rounded-md text-(--fg-quaternary) hover:bg-(--bg-secondary) hover:text-(--fg-secondary)"
           aria-label="Cerrar"
         >
-          <X className="size-5" />
+          <XClose className="size-5" />
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPrimitive.Portal>

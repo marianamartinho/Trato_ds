@@ -1,5 +1,5 @@
 "use client";
-import { MoreVertical, SlidersHorizontal } from "lucide-react";
+import { DotsVertical, Sliders04 } from "@untitledui/icons";
 import { Avatar, AvatarGroup, Badge, Button, CellStack, Checkbox, DocIcon, TBody, TD, TH, THead, TR, Table } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -33,7 +33,7 @@ export default function TableDoc() {
                 <TH>Creado</TH>
                 <TH>Días</TH>
                 <TH>Estatus</TH>
-                <TH className="w-12"><SlidersHorizontal className="size-4" /></TH>
+                <TH className="w-12"><Sliders04 className="size-4" /></TH>
               </TR>
             </THead>
             <TBody>
@@ -45,7 +45,7 @@ export default function TableDoc() {
                   <TD><CellStack invert top="Creado" bottom={r.created} /></TD>
                   <TD><Badge color="error">{r.days}</Badge></TD>
                   <TD>{r.sub ? <CellStack top={r.status} bottom={r.sub} /> : <span className="text-(--text-primary)">{r.status}</span>}</TD>
-                  <TD><Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><MoreVertical /></Button></TD>
+                  <TD><Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><DotsVertical /></Button></TD>
                 </TR>
               ))}
             </TBody>

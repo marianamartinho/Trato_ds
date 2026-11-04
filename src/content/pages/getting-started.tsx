@@ -26,11 +26,11 @@ npm run dev      # http://localhost:3000
 npm run build    # exporta el sitio estático a /out (deploy en Vercel)`} />
       </Section>
       <Section title="Stack" description="Pensado para que los componentes se copien tal cual a la app de Trato.">
-        <Guidelines items={["Next.js + React + TypeScript.", "Tailwind CSS v4 con los tokens como @theme.", "Radix UI para accesibilidad (diálogos, menús, selects, tabs).", "class-variance-authority para variantes; API compatible con shadcn/ui (el kit que usa el Figma).", "Íconos: lucide-react."]} />
+        <Guidelines items={["Next.js + React + TypeScript.", "Tailwind CSS v4 con los tokens como @theme.", "Radix UI para accesibilidad (diálogos, menús, selects, tabs).", "class-variance-authority para variantes.", "Íconos: @untitledui/icons, el mismo set que usa el Figma."]} />
       </Section>
       <Section title="Usar un componente">
         <CodeBlock code={`import { Button, Badge } from "@/components/ui";
-import { Plus } from "lucide-react";
+import { Plus } from "@untitledui/icons";
 
 export function Toolbar() {
   return (

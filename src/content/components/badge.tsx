@@ -1,5 +1,5 @@
 "use client";
-import { Folder, Sparkles } from "lucide-react";
+import { Folder, Stars01 } from "@untitledui/icons";
 import { Badge } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -27,10 +27,10 @@ export default function BadgeDoc() {
       <Section title="Casos de producto">
         <Preview code={`<Badge color="error">402</Badge>            {/* días desde creación */}
 <Badge color="brand" shape="tag"><Folder /> Archivero</Badge>
-<Badge color="ai"><Sparkles /> IA</Badge>`}>
+<Badge color="ai"><Stars01 /> IA</Badge>`}>
           <Badge color="error">402</Badge>
           <Badge color="brand" shape="tag"><Folder /> Archivero</Badge>
-          <Badge color="ai"><Sparkles /> IA</Badge>
+          <Badge color="ai"><Stars01 /> IA</Badge>
           <Badge color="gray" size="md">Privacy mode on</Badge>
         </Preview>
       </Section>

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { ChevronDown, Search } from "lucide-react";
+import { ChevronDown, SearchLg } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -38,7 +38,7 @@ export function SearchInput({ scopes, scope, onScopeChange, className, ...props 
         </label>
       )}
       <div className="flex flex-1 items-center gap-md px-lg">
-        <Search className="size-4 text-(--fg-quaternary)" />
+        <SearchLg className="size-4 text-(--fg-quaternary)" />
         <input
           type="search"
           className="h-full min-w-0 flex-1 bg-transparent text-sm text-(--text-primary) outline-none placeholder:text-(--text-placeholder)"

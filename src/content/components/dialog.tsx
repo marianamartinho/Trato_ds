@@ -1,5 +1,5 @@
 "use client";
-import { Send, Trash2 } from "lucide-react";
+import { Send01, Trash01 } from "@untitledui/icons";
 import { Button, Dialog, DialogClose, DialogContent, DialogTrigger, Field, Textarea } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -11,7 +11,7 @@ export default function DialogDoc() {
         <Preview code={`<Dialog>
   <DialogTrigger asChild><Button>Enviar a aprobación</Button></DialogTrigger>
   <DialogContent
-    icon={<Send />}
+    icon={<Send01 />}
     title="Enviar a aprobación"
     description="Los aprobadores del workflow recibirán una notificación."
     footer={<>
@@ -23,7 +23,7 @@ export default function DialogDoc() {
           <Dialog>
             <DialogTrigger asChild><Button>Enviar a aprobación</Button></DialogTrigger>
             <DialogContent
-              icon={<Send />}
+              icon={<Send01 />}
               title="Enviar a aprobación"
               description="Los aprobadores del workflow “Contratos de proveedores” recibirán una notificación."
               footer={<><DialogClose asChild><Button variant="secondary">Cancelar</Button></DialogClose><DialogClose asChild><Button>Enviar</Button></DialogClose></>}
@@ -32,9 +32,9 @@ export default function DialogDoc() {
             </DialogContent>
           </Dialog>
           <Dialog>
-            <DialogTrigger asChild><Button variant="secondary"><Trash2 /> Eliminar carpeta</Button></DialogTrigger>
+            <DialogTrigger asChild><Button variant="secondary"><Trash01 /> Eliminar carpeta</Button></DialogTrigger>
             <DialogContent
-              icon={<Trash2 />}
+              icon={<Trash01 />}
               className="[&>div>div:first-child]:border-error-50 [&>div>div:first-child]:bg-error-100 [&>div>div:first-child]:text-error-600"
               title="¿Eliminar “Archivero”?"
               description="Los 2 documentos se moverán a Mis documentos. Esta acción no se puede deshacer."

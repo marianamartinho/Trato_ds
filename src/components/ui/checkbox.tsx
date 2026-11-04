@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
-import { Check, Minus } from "lucide-react";
+import { Check, Minus } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /** Checkbox — Figma: "Checkbox" (~380 instancias, selección en tablas). 16px, radio xs (4). */

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { AlertTriangle, CheckCircle2, Info, OctagonAlert, Sparkles, X } from "lucide-react";
+import { AlertOctagon, AlertTriangle, CheckCircle, InfoCircle, Stars01, XClose } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -25,7 +25,7 @@ const alertVariants = cva("flex gap-lg text-sm", {
   defaultVariants: { tone: "info", layout: "inline" },
 });
 
-const icons = { info: Info, warning: AlertTriangle, error: OctagonAlert, success: CheckCircle2, ai: Sparkles };
+const icons = { info: InfoCircle, warning: AlertTriangle, error: AlertOctagon, success: CheckCircle, ai: Stars01 };
 
 export interface AlertProps extends VariantProps<typeof alertVariants> {
   title?: React.ReactNode;
@@ -48,7 +48,7 @@ export function Alert({ tone = "info", layout, title, children, action, onDismis
       {action && layout === "banner" && <div className="shrink-0">{action}</div>}
       {onDismiss && (
         <button onClick={onDismiss} aria-label="Cerrar" className="grid size-6 shrink-0 place-items-center rounded-sm opacity-70 hover:opacity-100">
-          <X className="size-4" />
+          <XClose className="size-4" />
         </button>
       )}
     </div>

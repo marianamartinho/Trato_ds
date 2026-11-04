@@ -1,5 +1,5 @@
 "use client";
-import { Archive, FolderPlus, Plus } from "lucide-react";
+import { Archive, FolderPlus, Plus } from "@untitledui/icons";
 import { Button, SearchInput, Tooltip } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, Section } from "@/components/docs/doc";

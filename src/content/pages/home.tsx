@@ -1,6 +1,6 @@
 "use client";
 import { DocLink as Link } from "@/lib/nav";
-import { ArrowRight, Component, FileText, Folder, Layers, LayoutGrid, MoreVertical, Palette, Plus, Sparkles } from "lucide-react";
+import { ArrowRight, Cube01, DotsVertical, File02, Folder, LayersThree01, LayoutGrid01, Palette, Plus, Stars01 } from "@untitledui/icons";
 import { Alert, Avatar, AvatarGroup, Badge, Button, Chip, DocIcon, Progress, QuickAction, SearchInput, SegmentedBar, Stat } from "@/components/ui";
 import { components, figmaPages, foundations, patterns } from "@/content/registry";
 import tokens from "@/tokens/tokens.json";
@@ -18,7 +18,7 @@ export default function Home() {
         <div aria-hidden className="animate-drift absolute -left-16 top-40 size-72 rounded-full bg-orange-400/20 blur-3xl [animation-delay:-6s]" />
         <div className="relative mx-auto max-w-[1040px]">
           <Badge color="brand" size="md" className="animate-fade-up mb-2xl">
-            <Sparkles /> Propuesta · Etapa 1
+            <Stars01 /> Propuesta · Etapa 1
           </Badge>
           <h1 className="animate-fade-up max-w-[768px] text-[44px] font-semibold leading-[1.08] tracking-[-0.03em] text-(--text-primary) md:text-[56px] [animation-delay:60ms]">
             Un Design System para <span className="bg-gradient-to-r from-indigo-500 via-gray-blue-500 to-orange-500 bg-clip-text text-transparent">Trato</span>, construido en código.
@@ -96,7 +96,7 @@ export default function Home() {
                     {r.d > 0 ? <Badge color={r.d > 100 ? "error" : "warning"}>{r.d}</Badge> : <Badge color="success">0</Badge>}
                   </span>
                   <span className="hidden w-20 text-13 text-(--text-secondary) md:block">{r.s}</span>
-                  <Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><MoreVertical /></Button>
+                  <Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><DotsVertical /></Button>
                 </div>
               ))}
             </div>
@@ -120,14 +120,14 @@ export default function Home() {
             </div>
             <div className="flex flex-1 flex-col gap-lg rounded-3xl border border-(--border-secondary) bg-(--bg-primary) p-xl">
               <div className="flex items-center gap-md">
-                <Sparkles className="size-4 text-(--fg-ai)" />
+                <Stars01 className="size-4 text-(--fg-ai)" />
                 <p className="text-md font-semibold text-(--text-primary)">AI chat</p>
                 <Badge color="gray" className="ml-auto">Privacy mode on</Badge>
               </div>
               <p className="ml-auto max-w-[80%] rounded-xl bg-(--bg-tertiary) px-lg py-md text-sm text-(--text-primary)">What are the payment terms?</p>
               <p className="text-sm text-(--text-secondary)">Invoices are issued monthly in arrears and payable within 30 days of receipt.</p>
               <div className="mt-auto rounded-xl border border-(--border-primary) p-md">
-                <Chip icon={<FileText />} onRemove={() => {}}>Master services agreement · TR-2024-0387</Chip>
+                <Chip icon={<File02 />} onRemove={() => {}}>Master services agreement · TR-2024-0387</Chip>
                 <p className="px-xs pb-xs pt-md text-sm text-(--text-placeholder)">Ask about this contract</p>
               </div>
               <div className="flex items-center gap-md text-xs text-(--text-quaternary)">
@@ -146,8 +146,8 @@ export default function Home() {
       <section className="grid gap-xl md:grid-cols-3">
         {[
           { href: "/foundations/colors/", icon: <Palette />, t: "Fundamentos", d: `${foundations.length} guías: color, tipografía, espaciado, elevación, íconos y voz.` },
-          { href: "/components/button/", icon: <Component />, t: "Componentes", d: `${ready} listos y ${components.length - ready} en la hoja de ruta, con props y código.` },
-          { href: "/patterns/documents-table/", icon: <LayoutGrid />, t: "Patrones", d: `${patterns.length} composiciones reales: header, tabla de documentos, dashboard y chat IA.` },
+          { href: "/components/button/", icon: <Cube01 />, t: "Componentes", d: `${ready} listos y ${components.length - ready} en la hoja de ruta, con props y código.` },
+          { href: "/patterns/documents-table/", icon: <LayoutGrid01 />, t: "Patrones", d: `${patterns.length} composiciones reales: header, tabla de documentos, dashboard y chat IA.` },
         ].map((c) => (
           <Link
             key={c.t}
@@ -166,7 +166,7 @@ export default function Home() {
 
       <section className="mt-6xl rounded-3xl border border-(--border-secondary) bg-gradient-to-br from-gray-blue-700 to-gray-blue-900 p-4xl text-white">
         <div className="flex flex-col gap-xl md:flex-row md:items-center">
-          <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-white/10"><Layers className="size-6" /></span>
+          <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-white/10"><LayersThree01 className="size-6" /></span>
           <div className="flex-1">
             <p className="text-lg font-semibold">Del Figma a la plataforma</p>
             <p className="text-sm text-gray-blue-200">Relevamos las 14 áreas del archivo de Figma y propusimos un orden para llevarlas a la plataforma, empezando por lo que más se repite.</p>

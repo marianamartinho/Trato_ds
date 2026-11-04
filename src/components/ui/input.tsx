@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
  * 40px de alto, radio md (8), borde border-primary, sombra xs.
  */
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  /** Ícono a la izquierda (lucide, 16px). */
+  /** Ícono a la izquierda (Untitled UI, 16px). */
   leadingIcon?: React.ReactNode;
   /** Elemento a la derecha (ícono de ayuda, atajo, etc.). */
   trailing?: React.ReactNode;

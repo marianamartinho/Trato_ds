@@ -1,4 +1,4 @@
-import { Check, Hammer, Layers } from "lucide-react";
+import { Check, LayersThree01, Tool01 } from "@untitledui/icons";
 import { Alert, Badge } from "@/components/ui";
 import { DocHeader, Section } from "@/components/docs/doc";
 import { DocLink as Link } from "@/lib/nav";
@@ -34,11 +34,11 @@ export default function Roadmap() {
               items: ["Tokens en código (color, tipografía, espaciado, radios, sombras)", "18 componentes documentados", "4 patrones: header, documentos, dashboard, chat IA", "Inventario de 14 áreas del Figma"],
             },
             {
-              icon: <Hammer />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
+              icon: <Tool01 />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
               items: [`Construir los ${planned.length} componentes mapeados en el inventario`, "Unificar piezas de otros kits con Untitled UI", "Pasar los íconos al set de Untitled UI", "Revisar los tokens contra el Figma y Untitled UI"],
             },
             {
-              icon: <Layers />, tone: "blue" as const, tag: "Propuesta", title: "Etapa 3 · Llevarlo a la plataforma",
+              icon: <LayersThree01 />, tone: "blue" as const, tag: "Propuesta", title: "Etapa 3 · Llevarlo a la plataforma",
               items: ["Conectar el DS al repo de la plataforma", "Implementar por fases (abajo)", "Cada mejora publicada vuelve al DS"],
             },
           ].map((s, i) => (

@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { FileText, Scale } from "lucide-react";
+import { File02, Scales02 } from "@untitledui/icons";
 import { Chip, QuickAction } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -10,11 +10,11 @@ export default function ChipDoc() {
   return (
     <>
       <Section title="Context chip" description="Documentos adjuntos al composer del chat IA. Se pueden quitar.">
-        <Preview code={`<Chip icon={<FileText />} onRemove={() => remove(id)}>
+        <Preview code={`<Chip icon={<File02 />} onRemove={() => remove(id)}>
   Master services agreement · TR-2024-0387
 </Chip>`}>
-          {chips.map((c) => <Chip key={c} icon={<FileText />} onRemove={() => setChips(chips.filter((x) => x !== c))}>{c}</Chip>)}
-          <Chip icon={<Scale />}>Ley 34/2002 (LSSI)</Chip>
+          {chips.map((c) => <Chip key={c} icon={<File02 />} onRemove={() => setChips(chips.filter((x) => x !== c))}>{c}</Chip>)}
+          <Chip icon={<Scales02 />}>Ley 34/2002 (LSSI)</Chip>
           {chips.length < 2 && <button className="text-xs font-semibold text-(--text-brand)" onClick={() => setChips(["Master services agreement · TR-2024-0387", "NDA · Grupo Invex"])}>Restablecer</button>}
         </Preview>
       </Section>

@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, Download, FolderPlus, Plus, Sparkles, Trash2 } from "lucide-react";
+import { ArrowUpRight, Download02, FolderPlus, Plus, Stars01, Trash01 } from "@untitledui/icons";
 import { Button } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { DoDont, Guidelines, PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -13,7 +13,7 @@ export default function ButtonDoc() {
 <Button variant="secondary">Mostrar</Button>
 <Button variant="tertiary">Cancelar</Button>
 <Button variant="soft">Trato agent</Button>
-<Button variant="dark"><Sparkles /> Analizar documento con IA</Button>
+<Button variant="dark"><Stars01 /> Analizar documento con IA</Button>
 <Button variant="destructive">Eliminar</Button>
 <Button variant="link">View more</Button>`}
         >
@@ -21,8 +21,8 @@ export default function ButtonDoc() {
           <Button variant="secondary">Mostrar</Button>
           <Button variant="tertiary">Cancelar</Button>
           <Button variant="soft">Trato agent</Button>
-          <Button variant="dark"><Sparkles className="text-orange-400" /> Analizar documento con IA</Button>
-          <Button variant="destructive"><Trash2 /> Eliminar</Button>
+          <Button variant="dark"><Stars01 className="text-orange-400" /> Analizar documento con IA</Button>
+          <Button variant="destructive"><Trash01 /> Eliminar</Button>
           <Button variant="link">View more</Button>
         </Preview>
       </Section>
@@ -42,7 +42,7 @@ export default function ButtonDoc() {
       <Section title="Solo ícono" description="Acciones de toolbar del header de Documentos (archivar, nueva carpeta, descargar). Siempre con aria-label.">
         <Preview code={`<Button variant="secondary" iconOnly aria-label="Nueva carpeta"><FolderPlus /></Button>`}>
           <Button variant="secondary" iconOnly aria-label="Nueva carpeta"><FolderPlus /></Button>
-          <Button variant="soft" iconOnly aria-label="Descargar"><Download /></Button>
+          <Button variant="soft" iconOnly aria-label="Descargar"><Download02 /></Button>
           <Button variant="tertiary" iconOnly size="sm" aria-label="Abrir"><ArrowUpRight /></Button>
         </Preview>
       </Section>

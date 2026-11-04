@@ -1,5 +1,5 @@
 import { DocLink as Link } from "@/lib/nav";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "@untitledui/icons";
 import type { NavEntry } from "@/content/registry";
 
 export function Pager({ list, slug, base }: { list: NavEntry[]; slug: string; base: string }) {

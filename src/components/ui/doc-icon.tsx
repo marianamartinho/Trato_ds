@@ -1,4 +1,4 @@
-import { FileText } from "lucide-react";
+import { File02 } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -11,7 +11,7 @@ export function DocIcon({ type = "doc", size = 32, className }: { type?: "doc" |
       className={cn("inline-grid shrink-0 place-items-center rounded-full bg-gray-blue-600 text-white", className)}
       style={{ width: size, height: size }}
     >
-      {type === "pdf" ? <span className="text-[9px] font-bold tracking-wide">PDF</span> : <FileText className="size-4" />}
+      {type === "pdf" ? <span className="text-[9px] font-bold tracking-wide">PDF</span> : <File02 className="size-4" />}
     </span>
   );
 }

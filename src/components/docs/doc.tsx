@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowUpRight, Check, X } from "lucide-react";
+import { ArrowUpRight, Check, XClose } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { figmaUrl, statusLabel, type Status } from "@/content/registry";
@@ -129,7 +129,7 @@ export function DoDont({ items }: { items: { do?: React.ReactNode; dont?: React.
           <figure key={i} className="overflow-hidden rounded-2xl border border-(--border-secondary) bg-(--bg-primary)">
             <div className="flex min-h-36 flex-wrap items-center justify-center gap-lg bg-dots p-3xl">{ok ? it.do : it.dont}</div>
             <figcaption className={cn("flex gap-md border-t-2 px-xl py-lg text-sm", ok ? "border-success-500" : "border-error-500")}>
-              {ok ? <Check className="mt-0.5 size-4 shrink-0 text-success-600" /> : <X className="mt-0.5 size-4 shrink-0 text-error-600" />}
+              {ok ? <Check className="mt-0.5 size-4 shrink-0 text-success-600" /> : <XClose className="mt-0.5 size-4 shrink-0 text-error-600" />}
               <span className="text-(--text-secondary)">
                 <strong className={ok ? "text-success-700 dark:text-success-400" : "text-error-700 dark:text-error-400"}>{ok ? "Sí. " : "No. "}</strong>
                 {it.caption}

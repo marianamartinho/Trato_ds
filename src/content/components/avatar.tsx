@@ -1,5 +1,5 @@
 "use client";
-import { Users } from "lucide-react";
+import { Users01 } from "@untitledui/icons";
 import { Avatar, AvatarGroup } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -23,7 +23,7 @@ export default function AvatarDoc() {
             <Avatar initials="P1" /><Avatar initials="P2" /><Avatar initials="FL" /><Avatar initials="AR" />
           </AvatarGroup>
           <div className="flex items-center -space-x-1.5">
-            <span className="grid size-7 place-items-center rounded-full border border-(--bg-primary) bg-gray-blue-50 text-gray-blue-600"><Users className="size-3.5" /></span>
+            <span className="grid size-7 place-items-center rounded-full border border-(--bg-primary) bg-gray-blue-50 text-gray-blue-600"><Users01 className="size-3.5" /></span>
             <Avatar initials="AR" />
           </div>
         </Preview>

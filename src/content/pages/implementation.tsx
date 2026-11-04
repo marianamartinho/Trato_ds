@@ -1,13 +1,13 @@
-import { CircleHelp, Component, Palette, Shapes, BookOpen } from "lucide-react";
+import { BookOpen01, Cube01, Grid01, HelpCircle, Palette } from "@untitledui/icons";
 import { Alert, Badge } from "@/components/ui";
 import { DocHeader, Guidelines, Section } from "@/components/docs/doc";
 import { DocLink as Link } from "@/lib/nav";
 
 const deliverables = [
   { icon: <Palette />, t: "Tokens", d: "Variables CSS generadas desde tokens.json. Funcionan con cualquier framework." },
-  { icon: <Component />, t: "Componentes", d: "Componentes React accesibles, construidos solo con tokens." },
-  { icon: <Shapes />, t: "Íconos", d: "Set oficial de Untitled UI, con los mismos nombres que en Figma." },
-  { icon: <BookOpen />, t: "Documentación", d: "Este sitio: uso, variantes, código y vínculo a cada pantalla de Figma." },
+  { icon: <Cube01 />, t: "Componentes", d: "Componentes React accesibles, construidos solo con tokens." },
+  { icon: <Grid01 />, t: "Íconos", d: "Set oficial de Untitled UI, con los mismos nombres que en Figma." },
+  { icon: <BookOpen01 />, t: "Documentación", d: "Este sitio: uso, variantes, código y vínculo a cada pantalla de Figma." },
 ];
 
 const options = [
@@ -121,7 +121,7 @@ export default function Implementation() {
         <ul className="grid gap-md md:grid-cols-2">
           {questions.map((q) => (
             <li key={q} className="flex gap-md rounded-xl border border-(--border-secondary) bg-(--bg-primary) p-lg text-sm text-(--text-secondary)">
-              <CircleHelp className="mt-px size-4 shrink-0 text-(--fg-brand)" />
+              <HelpCircle className="mt-px size-4 shrink-0 text-(--fg-brand)" />
               {q}
             </li>
           ))}

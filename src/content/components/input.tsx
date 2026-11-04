@@ -1,5 +1,5 @@
 "use client";
-import { HelpCircle, Mail } from "lucide-react";
+import { HelpCircle, Mail01 } from "@untitledui/icons";
 import { Field, Input, Textarea, Tooltip } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { PropsTable, Section, Specs } from "@/components/docs/doc";
@@ -9,10 +9,10 @@ export default function InputDoc() {
     <>
       <Section title="Campo con label y ayuda">
         <Preview align="start" code={`<Field label="Email del firmante" hint="Le enviaremos el enlace de firma." required>
-  <Input leadingIcon={<Mail />} placeholder="nombre@empresa.com" />
+  <Input leadingIcon={<Mail01 />} placeholder="nombre@empresa.com" />
 </Field>`}>
           <Field label="Email del firmante" hint="Le enviaremos el enlace de firma." required className="w-full max-w-[384px]">
-            <Input leadingIcon={<Mail />} placeholder="nombre@empresa.com" />
+            <Input leadingIcon={<Mail01 />} placeholder="nombre@empresa.com" />
           </Field>
           <Field label="Referencia interna" className="w-full max-w-[384px]">
             <Input placeholder="TR-2024-0387" trailing={<Tooltip content="Código que aparece en el PDF"><button aria-label="Ayuda"><HelpCircle /></button></Tooltip>} />

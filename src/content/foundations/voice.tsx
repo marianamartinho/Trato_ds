@@ -1,4 +1,4 @@
-import { HelpCircle } from "lucide-react";
+import { HelpCircle } from "@untitledui/icons";
 import { Section, DoDont, Guidelines } from "@/components/docs/doc";
 import { Button, Field, Input, Tooltip } from "@/components/ui";
 

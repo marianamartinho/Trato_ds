@@ -1,5 +1,5 @@
 "use client";
-import { AlertCircle, ArrowUpRight, MessageCircleQuestion, User } from "lucide-react";
+import { AlertCircle, ArrowUpRight, MessageQuestionCircle, User03 } from "@untitledui/icons";
 import { Button, Card, CardHeader, QuickAction, SegmentedBar, Select, Stat, StatGroup, Tabs, TabsList, TabsTrigger } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, Section } from "@/components/docs/doc";
@@ -12,7 +12,7 @@ export default function DashboardPattern() {
           <div className="flex flex-col gap-xl">
             <div className="flex flex-wrap items-center gap-md">
               <h1 className="mr-auto text-display-xs font-semibold text-(--text-primary)">Dashboard</h1>
-              <Button variant="soft"><MessageCircleQuestion /> Trato agent</Button>
+              <Button variant="soft"><MessageQuestionCircle /> Trato agent</Button>
               <Tabs defaultValue="overview"><TabsList><TabsTrigger value="overview">Overview</TabsTrigger><TabsTrigger value="reports">Reports</TabsTrigger></TabsList></Tabs>
             </div>
             <StatGroup>

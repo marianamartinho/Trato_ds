@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ArrowDown, ArrowUp, Info } from "lucide-react";
+import { ArrowDown, ArrowUp, InfoCircle } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -22,7 +22,7 @@ export function Stat({ label, value, delta, info, className }: StatProps) {
     <div className={cn("flex min-w-0 flex-col gap-md", className)}>
       <div className="flex items-center gap-sm text-sm text-(--text-tertiary)">
         <span className="truncate">{label}</span>
-        {info && <Info className="size-3.5 text-(--fg-quaternary)" />}
+        {info && <InfoCircle className="size-3.5 text-(--fg-quaternary)" />}
       </div>
       <div className="flex flex-wrap items-baseline gap-x-md gap-y-xxs">
         <span className="whitespace-nowrap text-lg font-medium text-(--text-primary)">{value}</span>

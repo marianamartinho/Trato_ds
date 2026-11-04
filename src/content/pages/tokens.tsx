@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "@untitledui/icons";
 import tokens from "@/tokens/tokens.json";
 import { DocHeader, Guidelines, Section } from "@/components/docs/doc";
 import { CodeBlock } from "@/components/docs/code-block";

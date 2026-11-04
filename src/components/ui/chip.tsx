@@ -1,5 +1,5 @@
 import * as React from "react";
-import { X } from "lucide-react";
+import { XClose } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /**
@@ -29,7 +29,7 @@ export function Chip({
       <span className="truncate">{children}</span>
       {onRemove && (
         <button onClick={onRemove} aria-label="Quitar" className="grid size-4 shrink-0 place-items-center rounded-xs text-(--fg-quaternary) hover:bg-gray-200 hover:text-(--fg-secondary) dark:hover:bg-gray-700">
-          <X className="size-3" />
+          <XClose className="size-3" />
         </button>
       )}
     </span>

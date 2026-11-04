@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Archive, Copy, Download, Folder, FolderInput, MoreVertical, Pencil, Share2, SlidersHorizontal, Trash2, Users, X } from "lucide-react";
+import { Archive, Copy03, DotsVertical, Download02, Edit05, Folder, FolderDownload, Share07, Sliders04, Trash01, Users01, XClose } from "@untitledui/icons";
 import {
   Avatar, AvatarGroup, Badge, Button, CellStack, Checkbox, DocIcon, DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuSeparator, DropdownMenuTrigger, Select, TBody, TD, TH, THead, TR, Table,
@@ -34,11 +34,11 @@ export default function DocumentsTablePattern() {
               <div className="flex animate-fade-up items-center gap-md rounded-xl bg-gray-900 px-xl py-md text-sm text-white dark:bg-gray-100 dark:text-gray-900">
                 <span className="font-semibold">{sel.length} seleccionado{sel.length > 1 ? "s" : ""}</span>
                 <span className="mx-xs h-4 w-px bg-white/20 dark:bg-black/20" />
-                {[[FolderInput, "Mover"], [Share2, "Compartir"], [Archive, "Archivar"]].map(([I, l]) => {
-                  const Icon = I as typeof FolderInput;
+                {[[FolderDownload, "Mover"], [Share07, "Compartir"], [Archive, "Archivar"]].map(([I, l]) => {
+                  const Icon = I as typeof FolderDownload;
                   return <button key={l as string} className="inline-flex items-center gap-sm rounded-sm px-md py-xs font-medium hover:bg-white/10 dark:hover:bg-black/10"><Icon className="size-4" />{l as string}</button>;
                 })}
-                <button onClick={() => setSel([])} className="ml-auto grid size-7 place-items-center rounded-sm hover:bg-white/10" aria-label="Limpiar selección"><X className="size-4" /></button>
+                <button onClick={() => setSel([])} className="ml-auto grid size-7 place-items-center rounded-sm hover:bg-white/10" aria-label="Limpiar selección"><XClose className="size-4" /></button>
               </div>
             )}
             <Table>
@@ -46,7 +46,7 @@ export default function DocumentsTablePattern() {
                 <TR className="hover:bg-transparent">
                   <TH className="w-12"><Checkbox checked={all} onCheckedChange={(v) => setSel(v ? data.map((d) => d.id) : [])} aria-label="Seleccionar todo" /></TH>
                   <TH>Nombre de documento</TH><TH className="hidden lg:table-cell">Creador</TH><TH>Participantes</TH><TH className="hidden md:table-cell">Creado</TH><TH>Días</TH><TH>Estatus</TH>
-                  <TH className="w-12"><SlidersHorizontal className="size-4" /></TH>
+                  <TH className="w-12"><Sliders04 className="size-4" /></TH>
                 </TR>
               </THead>
               <TBody>
@@ -56,7 +56,7 @@ export default function DocumentsTablePattern() {
                     <div className="flex items-center gap-lg">
                       <span className="grid size-8 place-items-center rounded-full bg-gray-blue-50 text-gray-blue-600 dark:bg-gray-blue-900 dark:text-gray-blue-200"><Folder className="size-4" /></span>
                       <CellStack top="Archivero" bottom="2 documentos" />
-                      <span className="ml-auto mr-3xl hidden items-center gap-sm sm:inline-flex"><Users className="size-4 text-(--fg-quaternary)" /><Avatar initials="AR" /></span>
+                      <span className="ml-auto mr-3xl hidden items-center gap-sm sm:inline-flex"><Users01 className="size-4 text-(--fg-quaternary)" /><Avatar initials="AR" /></span>
                     </div>
                   </TD>
                 </TR>
@@ -79,14 +79,14 @@ export default function DocumentsTablePattern() {
                     <TD>{r.sub ? <CellStack top={<span className="font-normal">{r.status}</span>} bottom={r.sub} /> : <span className="text-(--text-primary)">{r.status}</span>}</TD>
                     <TD>
                       <DropdownMenu>
-                        <DropdownMenuTrigger asChild><Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><MoreVertical /></Button></DropdownMenuTrigger>
+                        <DropdownMenuTrigger asChild><Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><DotsVertical /></Button></DropdownMenuTrigger>
                         <DropdownMenuContent>
-                          <DropdownMenuItem icon={<Pencil />}>Renombrar</DropdownMenuItem>
-                          <DropdownMenuItem icon={<FolderInput />}>Mover a carpeta</DropdownMenuItem>
-                          <DropdownMenuItem icon={<Copy />}>Duplicar</DropdownMenuItem>
-                          <DropdownMenuItem icon={<Download />}>Descargar</DropdownMenuItem>
+                          <DropdownMenuItem icon={<Edit05 />}>Renombrar</DropdownMenuItem>
+                          <DropdownMenuItem icon={<FolderDownload />}>Mover a carpeta</DropdownMenuItem>
+                          <DropdownMenuItem icon={<Copy03 />}>Duplicar</DropdownMenuItem>
+                          <DropdownMenuItem icon={<Download02 />}>Descargar</DropdownMenuItem>
                           <DropdownMenuSeparator />
-                          <DropdownMenuItem icon={<Trash2 />} destructive>Eliminar</DropdownMenuItem>
+                          <DropdownMenuItem icon={<Trash01 />} destructive>Eliminar</DropdownMenuItem>
                         </DropdownMenuContent>
                       </DropdownMenu>
                     </TD>

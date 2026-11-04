@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowRight, BookOpen, Command, Component, LayoutGrid, Menu, Moon, Palette, Search, Sun, X } from "lucide-react";
+import { ArrowRight, BookOpen01, Command, Cube01, LayoutGrid01, Menu01, Moon01, Palette, SearchLg, Sun, XClose } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 import { DocLink as Link, useNavigate, usePath } from "@/lib/nav";
 import { TRATO_OWL } from "@/lib/brand";
@@ -15,7 +15,7 @@ type Group = { title: string; icon: React.ReactNode; base: string; items: (NavEn
 const groups: Group[] = [
   {
     title: "Empezar",
-    icon: <BookOpen />,
+    icon: <BookOpen01 />,
     base: "",
     items: [
       { slug: "home", title: "Introducción", href: "/" },
@@ -26,8 +26,8 @@ const groups: Group[] = [
     ],
   },
   { title: "Fundamentos", icon: <Palette />, base: "/foundations", items: foundations },
-  { title: "Componentes", icon: <Component />, base: "/components", items: [{ slug: "inventory", title: "Inventario", href: "/inventory/" }, ...(["atom", "molecule", "organism"] as const).flatMap((l) => components.filter((c) => c.level === l))] },
-  { title: "Patrones", icon: <LayoutGrid />, base: "/patterns", items: patterns },
+  { title: "Componentes", icon: <Cube01 />, base: "/components", items: [{ slug: "inventory", title: "Inventario", href: "/inventory/" }, ...(["atom", "molecule", "organism"] as const).flatMap((l) => components.filter((c) => c.level === l))] },
+  { title: "Patrones", icon: <LayoutGrid01 />, base: "/patterns", items: patterns },
   {
     title: "Producto",
     icon: <FigmaIcon className="size-4" />,
@@ -162,7 +162,7 @@ function SearchDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o:
         <Dialog.Content className="fixed left-1/2 top-[12vh] z-50 w-[calc(100vw-32px)] max-w-[576px] -translate-x-1/2 overflow-hidden rounded-2xl border border-(--border-secondary) bg-(--bg-primary) shadow-xl animate-fade-up">
           <Dialog.Title className="sr-only">Buscar en el design system</Dialog.Title>
           <div className="flex items-center gap-lg border-b border-(--border-secondary) px-xl">
-            <Search className="size-5 text-(--fg-quaternary)" />
+            <SearchLg className="size-5 text-(--fg-quaternary)" />
             <input
               autoFocus
               value={q}
@@ -224,7 +224,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         <header className="sticky top-0 z-40 border-b border-(--border-secondary) bg-(--bg-primary)/80 backdrop-blur-md">
           <div className="mx-auto flex h-16 max-w-[1440px] items-center gap-xl px-xl lg:px-3xl">
             <button className="grid size-9 place-items-center rounded-md text-(--fg-secondary) hover:bg-(--bg-secondary) lg:hidden" onClick={() => setMobile(true)} aria-label="Abrir menú">
-              <Menu className="size-5" />
+              <Menu01 className="size-5" />
             </button>
             <Logo />
             <span className="hidden rounded-full border border-(--border-secondary) px-md py-0.5 font-mono text-xs text-(--text-quaternary) sm:inline">v0.1</span>
@@ -233,20 +233,20 @@ export function Shell({ children }: { children: React.ReactNode }) {
               onClick={() => setSearch(true)}
               className="hidden h-9 w-64 items-center gap-md rounded-md border border-(--border-secondary) bg-(--bg-secondary) px-lg text-sm text-(--text-quaternary) transition-colors hover:border-(--border-primary) md:flex"
             >
-              <Search className="size-4" />
+              <SearchLg className="size-4" />
               <span className="flex-1 text-left">Buscar…</span>
               <kbd className="inline-flex items-center gap-0.5 rounded-xs border border-(--border-secondary) bg-(--bg-primary) px-1 text-xs">
                 <Command className="size-3" />K
               </kbd>
             </button>
             <button onClick={() => setSearch(true)} className="grid size-9 place-items-center rounded-md text-(--fg-secondary) hover:bg-(--bg-secondary) md:hidden" aria-label="Buscar">
-              <Search className="size-5" />
+              <SearchLg className="size-5" />
             </button>
             <a href={figmaUrl()} target="_blank" rel="noreferrer" className="grid size-9 place-items-center rounded-md hover:bg-(--bg-secondary)" aria-label="Abrir Figma">
               <FigmaIcon className="size-4" />
             </a>
             <button onClick={toggle} className="grid size-9 place-items-center rounded-md text-(--fg-secondary) hover:bg-(--bg-secondary)" aria-label="Cambiar tema">
-              {dark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+              {dark ? <Sun className="size-5" /> : <Moon01 className="size-5" />}
             </button>
           </div>
         </header>
@@ -272,7 +272,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
               <div className="mb-3xl flex items-center justify-between">
                 <Logo />
                 <Dialog.Close className="grid size-9 place-items-center rounded-md hover:bg-(--bg-secondary)" aria-label="Cerrar">
-                  <X className="size-5" />
+                  <XClose className="size-5" />
                 </Dialog.Close>
               </div>
               <SidebarNav onNavigate={() => setMobile(false)} />

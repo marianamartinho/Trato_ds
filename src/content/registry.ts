@@ -41,7 +41,7 @@ export const foundations: NavEntry[] = [
   { slug: "typography", title: "Tipografía", description: "Inter, escala tipográfica y pesos.", status: "ready", keywords: ["fuente", "inter", "texto"] },
   { slug: "spacing", title: "Espaciado y radios", description: "Escala de espaciado, radios de borde y layout.", status: "ready", keywords: ["padding", "gap", "radius", "grid"] },
   { slug: "elevation", title: "Elevación", description: "Sombras, bordes y superficies.", status: "ready", keywords: ["shadow", "sombra"] },
-  { slug: "icons", title: "Iconografía", description: "Set de íconos, tamaños y los íconos más usados.", status: "ready", keywords: ["lucide", "icon"] },
+  { slug: "icons", title: "Iconografía", description: "Set de íconos, tamaños y los íconos más usados.", status: "ready", keywords: ["untitled", "icon", "íconos"] },
   { slug: "voice", title: "Voz y microcopy", description: "Tono, ayudas, tooltips y textos de estado.", status: "beta", keywords: ["copy", "textos", "ayudas"] },
 ];
 

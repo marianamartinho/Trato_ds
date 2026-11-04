@@ -1,5 +1,5 @@
 "use client";
-import { FolderOpen, Plus, SearchX, Upload } from "lucide-react";
+import { Folder, Plus, SearchRefraction, Upload01 } from "@untitledui/icons";
 import { Button, EmptyState } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -9,17 +9,17 @@ export default function EmptyStateDoc() {
     <>
       <Section title="Ejemplos" description="Carpeta vacía (11.10) y búsqueda sin resultados.">
         <Preview align="stretch" code={`<EmptyState
-  icon={<FolderOpen />}
+  icon={<Folder />}
   title="Esta carpeta está vacía"
   description="Arrastrá documentos acá o agregalos desde tu lista."
-  actions={<><Button variant="secondary"><Upload /> Subir</Button><Button><Plus /> Añadir documentos</Button></>}
+  actions={<><Button variant="secondary"><Upload01 /> Subir</Button><Button><Plus /> Añadir documentos</Button></>}
 />`}>
           <div className="grid gap-xl md:grid-cols-2">
             <div className="overflow-hidden rounded-xl border border-(--border-secondary) bg-(--bg-primary)">
-              <EmptyState icon={<FolderOpen />} title="Esta carpeta está vacía" description="Arrastrá documentos acá o agregalos desde tu lista." actions={<><Button variant="secondary"><Upload /> Subir</Button><Button><Plus /> Añadir</Button></>} />
+              <EmptyState icon={<Folder />} title="Esta carpeta está vacía" description="Arrastrá documentos acá o agregalos desde tu lista." actions={<><Button variant="secondary"><Upload01 /> Subir</Button><Button><Plus /> Añadir</Button></>} />
             </div>
             <div className="overflow-hidden rounded-xl border border-(--border-secondary) bg-(--bg-primary)">
-              <EmptyState icon={<SearchX />} title="Sin resultados" description="No encontramos documentos para “pagaré 2019”. Probá con otro nombre o ID." actions={<Button variant="secondary">Limpiar búsqueda</Button>} />
+              <EmptyState icon={<SearchRefraction />} title="Sin resultados" description="No encontramos documentos para “pagaré 2019”. Probá con otro nombre o ID." actions={<Button variant="secondary">Limpiar búsqueda</Button>} />
             </div>
           </div>
         </Preview>

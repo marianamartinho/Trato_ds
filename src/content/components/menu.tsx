@@ -1,5 +1,5 @@
 "use client";
-import { Copy, Download, FolderInput, MoreVertical, Pencil, Share2, Trash2 } from "lucide-react";
+import { Copy03, DotsVertical, Download02, Edit05, FolderDownload, Share07, Trash01 } from "@untitledui/icons";
 import { Button, DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui";
 import { Preview } from "@/components/docs/preview";
 import { Guidelines, PropsTable, Section } from "@/components/docs/doc";
@@ -10,25 +10,25 @@ export default function MenuDoc() {
       <Section title="Menú de documento" description="Figma 11.2 / 11.3: acciones del ⋮ en cada fila.">
         <Preview code={`<DropdownMenu>
   <DropdownMenuTrigger asChild>
-    <Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><MoreVertical /></Button>
+    <Button variant="tertiary" size="sm" iconOnly aria-label="Acciones"><DotsVertical /></Button>
   </DropdownMenuTrigger>
   <DropdownMenuContent>
-    <DropdownMenuItem icon={<Pencil />}>Renombrar</DropdownMenuItem>
-    <DropdownMenuItem icon={<FolderInput />}>Mover a carpeta</DropdownMenuItem>
+    <DropdownMenuItem icon={<Edit05 />}>Renombrar</DropdownMenuItem>
+    <DropdownMenuItem icon={<FolderDownload />}>Mover a carpeta</DropdownMenuItem>
     <DropdownMenuSeparator />
-    <DropdownMenuItem icon={<Trash2 />} destructive>Eliminar</DropdownMenuItem>
+    <DropdownMenuItem icon={<Trash01 />} destructive>Eliminar</DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu>`}>
           <DropdownMenu>
-            <DropdownMenuTrigger asChild><Button variant="secondary" iconOnly aria-label="Acciones"><MoreVertical /></Button></DropdownMenuTrigger>
+            <DropdownMenuTrigger asChild><Button variant="secondary" iconOnly aria-label="Acciones"><DotsVertical /></Button></DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem icon={<Pencil />} shortcut="R">Renombrar</DropdownMenuItem>
-              <DropdownMenuItem icon={<FolderInput />}>Mover a carpeta</DropdownMenuItem>
-              <DropdownMenuItem icon={<Copy />}>Duplicar</DropdownMenuItem>
-              <DropdownMenuItem icon={<Share2 />}>Compartir</DropdownMenuItem>
-              <DropdownMenuItem icon={<Download />}>Descargar PDF</DropdownMenuItem>
+              <DropdownMenuItem icon={<Edit05 />} shortcut="R">Renombrar</DropdownMenuItem>
+              <DropdownMenuItem icon={<FolderDownload />}>Mover a carpeta</DropdownMenuItem>
+              <DropdownMenuItem icon={<Copy03 />}>Duplicar</DropdownMenuItem>
+              <DropdownMenuItem icon={<Share07 />}>Compartir</DropdownMenuItem>
+              <DropdownMenuItem icon={<Download02 />}>Descargar PDF</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem icon={<Trash2 />} destructive>Eliminar</DropdownMenuItem>
+              <DropdownMenuItem icon={<Trash01 />} destructive>Eliminar</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </Preview>

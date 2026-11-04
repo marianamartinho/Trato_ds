@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Check, Copy } from "lucide-react";
+import { Check, Copy03 } from "@untitledui/icons";
 import { cn } from "@/lib/cn";
 
 /** Resaltado mínimo para TSX/CSS/bash, sin dependencias. */
@@ -33,7 +33,7 @@ export function CopyButton({ text, className }: { text: string; className?: stri
       aria-label="Copiar"
       className={cn("grid size-8 place-items-center rounded-md text-gray-400 transition-colors hover:bg-white/10 hover:text-white", className)}
     >
-      {done ? <Check className="size-4 text-success-400" /> : <Copy className="size-4" />}
+      {done ? <Check className="size-4 text-success-400" /> : <Copy03 className="size-4" />}
     </button>
   );
 }
