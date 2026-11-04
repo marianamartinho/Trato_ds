@@ -35,7 +35,7 @@ export default function Roadmap() {
             },
             {
               icon: <Hammer />, tone: "warning" as const, tag: "Siguiente", title: "Etapa 2 · Completar el sistema",
-              items: [...planned.map((c) => c.title), "Revisión de la paleta con Diseño"],
+              items: [`Construir los ${planned.length} componentes mapeados en el inventario`, "Unificar piezas de otros kits con Untitled UI", "Pasar los íconos al set de Untitled UI", "Revisar los tokens contra el Figma y Untitled UI"],
             },
             {
               icon: <Layers />, tone: "blue" as const, tag: "Propuesta", title: "Etapa 3 · Llevarlo a la plataforma",

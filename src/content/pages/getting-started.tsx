@@ -44,7 +44,7 @@ export function Toolbar() {
       <Section title="Estados de los componentes">
         <Guidelines items={["Listo: implementado, documentado y validado contra Figma. Usar en producto.", "Beta: implementado, puede cambiar la API.", "Pendiente: detectado en Figma, todavía no está en código (hoja de ruta)."]} />
         <Alert className="mt-xl" tone="info" title="Etapa 1">
-          Fundamentos completos, 18 componentes y 4 patrones. La etapa 2 suma drawer, breadcrumbs, toolbar del editor, gráficos, date picker y toast. Ver <Link href="/roadmap/" className="font-semibold underline">hoja de ruta</Link>.
+          Fundamentos completos, 18 componentes construidos y 4 patrones. El resto de los componentes que usan los diseños ya está mapeado en el <Link href="/inventory/" className="font-semibold underline">inventario</Link>.
         </Alert>
       </Section>
     </>

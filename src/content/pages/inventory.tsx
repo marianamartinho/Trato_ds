@@ -67,6 +67,31 @@ export default function Inventory() {
           </section>
         ))}
       </div>
+
+      <section className="mt-6xl grid gap-xl md:grid-cols-2">
+        <div className="rounded-2xl border border-(--border-secondary) bg-(--bg-primary) p-3xl">
+          <h2 className="mb-xs text-lg font-semibold text-(--text-primary)">Para unificar</h2>
+          <p className="mb-lg text-sm text-(--text-tertiary)">En el Figma conviven piezas de otros kits con el mismo nombre que las de Untitled UI. Al construirlas se unifican en un solo componente.</p>
+          <ul className="flex flex-col gap-md text-sm text-(--text-secondary)">
+            <li><strong className="font-semibold text-(--text-primary)">Button</strong> · ~913 instancias de otro kit (Tertiary/Secondary, Small/XSmall) a unificar con Buttons/Button.</li>
+            <li><strong className="font-semibold text-(--text-primary)">Badge</strong> · un segundo set (Primary/Neutral/Error…, Accent/Outline) a unificar con el Badge de Untitled UI.</li>
+            <li><strong className="font-semibold text-(--text-primary)">Text Input e Input field</strong> · dos sets de otros kits a unificar con el Input field de Untitled UI.</li>
+            <li><strong className="font-semibold text-(--text-primary)">Íconos</strong> · conviven Untitled UI y Remix Icon (close-line, file-2-line, eye-line…). Se unifican en el set de Untitled UI.</li>
+            <li><strong className="font-semibold text-(--text-primary)">Pantallas armadas a mano</strong> · NEW AI Chat y Expedientes no usan componentes: se reconstruyen con los del sistema.</li>
+          </ul>
+        </div>
+        <div className="rounded-2xl border border-(--border-secondary) bg-(--bg-primary) p-3xl">
+          <h2 className="mb-xs text-lg font-semibold text-(--text-primary)">Excluido del relevamiento</h2>
+          <p className="mb-lg text-sm text-(--text-tertiary)">Material de referencia que aparece en el archivo pero no es diseño de Trato.</p>
+          <ul className="flex flex-col gap-md text-sm text-(--text-secondary)">
+            <li>Kit de UI de IA de terceros (frames “Create Blog / Chat AI”) con íconos Phosphor.</li>
+            <li>Dashboards de referencia de otros productos (Transactions, Transfer, Attendance Overview).</li>
+            <li>Pantalla de videollamada con íconos Iconsax.</li>
+            <li>Tarjetas de gráficos de un kit externo (donut, estadísticas).</li>
+            <li>Páginas de wireframes, Graveyard, capturas de diseño en producción y versiones anteriores.</li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 }

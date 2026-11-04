@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 import { DocLink as Link, useNavigate, usePath } from "@/lib/nav";
 import { TRATO_OWL } from "@/lib/brand";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { components, foundations, patterns, type NavEntry } from "@/content/registry";
+import { components, foundations, levelLabel, patterns, type NavEntry } from "@/content/registry";
 import { FigmaIcon } from "./figma-icon";
 import { figmaUrl } from "@/content/registry";
 
@@ -26,7 +26,7 @@ const groups: Group[] = [
     ],
   },
   { title: "Fundamentos", icon: <Palette />, base: "/foundations", items: foundations },
-  { title: "Componentes", icon: <Component />, base: "/components", items: components },
+  { title: "Componentes", icon: <Component />, base: "/components", items: [{ slug: "inventory", title: "Inventario", href: "/inventory/" }, ...(["atom", "molecule", "organism"] as const).flatMap((l) => components.filter((c) => c.level === l))] },
   { title: "Patrones", icon: <LayoutGrid />, base: "/patterns", items: patterns },
   {
     title: "Producto",
@@ -62,12 +62,17 @@ function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
             {g.title}
           </p>
           <ul className="flex flex-col gap-px">
-            {g.items.map((it) => {
+            {g.items.map((it, idx) => {
               const href = hrefOf(g, it);
+              const lvl = "level" in it ? it.level : undefined;
+              const prev = g.items[idx - 1];
+              const prevLvl = prev && "level" in prev ? prev.level : undefined;
+              const sub = lvl && lvl !== prevLvl ? levelLabel[lvl] : null;
               const active = norm(pathname) === norm(href);
               const status = "status" in it ? it.status : undefined;
               return (
                 <li key={href}>
+                  {sub && <p className="mb-xs mt-md px-md text-[11px] font-semibold text-(--text-quaternary)">{sub}</p>}
                   <Link
                     href={href}
                     onClick={onNavigate}
